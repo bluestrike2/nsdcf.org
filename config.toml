@@ -1,3 +1,11 @@
-baseURL = "https://nsdcf.org/"
+baseURL = "https://nsdcf.org"
 languageCode = "en-us"
+pluralizelisttitles = false
 title = "Norwin School District Community Foundation"
+[params]
+description = ""
+google_analytics = "UA-XXXXX-Y"
+[sitemap]
+ChangeFreq = ""
+Filename = "sitemap.xml"
+Priority = "-1"
