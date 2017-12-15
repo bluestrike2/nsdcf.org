@@ -2,6 +2,8 @@ baseURL = "https://nsdcf.org"
 languageCode = "en-us"
 pluralizelisttitles = false
 title = "Norwin School District Community Foundation"
+# theme to use (located by default in /themes/THEMENAME/)
+theme = "bulma"
 [params]
 description = ""
 google_analytics = "UA-XXXXX-Y"
