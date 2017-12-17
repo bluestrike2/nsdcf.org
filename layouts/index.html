@@ -1,13 +1,15 @@
 {{ define "title"}} {{ .Site.Title}} {{end}}
 
-{{ define "main" }}
+{{ define "header" }}
   <section class="hero hero-split is-fullheight is-dark" id="home-hero">
     <div class="hero-split-body">
       <h1 class="title">{{.Title}}</h1>
     </div>
     <div class="hero-split-image"></div>
   </section>
+{{ end }}
 
+{{ define "main" }}
   <section class="section" id="home-intro">
     {{.Content}}
   </section>
