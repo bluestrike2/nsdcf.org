@@ -16,7 +16,31 @@ sectionPagesMenu = "main"
   description = ""
   facebook    = ""
   twitter     = ""
-
+[[menu.main]]
+  name        = "Our Story"
+  weight      = 10
+  identifier  = "story"
+  url         = "/story"
+[[menu.main]]
+  name        = "Programs"
+  weight      = 20
+  identifier  = "programs"
+  url         = "/programs"
+[[menu.main]]
+  name        = "Alumni"
+  weight      = 30
+  identifier  = "alumni"
+  url         = "/alumni"
+[[menu.main]]
+  name        = "News"
+  weight      = 40
+  identifier  = "news"
+  url         = "/news"
+[[menu.main]]
+  name        = "Get Involved"
+  weight      = 50
+  identifier  = "get-involved"
+  url         = "/get-involved"
 [sitemap]
   ChangeFreq  = ""
   Filename    = "sitemap.xml"
