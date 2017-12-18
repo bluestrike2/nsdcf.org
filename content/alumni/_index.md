@@ -1,5 +1,5 @@
 ---
-title: "_Index"
+title: "Norwin Alumni & Friends"
 date: 2017-12-15T12:06:03-05:00
 draft: true
 ---

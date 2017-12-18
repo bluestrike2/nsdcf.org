@@ -11,7 +11,7 @@ summaryLength   = 70
 pluralizelisttitles = false
 theme           = "bulma"
 title           = "Norwin School District Community Foundation"
-
+sectionPagesMenu = "main"
 [params]
   description = ""
   facebook    = ""
