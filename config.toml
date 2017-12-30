@@ -11,15 +11,18 @@ summaryLength   = 70
 pluralizelisttitles = false
 theme           = "bulma"
 title           = "Norwin School District Community Foundation"
-title_abbrev    = "NSDCF"
 sectionPagesMenu = "main"
+
 [params]
   description = ""
+  title_abbrev = "NSDCF"
+
   [params.social]
-    facebook        = ""
-    facebook_alumni = ""
+    facebook        = "https://www.facebook.com/groups/NorwinAlumFriends"
+    facebook_alumni = "https://www.facebook.com/groups/NorwinAlumFriends"
     twitter         = ""
     twitter_alumni  = ""
+
   [params.contact]
     email         = "hello@nsdcf.org"
     email_alumni  = "alumni@nsdcf.org"
@@ -28,6 +31,7 @@ sectionPagesMenu = "main"
     city          = "North Huntingdon"
     state         = "PA"
     postal        = "15642"
+    newsletter_signup = ""
 
 [[menu.main]]
   name        = "Our Story"
@@ -54,6 +58,22 @@ sectionPagesMenu = "main"
   weight      = 50
   identifier  = "get-involved"
   url         = "/get-involved"
+
+[[menu.footer]]
+  name = "Charitable Information"
+  weight = 20
+  identifier = "charitable-information"
+  url = "/charitable-information"
+[[menu.footer]]
+  name = "Privacy"
+  weight = 30
+  identifier = "privacy"
+  url = "/privacy"
+[[menu.footer]]
+  name = "Norwin School District"
+  weight = 40
+  url = "http://www.norwinsd.org"
+
 [sitemap]
   ChangeFreq  = ""
   Filename    = "sitemap.xml"

@@ -41,14 +41,14 @@
     {{ end }}
   </head>
 
-<body>
-  {{ partial "header/site-browser-upgrade" . }}
-  {{ block "nav" . }}{{ partial "header/site-nav" . }}{{ end }}
-  {{ block "header" . }}{{ end }}
+  <body>
+    {{ partial "header/site-browser-upgrade" . }}
+    {{ block "nav" . }}{{ partial "header/site-nav" . }}{{ end }}
+    {{ block "header" . }}{{ end }}
 
-  <main>{{ block "main" . }}{{ end }}</main>
-  <footer>{{ block "footer" . }}{{ end }}</footer>
+    <main id="main" class="main">{{ block "main" . }}{{ end }}</main>
 
-  {{ partial "footer/site-scripts" . }}
-</body>
+    {{ block "footer" . }}{{ partial "footer/site-footer" . }}{{ end }}
+    {{ partial "footer/site-scripts" . }}
+  </body>
 </html>
