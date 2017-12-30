@@ -8,7 +8,8 @@ var gulp         = require("gulp"),
 //Compile SCSS files to CSS
 gulp.task("sass", function () {
   del(["static/css/**/*"])
-  gulp.src("src/sass/**/*.sass")
+  gulp.src("src/sass/*.sass")
+    .pipe(sass().on('error', sass.logError))
     .pipe(sass({outputStyle : "compressed"}))
     .pipe(autoprefixer({browsers : ["last 20 versions"]}))
     .pipe(hash())
