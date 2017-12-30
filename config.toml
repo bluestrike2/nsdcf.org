@@ -11,11 +11,24 @@ summaryLength   = 70
 pluralizelisttitles = false
 theme           = "bulma"
 title           = "Norwin School District Community Foundation"
+title_abbrev    = "NSDCF"
 sectionPagesMenu = "main"
 [params]
   description = ""
-  facebook    = ""
-  twitter     = ""
+  [params.social]
+    facebook        = ""
+    facebook_alumni = ""
+    twitter         = ""
+    twitter_alumni  = ""
+  [params.contact]
+    email         = "hello@nsdcf.org"
+    email_alumni  = "alumni@nsdcf.org"
+    phone         = "724.861.3000"
+    street        = "281 McMahon Drive"
+    city          = "North Huntingdon"
+    state         = "PA"
+    postal        = "15642"
+
 [[menu.main]]
   name        = "Our Story"
   weight      = 10
