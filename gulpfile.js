@@ -47,7 +47,7 @@ gulp.task("favicon", function () {
 })
 
 // Watch asset folder for changes
-gulp.task("watch", ["dev-sass", "js", "images", "favicon"], function () {
+gulp.task("watch", ["sass", "js", "images", "favicon"], function () {
   gulp.watch("src/sass/**/*", ["sass"])
   gulp.watch("src/js/**/*", ["js"])
   gulp.watch("src/images/**/*", ["images"])
