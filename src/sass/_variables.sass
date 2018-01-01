@@ -1,14 +1,64 @@
+// Overrides bulma defaults and sets custom site variables
+
 @import "bulma/utilities/initial-variables"
 @import "bulma/utilities/functions"
 
-// Override bulma defaults
+// NSDCF Brand Color Scheme
+// $slate:             rgb(58, 65, 78)     hsl(219, 14.7%, 26.7%)
+// $slate-dark:        rgb(43, 48, 57)     hsl(219, 14%, 19.6%)
+// $slate-light:       rgb(67, 76, 91)     hsl(218, 15.2%, 31%)
+// $yellow:            rgb(247, 221, 114)  hsl(48, 89.3%, 70.8%)
+// $light-yellow:      rgb(249, 239, 152)  hsl(54, 89%, 78.6%)
+// $background:        rgb(235, 232, 233)  hsl(340, 7%, 91.6%)
+// $background-light:  rgb(246, 246, 246)  hsl(0, 0, 96.5%)
+// $azure:             rgb(117, 154, 171)  hsl(199, 24.3%, 56.5%)
 
-// 2. Set your own initial variables
+$slate:          hsl(219, 14.7%, 26.7%)
+$slate-dark:     hsl(219, 14%, 19.6%)
+$slate-light:    hsl(218, 15.2%, 31%)
+$yellow:         hsl(48, 89.3%, 70.8%)
+$light-yellow:   hsl(54, 89%, 78.6%)
+$azure:          hsl(199, 24.3%, 56.5%)
 
-// 3. Set the derived variables
+// $black is a darker shade derived from $slate-dark
+$black:          hsl(218, 14.3%, 11%)
+$black-bis:      hsl(218, 14.3%, 11%)
+$black-ter:      hsl(222, 13.5%, 14.5%)
 
-// 4. Setup your Custom Colors
+$grey-darker:    hsl(0, 0%, 23.5%)
+$grey-dark:      hsl(0, 0, 35%)
+$grey:           hsl(0, 0%, 51%)
+$grey-light:     hsl(0, 0%, 70%)
+$grey-lighter:   hsl(0, 0%, 81.5%)
 
-// 5. Add new color variables to the color map.
+$white-ter:      hsl(340, 7%, 91.6%)
+$white-bis:      hsl(0, 0, 96.5%)
+$white:          hsl(0, 0%, 100%)
 
-// 6. Import the rest of Bulma
+// Override bulma default colors with colors at least tangentially coordinated with brand colors
+
+$orange:         hsl(20, 75.6%, 58.2%)
+$green:          hsl(161, 81.8%, 23.7%)
+$turquoise:      hsl(131, 22.5%, 55.5%)
+$cyan:           hsl(182, 42.3%, 72.2%)
+$blue:           hsl(199, 24.3%, 56.5%)
+$purple  :       hsl(247, 59.2%, 79.8%)
+$red:            hsl(358, 100%, 67.6%)
+
+// Color map using colors from NSDCF brand guide. Not used directly for any bulma styles.
+// NOTE - Sass won't accept the map unless on one line when using the indented sass syntax.
+$site-colors: ( "primary": rgb(58, 65, 78), "primary-dark": rgb(43, 48, 57), "foreground": rgb(67, 76, 91), "accent": rgb(247, 221, 114), "accent-light": rgb(249, 239, 152), "background": rgb(235, 232, 233), "background-light": rgb(246, 246, 246) )
+
+// Derived variables
+
+$primary:  $yellow
+$info:     $blue
+$success:  $green
+$warning:  $orange
+$danger:   $red
+$light:    $white-ter
+$dark:     $slate
+
+$link:     $primary
+
+// Color Maps
