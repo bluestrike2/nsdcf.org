@@ -15,11 +15,11 @@
     {{ if or (in $noindex_kinds .Kind) ($is_noindex_true) }}
       <meta name="robots" content="noindex">
     {{ end }}
-    {{ partial "meta/name-author" . }}
+    {{ partial "head/name-author" . }}
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
-    {{ partial "meta/ogimage" . }}
-    {{ if .IsHome }} {{ partial "site-verification" . }} {{ end }}
+    {{ partial "head/ogimage" . }}
+    {{ if .IsHome }} {{ partial "head/site-verification" . }} {{ end }}
     {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
