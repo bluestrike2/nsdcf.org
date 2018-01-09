@@ -1,3 +1,37 @@
+// Get appropriate color and variant from $color map.
+//
+// name    - String specifying specific color scheme color.
+// variant - String specifying variant of name. If null,
+//           defaults to 'base'.
+//
+// Examples
+//
+//   color(primary)
+//   color(primary, light)
+//
+// Returns color value or null if name or variant not found.
+@function color($name: 'primary', $variant: 'base')
+  $color: null
+
+  // Get the nested color group from $colors map
+  $color-group: map-get($colors, $name)
+
+  // Get the requested variant
+  @if $color-group
+    $color: map-get($color-group, $variant)
+    @if $color == null
+      @warn "Color variant `#{$variant}` not found in color group `#{$name}`"
+  @else
+    @warn "Color group `#{$name}` not found in $colors map."
+
+  @return $color
+
+@function tint($color, $percent: 10%)
+  @return mix(white, $color, $percent)
+
+@function shade($color, $percent: 10%)
+  @return mix(black, $color, $percent)
+
 @function powerNumber($number, $exp)
   $value: 1
   @if $exp > 0
