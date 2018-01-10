@@ -1,3 +1,12 @@
+=font-face($name, $path, $weight: 400, $style: "normal")
+  @font-face
+    font-family: $name
+    font-style: $style
+    font-weight: $weight
+    src: url(quote($path + ".woff2")) format("woff2"), url(quote($path + ".woff")) format("woff")
+
+// Miscellania
+
 =arrow($color)
   border: 1px solid $color
   border-right: 0

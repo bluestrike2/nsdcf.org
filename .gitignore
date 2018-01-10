@@ -1,4 +1,5 @@
 node_modules/
 dist/
 
-static/
+static/css/
+static/js/
