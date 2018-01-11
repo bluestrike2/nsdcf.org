@@ -1,1 +1,11 @@
-//
+// Responsive Breakpoints
+// All values are used for min-widths queries, except for phone. Em
+// values relative to root font size of 16px.
+$breakpoints: (
+  "phone"    : 30em,
+  "tablet"   : 48em,
+  "small"    : 60em,
+  "medium"   : 64em,
+  "large"    : 80em,
+  "x-large"  : 90em
+);
