@@ -1,0 +1,41 @@
+// Overrides bulma defaults and sets custom site variables
+
+// NSDCF Brand Color Scheme
+// $slate:             rgb(58, 65, 78)     hsl(219, 14.7%, 26.7%)
+// $slate-dark:        rgb(43, 48, 57)     hsl(219, 14%, 19.6%)
+// $slate-light:       rgb(67, 76, 91)     hsl(218, 15.2%, 31%)
+// $yellow:            rgb(247, 221, 114)  hsl(48, 89.3%, 70.8%)
+// $light-yellow:      rgb(249, 239, 152)  hsl(54, 89%, 78.6%)
+// $light-grey:        rgb(235, 232, 233)  hsl(340, 7%, 91.6%)
+// $off-white:         rgb(246, 246, 246)  hsl(0, 0, 96.5%)
+
+$slate:          hsl(219, 14.7%, 26.7%);
+$slate-light:    hsl(218, 15.2%, 31%);
+$slate-dark:     hsl(219, 14%, 19.6%);
+$yellow:         hsl(48, 89.3%, 70.8%);
+$yellow-light:   hsl(54, 89%, 78.6%);
+$grey-light:     hsl(340, 7%, 91.6%);
+$off-white:      hsl(0, 0, 96.5%);
+
+$black:          hsl(0, 0%, 100%);
+$white:          hsl(0, 0%, 0%);
+$red:            hsl(358, 100%, 67.6%);
+
+// Color map using colors from NSDCF brand guide. Not used directly for any bulma styles.
+// NOTE - Sass won"t accept the map unless on one line when using the indented sass syntax.
+$colors: (
+  "primary":(
+    "base": $slate,
+    "light": $slate-light,
+    "dark": $slate-dark
+  ),
+  "accent":(
+    "base": $yellow,
+    "light": $yellow-light
+  ),
+  "background":(
+    "base": $grey-light,
+    "light": $off-white,
+    "lightest": $white
+  )
+);
