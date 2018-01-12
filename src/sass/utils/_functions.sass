@@ -1,8 +1,43 @@
+// Get a single value from map, including nested maps
+//
+// $map  - Map.
+// $key  - Key to lookup.
+// $key2 - Key to lookup in nested tree $key. Optional.
+//
+// Returns in order: value for $key2 if present, $key or null.
+@function map-search($map, $key: null, $nested-key: null)
+  $value: null
+
+  // Get the nested color group from $colors map
+  $nested-tree: map-get($map, $key)
+
+  // Get the requested nested-key
+  @if $nested-tree
+    $value: map-get($nested-tree, $nested-key)
+    @if $value == null
+      @warn  "Key `#{$nested-key}` not found in nested tree for `#{$key}`."
+  @else
+    @warn  "Key `#{$key}` not found in map."
+
+  @return $value
+
+// Map deep get
+//
+// $map  - Map.
+// $keys - List of key values.
+//
+// Returns matching keys as map.
+@function map-deep-get($map, $keys...)
+  @each $key in $keys
+    $map: map-get($map, $key)
+    
+  @return map
+
 // Get appropriate color and variant from $color map.
 //
-// name    - String specifying specific color scheme color.
-// variant - String specifying variant of name. If null,
-//           defaults to 'base'.
+// $name    - String specifying specific color scheme color.
+// $variant - String specifying variant of name. If null,
+//            defaults to 'base'.
 //
 // Examples
 //
@@ -11,19 +46,7 @@
 //
 // Returns color value or null if name or variant not found.
 @function color($name: 'primary', $variant: 'base')
-  $color: null
-
-  // Get the nested color group from $colors map
-  $color-group: map-get($colors, $name)
-
-  // Get the requested variant
-  @if $color-group
-    $color: map-get($color-group, $variant)
-    @if $color == null
-      @warn "Color variant `#{$variant}` not found in color group `#{$name}`"
-  @else
-    @warn "Color group `#{$name}` not found in $colors map."
-
+  $color: map-search($colors, $name, $variant)
   @return $color
 
 @function tint($color, $percent: 10%)
