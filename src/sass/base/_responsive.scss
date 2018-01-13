@@ -2,13 +2,25 @@
 // All values are used for min-widths queries, except for phone. Em
 // values relative to root font size of 16px.
 $breakpoints: (
-  "phone"    : 30em,
-  "tablet"   : 48em,
-  "small"    : 60em,
-  "medium":  64em,
-  "large":   80em,
-  "x-large": 90em
+  "tablet-portrait": 50em,    // 600px
+  "tablet-landscape": 57em,   // 912px
+  "desktop": 75em,            // 1200px
+  "desktop-wide": 90em        // 1440px
 );
+
+@mixin respond($breakpoint-name) {
+  @if $breakpoint-name == "mobile-only" {
+    $breakpoint-width: map-get($breakpoints, "tablet");
+    @media screen and (max-width: #{breakpoint-width} - 1px) { @content; }
+  } @else {
+    $breakpoint-width: map-get($breakpoints, $breakpoint-name);
+    @media screen and (min-width: #{breakpoint-width}) { @content; }
+  }
+}
+
+@mixin print {
+  @media print { @content; }
+}
 
 // Vertical Rhythm
 
