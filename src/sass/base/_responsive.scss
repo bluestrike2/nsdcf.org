@@ -1,0 +1,65 @@
+// Responsive Breakpoints
+// All values are used for min-widths queries, except for phone. Em
+// values relative to root font size of 16px.
+$breakpoints: (
+  "phone"    : 30em,
+  "tablet"   : 48em,
+  "small"    : 60em,
+  "medium":  64em,
+  "large":   80em,
+  "x-large": 90em
+);
+
+// Vertical Rhythm
+
+$ratio: 1.45;
+$base-font-size: 1em;
+$base-line: 1.5em;
+$base-line-headings: 1.333em;
+
+$type-scale-sizes: (
+  "-3": 0.296em,
+  "-2": 0.444em,
+  "-1": 0.667em,
+  "0": 1em,
+  "1": 1.5em,
+  "2": 2.25em,
+  "3": 3.375em,
+  "4": 5.063em,
+  "5": 7.594em,
+  "6": 11.391em,
+  "7": 17.086em
+);
+
+$type-scale: (
+  "h1": (
+    "size":   map-get($type-scale-sizes, 4),
+    "line":   1.2em,                      // 1.2em
+    "margin": ($base-line * 2) - 1.2em
+  ),
+  "h2": (
+    "size":   map-get($type-scale-sizes, 3),
+    "line":   $base-line-headings,
+    "margin": ($base-line * 2) - $base-line-headings
+  ),
+  "h3": (
+    "size":   map-get($type-scale-sizes, 2),
+    "line":   $base-line-headings,
+    "margin": ($base-line * 2) - $base-line-headings
+  ),
+  "h4": (
+    "size":   map-get($type-scale-sizes, 1),
+    "line":   $base-line,
+    "margin": ($base-line * 2) - $base-line-headings
+  ),
+  "base": (
+    "size":   map-get($type-scale-sizes, 0),
+    "line":   $base-line,
+    "margin": $base-line
+  ),
+  "small": (
+    "size":   map-get($type-scale-sizes, -1),
+    "line":   $base-line,
+    "margin": $base-line
+  ),
+);
