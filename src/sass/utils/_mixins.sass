@@ -5,6 +5,10 @@
     font-weight: $weight
     src: url(quote($path + ".woff2")) format("woff2"), url(quote($path + ".woff")) format("woff")
 
+=background-image-set($url-1x, $url-2x)
+  background-image: url(#{$url-1x})
+  background-image: -webkit-image-set(url(#{$url-1x}) 1x, url(#{$url-2x}) 2x)
+
 // Miscellania
 
 =arrow($color)
