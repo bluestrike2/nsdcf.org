@@ -1,7 +1,7 @@
 <header class="site-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <nav class="site-navbar">
-    <a href="{{ .Site.BaseURL }}" class="site-navbar-logo" itemprop="name">{{ .Site.Title }}</a>
-    <ul class="site-navbar-nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <a href="{{ .Site.BaseURL }}" class="logo" itemprop="name">{{ .Site.Title }}</a>
+    <ul role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
         <li{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} class="is-active"{{end}}><a itemprop="url" href="{{.URL}}">{{ .Name }}</a></li>

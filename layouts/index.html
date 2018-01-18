@@ -1,8 +1,8 @@
 {{ define "title"}} {{ .Site.Title}} {{end}}
 
 {{ define "header" }}
-  <section class="hero hero-split is-fullheight is-dark" id="home-hero">
-    <div class="hero-split-body">
+  <section class="hero" id="home-hero">
+    <div class="hero-content">
       <h1 class="title">{{.Title}}</h1>
     </div>
     <div class="hero-split-image"></div>
@@ -14,7 +14,7 @@
     {{.Content}}
   </section>
 
-  <section class="updates" id="home-news">
+  <section class="section" id="home-news">
 
   </section>
 {{ end }}

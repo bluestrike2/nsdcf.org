@@ -1,49 +1,47 @@
-<footer id="site-footer" class="section">
-  <div class="newsletter-signup-footer newsletter-signup">
-    <div class="container">
-      <h2>Sign up for our newsletter</h2>
-      <p>Receive the latest news from the NSDCF.</p>
-      <form action="https://nsdcf.us15.list-manage.com/subscribe/post?u=347d678a4ec7efe1cf490d9fd&amp;id=e13e076af9" method="post" class="newsletter-form">
-        <label for="footer-newsletter-email">Email address</label>
-        <input id="footer-newsletter-email" type="email" name="email" value placeholder="Enter email address" data-newsletter-email>
-        <button type="submit">Sign up</button>
-      </form>
-    </div>
+<footer class="footer-section" id="site-newsletter">
+  <div class="wrapper">
+    <h2>Sign up for our newsletter</h2>
+    <p>Receive the latest news from the NSDCF.</p>
+    <form action="https://nsdcf.us15.list-manage.com/subscribe/post?u=347d678a4ec7efe1cf490d9fd&amp;id=e13e076af9" method="post" class="newsletter-form">
+      <label for="footer-newsletter-email">Email address</label>
+      <input id="footer-newsletter-email" type="email" name="email" value placeholder="Enter email address" data-newsletter-email>
+      <button type="submit">Sign up</button>
+    </form>
   </div>
+</footer>
 
-  <div class="container">
-    <div class="columns is-multiline" itemscope itemtype="http://schema.org/Organization">
-      <div class="column footer-logo">
-        <a href="{{ .Site.BaseURL }}" itemprop="name">{{ .Site.Title }}</a>
+<footer class="footer-section" id="site-footer">
+  <div class="wrapper" itemtype="http://schema.org/Organization">
+    <div class="logo">
+      <a href="{{ .Site.BaseURL }}" itemprop="name">{{ .Site.Title }}</a>
+    </div>
+    <div class="col">
+      <h3><a href="">Contact</a></h3>
+      <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">{{ .Site.Params.contact.street }}</span><br />
+        <span itemprop="addressLocality">{{ .Site.Params.contact.city }}</span>,&nbsp;
+        <span itemprop="addressRegion">{{ .Site.Params.contact.state }}</span>&nbsp;
+        <span itemprop="postalCode">{{ .Site.Params.contact.postal }}</span>
       </div>
-      <div class="column">
-        <h3><a href="">Contact</a></h3>
-        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          <span itemprop="streetAddress">{{ .Site.Params.contact.street }}</span><br />
-          <span itemprop="addressLocality">{{ .Site.Params.contact.city }}</span>,&nbsp;
-          <span itemprop="addressRegion">{{ .Site.Params.contact.state }}</span>&nbsp;
-          <span itemprop="postalCode">{{ .Site.Params.contact.postal }}</span>
-        </div>
-        <br />
-        <span class="footer-label">Phone </span>
-        <span itemprop="telephone">{{ .Site.Params.contact.phone }}</span><br />
-        <a href="mailto:{{ .Site.Params.contact.email }}" itemprop="email">{{ .Site.Params.contact.email }}</a>
-      </div>
-      <nav class="column">
-        <h3>About {{ .Site.Params.title_abbrev }}</h3>
-        <ul id="footer-nav">
-          {{ range .Site.Menus.footer }}
-            <li><a itemprop="url" href="{{.URL}}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-        <ul id="footer-social">
-          <li class="footer-social-facebook"><a href="{{ .Site.Params.social.facebook }}" target="_blank">Facebook</a></li>
-          <li class="footer-social-twitter"><a href="{{ .Site.Params.social.twitter }}" target="_blank">Twitter</a></li>
-        </ul>
-      </nav>
-      <div class="column footer-copyright">
-        <p>&copy; {{ .Now.Year }} {{ .Site.Title }}. All Rights Reserved.</p>
-      </div>
+      <br />
+      <span class="label">Phone </span>
+      <span itemprop="telephone">{{ .Site.Params.contact.phone }}</span><br />
+      <a href="mailto:{{ .Site.Params.contact.email }}" itemprop="email">{{ .Site.Params.contact.email }}</a>
+    </div>
+    <nav class="col">
+      <h3>About {{ .Site.Params.title_abbrev }}</h3>
+      <ul id="footer-nav">
+        {{ range .Site.Menus.footer }}
+          <li><a itemprop="url" href="{{.URL}}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+      <ul id="footer-social">
+        <li class="footer-social-facebook"><a href="{{ .Site.Params.social.facebook }}" target="_blank">Facebook</a></li>
+        <li class="footer-social-twitter"><a href="{{ .Site.Params.social.twitter }}" target="_blank">Twitter</a></li>
+      </ul>
+    </nav>
+    <div class="column footer-copyright">
+      <p>&copy; {{ .Now.Year }} {{ .Site.Title }}. All Rights Reserved.</p>
     </div>
   </div>
 </footer>
