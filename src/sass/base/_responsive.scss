@@ -11,10 +11,10 @@ $breakpoints: (
 @mixin respond($breakpoint-name) {
   @if $breakpoint-name == "mobile-only" {
     $breakpoint-width: map-get($breakpoints, "tablet");
-    @media screen and (max-width: #{breakpoint-width} - 1px) { @content; }
+    @media screen and (max-width: #{$breakpoint-width} - 1px) { @content; }
   } @else {
     $breakpoint-width: map-get($breakpoints, $breakpoint-name);
-    @media screen and (min-width: #{breakpoint-width}) { @content; }
+    @media screen and (min-width: #{$breakpoint-width}) { @content; }
   }
 }
 
@@ -30,17 +30,17 @@ $base-line: 1.5em;
 $base-line-headings: 1.333em;
 
 $type-scale-sizes: (
-  "-3": 0.296em,
-  "-2": 0.444em,
-  "-1": 0.667em,
-  "0": 1em,
-  "1": 1.5em,
-  "2": 2.25em,
-  "3": 3.375em,
-  "4": 5.063em,
-  "5": 7.594em,
-  "6": 11.391em,
-  "7": 17.086em
+  -3: 0.296em,
+  -2: 0.444em,
+  -1: 0.667em,
+  0: 1em,
+  1: 1.5em,
+  2: 2.25em,
+  3: 3.375em,
+  4: 5.063em,
+  5: 7.594em,
+  6: 11.391em,
+  7: 17.086em
 );
 
 $type-scale: (

@@ -30,8 +30,14 @@
 @function map-deep-get($map, $keys...)
   @each $key in $keys
     $map: map-get($map, $key)
-    
+
   @return map
+
+@function breakpoint($breakpoint)
+  @return map-get($breakpoints, $breakpoint)
+
+@function scale($scale-level, $property: "size")
+  @return map-search($type-scale, $scale-level, $property)
 
 // Get appropriate color and variant from $color map.
 //
@@ -54,6 +60,9 @@
 
 @function shade($color, $percent: 10%)
   @return mix(black, $color, $percent)
+
+@function strip-unit($value)
+  @return $value / ($value * 0 + 1)
 
 @function powerNumber($number, $exp)
   $value: 1

@@ -8,20 +8,39 @@ $family-sans-serif: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-s
 $family-monospace: monospace !default
 $render-mode: optimizeLegibility !default
 
-$size-1: 3rem !default
-$size-2: 2.5rem !default
-$size-3: 2rem !default
-$size-4: 1.5rem !default
-$size-5: 1.25rem !default
-$size-6: 1rem !default
-$size-7: 0.75rem !default
+// Fluid Typography
 
-$weight-light: 300 !default
-$weight-normal: 400 !default
-$weight-medium: 500 !default
-$weight-semibold: 600 !default
-$weight-bold: 700 !default
+html
+  font-size: scale(base)
+  font-size: calc( 20px + ( ( 20 - 16 ) * (100vw - 400px) / (1200 - 400) ) )
+  +respond(desktop)
+    font-size: 20px
 
-// Typography Lists and Maps
+h1
+  font-size: scale(h1)
+  line-height: scale(h1, line)
+  margin-top: scale(h1, margin)
 
-$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7 !default
+h2
+  font-size: scale(h2)
+  line-height: scale(h2, line)
+  margin-top: scale(h2, margin)
+
+h3
+  font-size: scale(h3)
+  line-height: scale(h3, line)
+  margin-top: scale(h3, margin)
+
+h4
+  font-size: scale(h4)
+  line-height: scale(h4, line)
+  margin-top: scale(h4, margin)
+
+h5
+  font-size: scale(base)
+  line-height: scale(base, line)
+  margin-top: scale(base, margin)
+
+p
+  line-height: scale(base, line)
+  margin-top: scale(base, margin)
