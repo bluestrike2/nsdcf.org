@@ -3,5 +3,9 @@
 
 body
   background: color(background, light)
-  display: grid
-  grid-gap: $base-line
+  // display: grid
+  // grid-gap: $base-line
+
+.section
+  +respond(desktop)
+    margin-left: scale(big)

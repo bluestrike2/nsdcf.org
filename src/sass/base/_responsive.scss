@@ -44,6 +44,9 @@ $type-scale-sizes: (
 );
 
 $type-scale: (
+  "big": (
+    size: map-get($type-scale-sizes, 4)
+  ),
   "h1": (
     "size":   map-get($type-scale-sizes, 3),
     "line":   $base-line-headings,

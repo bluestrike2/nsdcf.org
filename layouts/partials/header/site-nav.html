@@ -1,11 +1,28 @@
-<header class="site-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-  <nav class="site-navbar">
-    <a href="{{ .Site.BaseURL }}" class="logo" itemprop="name">{{ .Site.Title }}</a>
-    <ul role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
-        <li{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} class="is-active"{{end}}><a itemprop="url" href="{{.URL}}">{{ .Name }}</a></li>
-      {{ end }}
-    </ul>
-  </nav>
+<header id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header-wrapper">
+    <div class="hamburger-menu">
+      <div class="line-menu half start"></div>
+      <div class="line-menu"></div>
+      <div class="line-menu half end"></div>
+    </div>
+
+    <div class="header-logo">
+      <a href="{{ .Site.BaseURL }}" itemprop="name"></a>
+    </div>
+
+    <div class="header-name">
+      <a href="{{ .Site.BaseURL }}" itemprop="name">{{ .Site.Params.title_abbrev }}</a>
+    </div>
+  </div>
+
 </header>
+
+
+<nav id="site-nav">
+  <ul role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      <li{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} class="is-active"{{end}}><a itemprop="url" href="{{.URL}}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+</nav>
