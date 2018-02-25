@@ -10,8 +10,7 @@ $breakpoints: (
 
 @mixin respond($breakpoint-name) {
   @if $breakpoint-name == "mobile-only" {
-    $breakpoint-width: map-get($breakpoints, "tablet");
-    @media screen and (max-width: #{$breakpoint-width} - 1px) { @content; }
+    @media screen and (max-width: unquote("57em - .07em")) { @content; }
   } @else {
     $breakpoint-width: map-get($breakpoints, $breakpoint-name);
     @media screen and (min-width: #{$breakpoint-width}) { @content; }
