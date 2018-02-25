@@ -16,25 +16,52 @@ html
   +respond(desktop)
     font-size: 20px
 
+body
+  font-family: $family-sans-serif
+  font-weight: 400
+
+h1, h2, h3, h4
+  font-family: $family-serif
+  font-weight: 400
+
+h5, h6
+  font-family: $family-sans-serif
+  font-weight: 600
+
 h1
-  font-size: scale(h1)
-  line-height: scale(h1, line)
-  margin-top: scale(h1, margin)
-
-h2
-  font-size: scale(h2)
-  line-height: scale(h2, line)
-  margin-top: scale(h2, margin)
-
-h3
   font-size: scale(h3)
   line-height: scale(h3, line)
   margin-top: scale(h3, margin)
+  +respond('tablet-portrait')
+    font-size: scale(h2)
+    line-height: scale(h2, line)
+    margin-top: scale(h2, margin)
+  +respond('tablet-landscape')
+    font-size: scale(h1)
+    line-height: scale(h1, line)
+    margin-top: scale(h1)
+
+h2
+  font-size: scale(h3)
+  line-height: scale(h3, line)
+  margin-top: scale(h3, margin)
+  +respond('tablet-landscape')
+    font-size: scale(h2)
+    line-height: scale(h2, line)
+    margin-top: scale(h2, margin)
+
+h3
+  font-size: scale(base)
+  line-height: scale(base, line)
+  margin-top: scale(base, margin)
+  +respond('tablet-portrait')
+    font-size: scale(h3)
+    line-height: scale(h3, line)
+    margin-top: scale(h3, margin)
 
 h4
-  font-size: scale(h4)
-  line-height: scale(h4, line)
-  margin-top: scale(h4, margin)
+  //@extend h3
+  // different font-family/treatment
 
 h5
   font-size: scale(base)
@@ -44,3 +71,9 @@ h5
 p
   line-height: scale(base, line)
   margin-top: scale(base, margin)
+
+a
+  color: color(accent)
+  text-decoration: none
+  &:hover
+    color: color(primary)

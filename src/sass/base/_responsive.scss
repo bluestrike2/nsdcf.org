@@ -45,18 +45,18 @@ $type-scale-sizes: (
 
 $type-scale: (
   "h1": (
-    "size":   map-get($type-scale-sizes, 4),
-    "line":   1.2em,                      // 1.2em
-    "margin": ($base-line * 2) - 1.2em
-  ),
-  "h2": (
     "size":   map-get($type-scale-sizes, 3),
     "line":   $base-line-headings,
     "margin": ($base-line * 2) - $base-line-headings
   ),
-  "h3": (
+  "h2": (
     "size":   map-get($type-scale-sizes, 2),
     "line":   $base-line-headings,
+    "margin": ($base-line * 2) - $base-line-headings
+  ),
+  "h3": (
+    "size":   map-get($type-scale-sizes, 1),
+    "line":   $base-line,
     "margin": ($base-line * 2) - $base-line-headings
   ),
   "h4": (
