@@ -10,7 +10,7 @@ $breakpoints: (
 
 @mixin respond($breakpoint-name) {
   @if $breakpoint-name == "mobile-only" {
-    @media screen and (max-width: unquote("57em - .07em")) { @content; }
+    @media screen and (max-width: map-get($breakpoints, tablet-portrait)) { @content; }
   } @else {
     $breakpoint-width: map-get($breakpoints, $breakpoint-name);
     @media screen and (min-width: #{$breakpoint-width}) { @content; }
@@ -27,6 +27,7 @@ $ratio: 1.45;
 $base-font-size: 1em;
 $base-line: 1.5em;
 $base-line-headings: 1.333em;
+$gutter: $base-line;
 
 $type-scale-sizes: (
   -3: 0.296em,

@@ -21,13 +21,16 @@ $black:          hsl(0, 0%, 100%);
 $white:          hsl(0, 0%, 0%);
 $red:            hsl(358, 100%, 67.6%);
 
+$slate-overlay:  rgba(58, 65, 78, 0.65);
+
 // Color map using colors from NSDCF brand guide. Not used directly for any bulma styles.
 // NOTE - Sass won"t accept the map unless on one line when using the indented sass syntax.
 $colors: (
   "primary":(
     "base": $slate,
     "light": $slate-light,
-    "dark": $slate-dark
+    "dark": $slate-dark,
+    "overlay": rgba($slate, 0.667)
   ),
   "accent":(
     "base": $yellow,
