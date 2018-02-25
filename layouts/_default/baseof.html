@@ -28,11 +28,6 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="css/main.css">
     {{ block "style" .}} {{end}}
-    <!-- http://regexr.com/3f9d1 -->
-    {{ $lazylist := findRE "class=\".*?\\blazyload\\b.*?\"|class=lazyload\b" .Content }}
-    {{ if ge (len $lazylist) 1 }}
-      <script async src="/js/lazysizes.min.js"></script>
-    {{ end }}
   </head>
 
   <body{{ with .Type }} class="{{ . }}" {{ end }}>
