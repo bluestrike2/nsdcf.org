@@ -1,2 +1,86 @@
 #footer
   background: color(primary)
+  padding: $gutter
+  color: color(background)
+  +respond(desktop)
+    padding-left: scale(big)
+
+  a
+    color: color(background)
+    &:hover
+      color: color(accent)
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    li
+      //
+
+  .logo
+    margin-bottom: $gutter
+    +respond(desktop)
+      width: 38%
+    a
+      display: block
+      font-size: scale(h4)
+      max-width: 95%
+      margin-top: scale(h4, margin)
+      line-height: scale(h4, line)
+      +respond(tablet-portrait)
+        max-width: 60%
+      +respond(tablet-landscape)
+        max-width: none
+        margin-top: 0
+
+  h5
+    margin-bottom: 0
+    margin-top: scale(small)
+    text-transform: uppercase
+
+  .col
+    margin-top: $gutter
+    +respond(desktop)
+      flex-grow: 2
+      margin-top: 0
+
+.footer-content
+  +respond(desktop)
+    display: flex
+    flex-direction: row
+    margin-top: scale(h1)
+    margin-bottom: $gutter * 2
+
+
+
+.copyright p
+  font-size: scale(small)
+  margin: 0
+
+#footer-social
+  text-align: center
+  +respond(desktop)
+    text-align: left
+    padding-top: scale(tiny)
+  li
+    display: inline-block
+  a, svg
+    display: block
+  a
+    height: scale(h2)
+    width: scale(h2)
+    color: color(primary, dark)
+    fill: color(primary, dark)
+    &:hover
+      border-radius: 100%
+      background: color(primary, dark)
+      color: color(primary, light)
+      fill: color(primary, light)
+      // transform: scale(1.25)
+      transition: background-color .5s, transform .5s ease-out
+  svg
+    height: 100%
+    width: 100%
+
+#newsletter
+  display: none
