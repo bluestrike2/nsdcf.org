@@ -77,4 +77,7 @@ $type-scale: (
     "line":   $base-line,
     "margin": $base-line
   ),
+  "tiny": (
+    "size":   map-get($type-scale-sizes, -3)
+  )
 );
