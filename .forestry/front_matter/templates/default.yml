@@ -1,9 +1,6 @@
 ---
 pages:
-- programs/scholarships/murdock.md
-- programs/scholarships/fallone.md
 - news/distinguished-alumni-2018-nominations.md
-- get-involved/tax-information/ira-donations.md
 hide_body: false
 fields:
 - name: title
