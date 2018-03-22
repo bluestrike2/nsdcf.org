@@ -1,7 +1,7 @@
 ---
 title: "Norwin Alumni & Friends"
 date: 2017-12-15T12:06:03-05:00
-draft: true
+draft: false
 ---
 
 For most graduates (and friends!!) of Norwin High School, there remain fond memories of friendships, teachers and activities. Most would agree that Norwin prepared them well to take that next life step toward further education and/or career. Most are proud to say they are Norwin graduates (or friends) and desire to always see Norwin being that place where students have high quality opportunities to learn and grow.

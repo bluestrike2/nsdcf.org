@@ -1,7 +1,7 @@
 ---
 title: Our Story
 date: 2017-12-15 11:58:57 -0500
-draft: true
+draft: false
 
 ---
 The estate of Thomas J. and Gladys Sowash Stoker bequeathed a sizable sum to create an endowment to provide scholarships for Norwin High School Students residing in the Borough of Irwin.  The funds could only be provided to a 501(c)3 charitible organization, thus the creation of the Norwin School District Community Foundation (NSDCF) in 2007.
