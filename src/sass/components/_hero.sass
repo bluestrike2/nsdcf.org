@@ -1,11 +1,13 @@
 .hero
   background: color(primary)
   color: color(background, light)
-  +respond(mobile-only)
-    //
-  +respond(tablet-portrait)
-    display: flex
-    flex-direction: row
+  +respond("tablet-portrait")
+    background: color(primary) url(/images/knight-icon.svg) no-repeat left -5em bottom -4em
+
+  &.split
+    +respond(tablet-portrait)
+      display: flex
+      flex-direction: row
 
 .hero-content
   display: flex
@@ -18,7 +20,7 @@
     width: 100%
     text-align: center
   +respond(tablet-portrait)
-    background: url(/images/knight-icon.svg) no-repeat left -5em bottom -4em
+    //background: url(/images/knight-icon.svg) no-repeat left -5em bottom -4em
     flex: 1
     align-items: flex-end
     padding-bottom: $gutter
@@ -37,13 +39,17 @@
       max-width: 85%
 
 
-.hero-image
-  background: linear-gradient(color(primary, overlay), color(primary, overlay)), url(/images/home-1.jpg) no-repeat center center
-  background-size: cover
+.hero-figure
   margin: 0
   height: 100vh
   +respond(tablet-portrait)
     flex: 1
+
+
+.hero-figure-home
+  background: linear-gradient(color(primary, overlay), color(primary, overlay)), url(/images/home-1.jpg) no-repeat center center
+  background-size: cover
+  +respond(tablet-portrait)
     background: url(/images/home-1.jpg) no-repeat center center
   +respond(desktop)
     background-position: 55% 65%

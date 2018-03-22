@@ -1,0 +1,19 @@
+// Width of navbar on desktop screens.
+$navwidth: scale(big)
+
+*
+  box-sizing: border-box
+
+body
+  background: color(background, light)
+
+.main
+  +respond(desktop)
+    // Padding to accomodate size of #header fixed on left side of screen
+    padding-left: scale(big)
+
+.section
+  margin-left: auto
+  margin-right: auto
+  padding-bottom: $gutter2
+  padding-top: $gutter2

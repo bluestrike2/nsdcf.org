@@ -33,9 +33,11 @@
   <body{{ with .Type }} class="{{ . }}" {{ end }}>
     {{ partial "header/site-browser-upgrade" . }}
     {{ block "nav" . }}{{ partial "header/site-nav" . }}{{ end }}
-    {{ block "header" . }}{{ end }}
 
-    <main class="main" id="main">{{ block "main" . }}{{ end }}</main>
+    <main class="main">
+      {{ block "header" . }}{{ end }}
+      {{ block "main" . }}{{ end }}
+    </main>
 
     {{ block "footer" . }}{{ partial "footer/site-footer" . }}{{ end }}
     {{ partial "footer/site-scripts" . }}
