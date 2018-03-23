@@ -55,6 +55,10 @@
   $color: map-search($colors, $name, $variant)
   @return $color
 
+@function z-index($name: 'default')
+  $value: map-get($z-indexes, $name)
+  @return $value
+
 @function tint($color, $percent: 10%)
   @return mix(white, $color, $percent)
 

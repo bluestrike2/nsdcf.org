@@ -2,12 +2,30 @@
   box-sizing: border-box
 
 body
-  background: color(background, light)
+  background: color("background", "base")
+  color: color("primary", "base")
+  +respond("desktop")
+    &:before,
+    &:after
+      background: color("background", "base")
+      content: ""
+      display: block
+      height: scale("base")
+      position: fixed
+      left: 0
+      right: 0
+      z-index: z-index("page-borders")
+    &:before
+      top: 0
+    &:after
+      bottom: 0
+
 
 .main
-  +respond(desktop)
-    // Padding to accomodate size of #header fixed on left side of screen
-    padding-left: scale(big)
+  +respond("desktop")
+    // Padding to accomodate size of .header fixed on left side of screen
+    padding-left: $navwidth
+
 
 .section
   margin-left: auto

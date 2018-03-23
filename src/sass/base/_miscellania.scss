@@ -1,0 +1,11 @@
+// Width of navbar on desktop screens.
+$navwidth: 4em;
+
+$z-indexes: (
+  "page-transitions": 999,
+  "header": 850,
+  "nav-overlay": 750,
+  "page-borders": 500,
+  "footer": 250,
+  "default": 1
+);
