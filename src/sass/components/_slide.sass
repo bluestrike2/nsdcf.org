@@ -8,21 +8,22 @@
     padding-left: scale(big)
     min-height: 100vh
     text-align: left
-
-  h1
-    margin-top: 0
+  &--alt-bg
     +respond(desktop)
-      margin-top: scale(h2)
-      // &::before
-      //   background: color(primary, light)
-      //   content: ''
-      //   display: block
-      //   height: 0.296rem
-      //   width: 3.375rem
-      //   margin-bottom: 1.5rem
+      background: color(background, base)
 
+.slide h1
+  margin-top: 0
+  +respond(desktop)
+    margin-top: scale(h2)
+    // &::before
+    //   background: color(primary, light)
+    //   content: ''
+    //   display: block
+    //   height: 0.296rem
+    //   width: 3.375rem
+    //   margin-bottom: 1.5rem
 
-
-  p
-    +respond(desktop)
-      margin-right: map-get($type-scale-sizes, 5)
+.slide p
+  +respond(desktop)
+    margin-right: map-get($type-scale-sizes, 5)

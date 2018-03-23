@@ -31,8 +31,11 @@
   </head>
 
   <body{{ with .Type }} class="{{ . }}" {{ end }}>
-    {{ partial "header/site-browser-upgrade" . }}
-    {{ block "nav" . }}{{ partial "header/site-nav" . }}{{ end }}
+    {{ partial "header/browser-upgrade" . }}
+    {{ block "nav" . }}
+      {{ partial "header/header" . }}
+      {{ partial "header/nav" . }}
+    {{ end }}
 
     <main class="main">
       {{ block "header" . }}{{ end }}

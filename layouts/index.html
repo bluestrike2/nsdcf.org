@@ -1,16 +1,16 @@
 {{ define "title"}} {{ .Site.Title}} {{end}}
 
 {{ define "header" }}
-  <section class="hero split" id="hero-home">
+  <section class="hero hero__split">
     <div class="hero-content">
-      <h2 class="title">{{.Title}}</h2>
+      <h2 class="hero-content__title">{{.Title}}</h2>
     </div>
-    <figure class="hero-figure hero-figure-home"></figure>
+    <figure class="hero__figure hero__figure--home"></figure>
   </section>
 {{ end }}
 
 {{ define "main" }}
-  <section class="section slide home-section" id="home-intro">
+  <section class="section slide slide--alt-bg" id="home-intro">
     {{.Content}}
   </section>
 

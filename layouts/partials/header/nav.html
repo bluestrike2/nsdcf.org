@@ -1,0 +1,8 @@
+<nav class="nav-overlay">
+  <ul class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      <li class="nav__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}nav__item--active{{end}}"><a class="nav__link" itemprop="url" href="{{.URL}}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+</nav>

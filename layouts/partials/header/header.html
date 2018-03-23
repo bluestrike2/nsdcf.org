@@ -1,0 +1,17 @@
+<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="header__inner">
+    <div class="nav-icon">
+      <div class="nav-icon__line nav-icon__line--start"></div>
+      <div class="nav-icon__line"></div>
+      <div class="nav-icon__line nav-icon__line--end"></div>
+    </div>
+
+    <div class="header-logo-icon">
+      <a class="header-logo-icon__link" href="{{ .Site.BaseURL }}" itemprop="name"></a>
+    </div>
+
+    <div class="header-logo-name logo-name">
+      <a class="header-logo-name__link" href="{{ .Site.BaseURL }}" itemprop="name">{{ .Site.Params.title_abbrev }}</a>
+    </div>
+  </div>
+</header>
