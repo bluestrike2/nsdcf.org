@@ -27,8 +27,8 @@
 .nav-icon
   display: flex
   order: 2
-  width: 1.5em
-  height: 1.25em
+  width: 1.3em
+  height: 1em
   flex-direction: column
   justify-content: space-between
   cursor: pointer
@@ -38,7 +38,7 @@
     transform: rotate(90deg)
   &:hover
     .nav-icon__line
-      background-color: color("accent", "light")
+      background-color: color("primary", "base")
 
 .nav-icon--active
   transform: rotate(-45deg)
@@ -96,7 +96,7 @@
     position: fixed
     height: 100vh
     width: 100vw
-    padding: scale(big) scale(big) scale(h1) scale(big)*3
+    padding: scale(big) scale(big) scale(h1) scale(big)*2
     display: none
     z-index: z-index("nav-overlay")
   &--active
@@ -119,9 +119,6 @@
     color: color(accent, base)
   +respond(desktop)
     font-family: $family-serif
-    font-size: scale(h2)
-    padding-left: 0
-    padding-right: 0
-    padding-top: 0
-  +respond(desktop)
-    font-size: scale(h2)
+    font-size: scale(h1)
+    line-height: $base-line-headings
+    padding: 0
