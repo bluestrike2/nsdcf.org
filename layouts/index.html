@@ -14,7 +14,9 @@
     {{.Content}}
   </section>
 
-  <section class="section home-news" id="home-news">
-
+  <section class="section listings listings--home" id="home-news">
+    {{ range first 4 (where .Data.Pages "Section" "news") }}
+      {{ .Render "list-item-short" }}
+    {{ end }}
   </section>
 {{ end }}

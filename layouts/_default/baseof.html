@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ block "title" . }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ .Params.Title }} &middot; {{ .Site.Params.title_abbrev }}{{ end }}</title>
     {{ .Hugo.Generator }}
     {{ with .Description }}
       <meta name="description" content="{{ . }}">

@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <header class="list-header">
+    <h1 class="list-header__title">{{ .Title }}</h1>
+    {{ .Content }}
+  </header>
+
+  {{ $paginator := .Paginate (where .Data.Pages "Section" .Section) }}
+
+  {{ range first 1 $paginator.Pages }}
+
+  {{ range $paginator.Pages }}
+    {{ .Render "listing-short" }}
+  {{ end }}
+
+  {{ template "_internal/pagination.html" . }}
+{{ end }}
