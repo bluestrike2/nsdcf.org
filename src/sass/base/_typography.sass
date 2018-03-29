@@ -77,7 +77,20 @@ p
   margin-top: scale(base, margin)
 
 a
-  color: color(accent)
+  color: color("tertiary")
   text-decoration: none
   &:hover
-    color: color(primary)
+    color: color("primary")
+    text-decoration: none
+
+.main a
+  text-decoration: underline
+
+%reversed-link
+  color: color("primary", "base")
+  &:hover
+    color: color("primary", "base")
+%reversed-link-accent
+  color: color("primary", "base")
+  &:hover
+    color: color("accent", "base")
