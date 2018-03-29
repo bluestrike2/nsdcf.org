@@ -6,10 +6,12 @@
 
   {{ $paginator := .Paginate (where .Data.Pages "Section" .Section) }}
 
-  {{ range first 1 $paginator.Pages }}
-
-  {{ range $paginator.Pages }}
-    {{ .Render "listing-short" }}
+  {{ range $index, $page := $paginator.Pages }}
+    {{ if and (eq $index 0) (eq $paginator.PageNumber 1) }}
+      {{ .Render "listing-summary" }}
+    {{ else }}
+      {{ .Render "listing-short" }}
+    {{ end }}
   {{ end }}
 
   {{ template "_internal/pagination.html" . }}
