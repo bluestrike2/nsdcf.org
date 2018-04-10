@@ -1,56 +1,38 @@
 .hero
   background: color(primary)
+  background-size: cover
   color: color(background, light)
-  +respond("tablet-portrait")
-    background: color(primary) url(/images/knight-icon.svg) no-repeat left -5em bottom -4em
-
-
-.hero__split
-  +respond(tablet-portrait)
-    display: flex
-    flex-direction: row
-
-
-.hero-content
   display: flex
   align-items: center
   justify-content: center
+  text-align: center
+  min-height: 100vh
+  +respond("tablet-portrait")
+    justify-content: left
+    text-align: left
+
+  &--home
+    background: linear-gradient(color(primary, overlay), color(primary, overlay)), url(/images/home-1.jpg) center center / cover no-repeat
+
+
+.hero-content
   padding: $gutter
-  +respond(mobile-only)
+  +respond("tablet-portrait")
+    align-self: flex-end
+    max-width: 80%
+  +respond("tablet-landscape")
     position: absolute
-    height: 100vh
-    width: 100%
-    text-align: center
-  +respond(tablet-portrait)
-    //background: url(/images/knight-icon.svg) no-repeat left -5em bottom -4em
-    flex: 1
-    align-items: flex-end
-    padding-bottom: $gutter
-  +respond(tablet-landscape)
-    padding-left: $gutter * 2
-  +respond(desktop)
-    padding-bottom: $gutter * 2
-  +respond(desktop-wide)
-    padding-bottom: $gutter * 3
+    bottom: 0
+    right: 0
+  +respond("desktop")
+    margin: 0 $gutter2 $gutter2 0
+    padding: 0
+    max-width: none
+  +respond("desktop-wide")
+    margin: 0 scale(big) $gutter2 0
 
-.hero-content__title
-  //margin: scale(h1, margin) 0
-  margin-bottom: 0
-  +respond(mobile-only)
-    margin-top: 0
-  +respond(desktop-wide)
-    max-width: 85%
-
-.hero__figure
-  margin: 0
-  height: 100vh
-  +respond(tablet-portrait)
-    flex: 1
-
-.hero__figure--home
-  background: linear-gradient(color(primary, overlay), color(primary, overlay)), url(/images/home-1.jpg) no-repeat center center
-  background-size: cover
-  +respond(tablet-portrait)
-    background: url(/images/home-1.jpg) no-repeat center center
-  +respond(desktop)
-    background-position: 55% 65%
+  &__title
+    margin: 0
+    +respond("desktop")
+      font-size: scale(h1)
+      width: 10em
