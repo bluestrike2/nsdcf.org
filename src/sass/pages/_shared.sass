@@ -25,12 +25,13 @@ body
   //   &:after
   //     bottom: 0
 
+.page--dark
+  background: color("primary", "base")
+  color: color("background", "base")
+
 
 .main
   overflow: auto
-  +respond("desktop")
-    // Padding to accomodate size of .header fixed on left side of screen
-    padding-left: $navwidth
 
 
 .section

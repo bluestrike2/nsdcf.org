@@ -2,7 +2,7 @@
   background: color("primary", "base")
   padding: scale("small") $gutter
   +respond(desktop)
-    background: color("background", "base")
+    background: none
     padding: 0 scale("base")
     position: fixed
     // height and width are reversed after transform; header is rotated
@@ -11,19 +11,15 @@
     transform: rotate(-90deg) translateX(-100%)
     transform-origin: left top
     z-index: z-index("header")
-  a
-    @extend %reversed-link
 
 
-.header__inner
-  display: flex
-  align-items: center
-  justify-content: space-between
-  +respond("desktop")
+  &__inner
+    display: flex
     align-items: center
-    height: 100%
-    // padding fixes annoying alignment issue with "NSDCF" font
-    padding-left: 1px
+    justify-content: space-between
+    +respond("desktop")
+      align-items: center
+      height: 100%
 
 
 .nav-icon
@@ -41,9 +37,9 @@
 
   &--active
     transform: rotate(-45deg)
-    .nav-icon__line
-      +respond("mobile-only")
-        background-color: color("accent", "base")
+    // .nav-icon__line
+    //   +respond("mobile-only")
+    //     background-color: color("accent", "base")
     .nav-icon__line--start
       transform: rotate(-90deg) translateX(3px)
     .nav-icon__line--end
@@ -56,6 +52,9 @@
     height: 4px
     +respond("desktop")
       background-color: color("primary", "base")
+      .page--dark &
+        background-color: color("background", "base")
+
 
     &--start
       transition: transform 350ms cubic-bezier(0.54, -0.81, 0.57, 0.57)
@@ -84,6 +83,10 @@
       display: block
       font-size: scale(h4)
       color: color("primary", "base")
+      .page--dark &
+        color: color("background", "base")
+        &:hover
+          color: color("background", "base")
       &:hover
         color: color("primary", "light")
 
@@ -104,6 +107,7 @@
     display: block
     +respond(desktop)
       display: flex
+
 
 .nav
   margin: 0

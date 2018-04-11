@@ -14,9 +14,6 @@ html
   font-size: scale(base)
   font-size: calc( 20px + ( ( 20 - 16 ) * (100vw - 400px) / (1200 - 400) ) )
 
-.logo-name
-  font-family: $family-serif
-
 body
   font-family: $family-sans-serif
   font-weight: 400
@@ -77,14 +74,17 @@ a
     color: color("primary")
     text-decoration: none
 
+.logo-name
+  font-family: $family-serif
+
 .main a
   text-decoration: underline
 
-%reversed-link
+=reversed-link
   color: color("primary", "base")
   &:hover
     color: color("primary", "base")
-%reversed-link-accent
+=reversed-link--accent
   color: color("primary", "base")
   &:hover
     color: color("accent", "base")
