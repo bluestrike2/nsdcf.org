@@ -23,26 +23,26 @@ $breakpoints: (
 
 // Vertical Rhythm
 
-$ratio: 1.45;
+$ratio: 1.414;
 $base-font-size: 1em;
-$base-line: 1.5em;
-$base-line-headings: 1.333em;
+$base-line: 1.414em;
+$base-line--headings: 1.177em;
 
 $gutter: $base-line;
 $gutter2: $base-line*2;
 
 $type-scale-sizes: (
-  -3: 0.296em,
-  -2: 0.444em,
-  -1: 0.667em,
+  -3: 0.354em,
+  -2: 0.5em,
+  -1: 0.707em,
   0: 1em,
-  1: 1.5em,
-  2: 2.25em,
-  3: 3.375em,
-  4: 5.063em,
-  5: 7.594em,
-  6: 11.391em,
-  7: 17.086em
+  1: 1.414em,
+  2: 1.999em,
+  3: 2.827em,
+  4: 3.998em,
+  5: 5.653em,
+  6: 7.993em,
+  7: 11.302em
 );
 
 $type-scale: (
@@ -51,23 +51,23 @@ $type-scale: (
   ),
   "h1": (
     "size":   map-get($type-scale-sizes, 3),
-    "line":   $base-line-headings,
-    "margin": ($base-line * 2) - $base-line-headings
+    "line":   $base-line--headings,
+    "margin": ($base-line * 2) - $base-line--headings
   ),
   "h2": (
     "size":   map-get($type-scale-sizes, 2),
-    "line":   $base-line-headings,
-    "margin": ($base-line * 2) - $base-line-headings
+    "line":   $base-line--headings,
+    "margin": ($base-line * 2) - $base-line--headings
   ),
   "h3": (
     "size":   map-get($type-scale-sizes, 1),
     "line":   $base-line,
-    "margin": ($base-line * 2) - $base-line-headings
+    "margin": ($base-line * 2) - $base-line--headings
   ),
   "h4": (
     "size":   map-get($type-scale-sizes, 1),
     "line":   $base-line,
-    "margin": ($base-line * 2) - $base-line-headings
+    "margin": ($base-line * 2) - $base-line--headings
   ),
   "base": (
     "size":   map-get($type-scale-sizes, 0),
