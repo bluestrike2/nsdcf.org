@@ -30,7 +30,9 @@
     {{ block "style" .}} {{end}}
   </head>
 
-  <body{{ with .Type }} class="{{ . }}" {{ end }}>
+  <body class="{{ with .Type }}page--{{ . }}{{ end }}
+               {{ with .Kind }}page--{{ . }}{{ end }}
+               {{ if .Params.layout_dark }}page--dark{{ end }}">
     {{ partial "header/browser-upgrade" . }}
     {{ block "nav" . }}
       {{ partial "header/header" . }}
