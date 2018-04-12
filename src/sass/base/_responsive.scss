@@ -32,6 +32,8 @@ $gutter: $base-line;
 $gutter2: $base-line*2;
 
 $type-scale-sizes: (
+  -5: 0.177em,
+  -4: 0.25em,
   -3: 0.354em,
   -2: 0.5em,
   -1: 0.707em,
@@ -46,7 +48,13 @@ $type-scale-sizes: (
 );
 
 $type-scale: (
-  "big": (
+  "xx-large": (
+    "size": map-get($type-scale-sizes, 6)
+  ),
+  "x-large": (
+    "size": map-get($type-scale-sizes, 5)
+  ),
+  "large": (
     "size": map-get($type-scale-sizes, 4)
   ),
   "h1": (
@@ -79,9 +87,15 @@ $type-scale: (
     "line":   $base-line,
     "margin": $base-line
   ),
-  "tiny": (
+  "x-small": (
     "size":   map-get($type-scale-sizes, -3)
+  ),
+  "xx-small": (
+    "size":   map-get($type-scale-sizes, -4)
+  ),
+  "xxx-small": (
+    "size":   map-get($type-scale-sizes, -5)
   )
 );
 
-$left-gutter: scale(big);
+$left-gutter: scale(large);
