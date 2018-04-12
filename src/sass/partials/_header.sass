@@ -1,7 +1,12 @@
 .header
-  background: color("primary", "base")
-  padding: scale("small") $gutter
-  +respond(desktop)
+  background: none
+  padding: scale("base") $gutter
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+
+  +respond("desktop")
     background: none
     padding: 0 scale("base")
     position: fixed
@@ -12,7 +17,6 @@
     transform-origin: left top
     z-index: z-index("header")
 
-
   &__inner
     display: flex
     align-items: center
@@ -21,40 +25,37 @@
       align-items: center
       height: 100%
 
-
-.nav-icon
+.hamburger
   display: flex
   order: 2
-  width: 1.3em
-  height: 1em
+  width: $gutter
+  height: 1.125em
   flex-direction: column
   justify-content: space-between
   cursor: pointer
   transition: transform 350ms ease-out
+
   +respond("desktop")
     order: 3
     transform: rotate(90deg)
 
   &--active
     transform: rotate(-45deg)
-    // .nav-icon__line
-    //   +respond("mobile-only")
-    //     background-color: color("accent", "base")
-    .nav-icon__line--start
-      transform: rotate(-90deg) translateX(3px)
-    .nav-icon__line--end
-      transform: rotate(-90deg) translateX(-3px)
+
+    .hamburger__line--start
+      transform: rotate(-90deg) translateX(5px)
+
+    .hamburger__line--end
+      transform: rotate(-90deg) translateX(-5px)
 
   &__line
-    background-color: color("background", "base")
-    border-radius: 3px
-    width: 100%
+    background-color: color("primary")
+    border-radius: 2px
     height: 4px
-    +respond("desktop")
-      background-color: color("primary", "base")
-      .page--dark &
-        background-color: color("background", "base")
+    width: 100%
 
+    .page--dark &
+      background-color: color("background")
 
     &--start
       transition: transform 350ms cubic-bezier(0.54, -0.81, 0.57, 0.57)
@@ -67,35 +68,42 @@
       transform-origin: left
       width: 50%
 
-
-.header-logo-name
-  order: 1
+.header-logo
   flex: 1
+  order: 1
+
   +respond("desktop")
     flex: none
     order: 1
 
   &__link
-    color: color("background", "base")
-    &:hover
-      color: color("accent", "base")
+    color: color("primary")
+    font-size: scale(h4)
+    +logo-name
+
+    .page--dark &
+      color: color("background")
+
     +respond("desktop")
       display: block
       font-size: scale(h4)
-      color: color("primary", "base")
+      color: color("primary")
+
       .page--dark &
-        color: color("background", "base")
+        color: color("background")
+
         &:hover
-          color: color("background", "base")
+          color: color("background")
+
       &:hover
         color: color("primary", "light")
-
 
 .nav-overlay
   background: color(primary, light)
   display: none
-  +respond(desktop)
-    background: color(primary, base) url(/images/knight-icon.svg) no-repeat left -25% bottom 85%
+
+  +respond("desktop")
+    background: color(primary) url(/images/knight-icon.svg) no-repeat left -25% bottom 85%
     background-size: auto 150%
     position: fixed
     height: 100vh
@@ -103,26 +111,30 @@
     padding: scale(large) scale(large) scale(h1) scale(large)*2
     display: none
     z-index: z-index("nav-overlay")
+
   &--active
     display: block
-    +respond(desktop)
-      display: flex
 
+    +respond("desktop")
+      display: flex
 
 .nav
   margin: 0
   padding: 0
   list-style: none
-  +respond(desktop)
+
+  +respond("desktop")
     align-self: flex-end
 
   &__link
     display: block
     padding: scale(small) $gutter
-    color: color(background, base)
+    color: color(background)
+
     &:hover
-      color: color(accent, base)
-    +respond(desktop)
+      color: color(accent)
+
+    +respond("desktop")
       font-family: $family-serif
       font-size: scale(h1)
       line-height: $base-line--headings

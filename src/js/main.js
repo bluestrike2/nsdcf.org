@@ -1,6 +1,6 @@
 (function () {
-	$('.nav-icon').on('click', function() {
-		$(this).toggleClass('nav-icon--active');
+	$('.hamburger').on('click', function() {
+		$(this).toggleClass('hamburger--active');
 		$('.nav-overlay').toggleClass('nav-overlay--active');
 	})
 })();
