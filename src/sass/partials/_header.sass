@@ -1,5 +1,4 @@
 .header
-  background: none
   padding: scale("base") $gutter
   position: absolute
   left: 0
@@ -7,12 +6,11 @@
   width: 100%
 
   +respond("desktop")
-    background: none
-    padding: 0 scale("base")
+    background: color(background, base)
+    padding: .707em scale("base")
     position: fixed
     // height and width are reversed after transform; header is rotated
     width: 100vh
-    height: $navwidth
     transform: rotate(-90deg) translateX(-100%)
     transform-origin: left top
     z-index: z-index("header")
@@ -52,13 +50,13 @@
       transform: rotate(-90deg) translateX(-5px)
 
   &__line
-    background-color: color("primary")
+    background-color: color("background")
     border-radius: 2px
     height: 4px
     width: 100%
 
-    .page--dark &
-      background-color: color("background")
+    +respond("desktop")
+      background-color: color("primary")
 
     &--start
       transition: transform 350ms cubic-bezier(0.54, -0.81, 0.57, 0.57)
@@ -80,26 +78,14 @@
     order: 1
 
   &__link
-    color: color("primary")
+    color: color("background")
     font-size: scale(h4)
     +logo-name
 
-    .page--dark &
-      color: color("background")
-
     +respond("desktop")
+      color: color("primary")
       display: block
       font-size: scale(h4)
-      color: color("primary")
-
-      .page--dark &
-        color: color("background")
-
-        &:hover
-          color: color("background")
-
-      &:hover
-        color: color("primary", "light")
 
 .nav-overlay
   background: color(primary, light)
