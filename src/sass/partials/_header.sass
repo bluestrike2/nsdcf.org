@@ -5,23 +5,23 @@
   top: 0
   width: 100%
 
-  +respond("desktop")
-    background: color(background, base)
-    padding: .707em scale("base")
-    position: fixed
-    // height and width are reversed after transform; header is rotated
-    width: 100vh
-    transform: rotate(-90deg) translateX(-100%)
-    transform-origin: left top
-    z-index: z-index("header")
+  // +respond("desktop")
+  //   background: color(background, base)
+  //   padding: .707em scale("base")
+  //   position: fixed
+  //   // height and width are reversed after transform; header is rotated
+  //   width: 100vh
+  //   transform: rotate(-90deg) translateX(-100%)
+  //   transform-origin: left top
+  //   z-index: z-index("header")
 
   &__inner
     display: flex
     align-items: center
     justify-content: space-between
-    +respond("desktop")
-      align-items: center
-      height: 100%
+    // +respond("desktop")
+    //   align-items: center
+    //   height: 100%
 
 .hamburger
   display: flex
@@ -36,9 +36,9 @@
   // and loaders.
   z-index: z-index("hamburger")
 
-  +respond("desktop")
-    order: 3
-    transform: rotate(90deg)
+  // +respond("desktop")
+  //   order: 3
+  //   transform: rotate(90deg)
 
   &--active
     transform: rotate(-45deg)
@@ -55,8 +55,8 @@
     height: 4px
     width: 100%
 
-    +respond("desktop")
-      background-color: color("primary")
+    // +respond("desktop")
+    //   background-color: color("primary")
 
     &--start
       transition: transform 350ms cubic-bezier(0.54, -0.81, 0.57, 0.57)
@@ -73,19 +73,19 @@
   flex: 1
   order: 1
 
-  +respond("desktop")
-    flex: none
-    order: 1
+  // +respond("desktop")
+  //   flex: none
+  //   order: 1
 
   &__link
     color: color("background")
     font-size: scale(h4)
     +logo-name
 
-    +respond("desktop")
-      color: color("primary")
-      display: block
-      font-size: scale(h4)
+    // +respond("desktop")
+    //   color: color("primary")
+    //   display: block
+    //   font-size: scale(h4)
 
 .nav-overlay
   background: color(primary, light)
@@ -121,8 +121,8 @@
   margin: 0
   padding: 0
 
-  +respond("desktop")
-    align-self: flex-end
+  // +respond("desktop")
+  //   align-self: flex-end
 
   &__item
 
@@ -137,8 +137,8 @@
     padding: scale(xx-small) 0
     text-align: center
 
-    +respond("desktop")
-      font-size: scale(h2)
+    // +respond("desktop")
+    //   font-size: scale(h2)
 
     &--active,
     &:hover
