@@ -11,7 +11,7 @@ gulp.task("sass", function () {
   gulp.src("src/sass/*.sass")
     .pipe(sass().on('error', sass.logError))
     .pipe(sass({outputStyle : "nested"}))
-    .pipe(autoprefixer({browsers : ["last 20 versions"]}))
+    .pipe(autoprefixer())
     // .pipe(hash())
     .pipe(gulp.dest("static/css"))
     // .pipe(hash.manifest("hash.json"))
