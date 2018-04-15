@@ -4,6 +4,7 @@
   left: 0
   top: 0
   width: 100%
+  z-index: z-index("header-links")
 
   // +respond("desktop")
   //   background: color(background, base)
@@ -26,15 +27,13 @@
 .hamburger
   display: flex
   order: 2
-  width: $gutter
-  height: 1.125em
+  width: $base-line
+  height: $base-line--headings
   flex-direction: column
   justify-content: space-between
   cursor: pointer
   transition: transform 350ms ease-out
-  // Hamburger icon is always above everything except page transitions
-  // and loaders.
-  z-index: z-index("hamburger")
+  // Hamburger icon is always above everything except page transitions and loaders
 
   // +respond("desktop")
   //   order: 3
