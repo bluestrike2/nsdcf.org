@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="{{ .Site.LanguageCode }}">
+<html class="html--no-js" lang="{{ .Site.LanguageCode }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -28,7 +28,7 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="/css/main.css">
     {{ block "style" .}} {{end}}
-    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <script>(function(H){H.className=H.className.replace(/\bhtml--no-js\b/,'html--js')})(document.documentElement)</script>
   </head>
 
   <body class="{{ with .Type }}page--{{ . }}{{ end }}
@@ -40,7 +40,7 @@
     {{ end }}
 
     <main class="main">
-      {{ block "hero" . }}{{ end }}
+      {{ block "intro" . }}{{ end }}
       {{ block "main" . }}{{ end }}
     </main>
 
