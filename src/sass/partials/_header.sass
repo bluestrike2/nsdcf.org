@@ -42,14 +42,17 @@
   &--active
     transform: rotate(-45deg)
 
-    .hamburger__line--start
-      transform: rotate(-90deg) translateX(5px)
+    .hamburger__line
+      background-color: color("background")
 
-    .hamburger__line--end
-      transform: rotate(-90deg) translateX(-5px)
+      &--start
+        transform: rotate(-90deg) translateX(5px)
+
+      &--end
+        transform: rotate(-90deg) translateX(-5px)
 
   &__line
-    background-color: color("background")
+    background-color: color("primary")
     border-radius: 2px
     height: 4px
     width: 100%
@@ -68,6 +71,9 @@
       transform-origin: left
       width: 50%
 
+    .page--has-hero &
+      background-color: color("background")
+
 .header-logo
   flex: 1
   order: 1
@@ -77,9 +83,12 @@
   //   order: 1
 
   &__link
-    color: color("background")
+    color: color("primary")
     font-size: scale(h4)
     +logo-name
+
+    .page--has-hero &
+      color: color("background")
 
     // +respond("desktop")
     //   color: color("primary")
