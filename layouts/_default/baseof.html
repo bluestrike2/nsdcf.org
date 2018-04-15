@@ -27,7 +27,7 @@
     {{ partial "head/favicons" . }}
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="/css/main.css">
-    {{ block "style" .}} {{end}}
+    {{ block "style" . }}{{ end }}
     <script>(function(H){H.className=H.className.replace(/\bhtml--no-js\b/,'html--js')})(document.documentElement)</script>
   </head>
 
@@ -41,7 +41,6 @@
     {{ end }}
 
     <main class="main">
-      {{ template "_internal/opengraph.html" . }}
       {{ block "intro" . }}{{ end }}
       {{ block "main" . }}{{ end }}
     </main>

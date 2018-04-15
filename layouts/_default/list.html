@@ -1,8 +1,11 @@
-{{ define "main" }}
-  <header class="list-header">
-    <h1 class="list-header__title">{{ .Title }}</h1>
-    {{ .Content }}
+{{ define "intro" }}
+  <header class="intro">
+    <h1 class="intro__title">{{ .Title }}</h1>
   </header>
+{{ end }}
+
+{{ define "main" }}
+  {{ .Content }}
 
   {{ $paginator := .Paginate (where .Data.Pages "Section" .Section) }}
 
