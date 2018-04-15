@@ -28,6 +28,7 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="/css/main.css">
     {{ block "style" .}} {{end}}
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
   </head>
 
   <body class="{{ with .Type }}page--{{ . }}{{ end }}
