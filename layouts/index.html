@@ -9,13 +9,17 @@
 {{ end }}
 
 {{ define "main" }}
-  <section class="section slide slide--alt-bg" id="home-intro">
+  <section class="home-slide">
     {{.Content}}
   </section>
 
-  <section class="section listings listings--home" id="home-news">
+  <section class="list list--home">
+    <div class="home-listings__intro">
+      <h2 class="home-listings__heading">Latest News</h2>
+    </div>
+
     {{ range first 4 (where .Data.Pages "Section" "news") }}
-      {{ .Render "list-item-short" }}
+      {{ .Render "listing-short" }}
     {{ end }}
   </section>
 {{ end }}

@@ -1,1 +1,13 @@
-//
+.home-slide
+  @extend %section-padding
+  margin: 0 auto
+  +respond("tablet-landscape")
+    min-height: 100vh
+
+.list--home
+  @extend %section-padding
+  background: color(background)
+  margin: 0 auto
+
+  &__heading
+    //

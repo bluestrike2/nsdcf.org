@@ -13,6 +13,8 @@ body
 .main
   overflow: auto
 
-.section
-  margin: 0 auto
-  padding: 0 $gutter
+%section-padding
+  padding: $gutter $gutter $gutter2
+  +respond("tablet-landscape")
+    padding-left: 15%
+    padding-right: 15%

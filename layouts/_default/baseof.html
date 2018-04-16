@@ -31,9 +31,9 @@
     <script>(function(H){H.className=H.className.replace(/\bhtml--no-js\b/,'html--js')})(document.documentElement)</script>
   </head>
 
-  <body class="{{ with .Type }}page--{{ . }}{{ end }}
-               {{ with .Kind }}page--{{ . }}{{ end }}
-               {{ if .Params.layout_hero }}page--has-hero{{ end }}">
+  <body class="{{ with .Type }}body--{{ . }}{{ end }}
+               {{ with .Kind }}body--{{ . }}{{ end }}
+               {{ if .Params.layout_hero }}body--has-hero{{ end }}">
 
     {{ block "nav" . }}
       {{ partial "header/header" . }}

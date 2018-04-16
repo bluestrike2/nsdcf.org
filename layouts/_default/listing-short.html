@@ -1,9 +1,12 @@
 <article class="listing listing--short">
-  <h2 class="listing__title">
+  <h3 class="listing__title">
     <a href="{{ .RelPermalink }}" class="listing__link">{{ .Title }}</a>
-  </h2>
-  <div class="listing__meta">
-    <address class="meta__author"><a class="listing__author__link" rel="author" href="#">John Doe</a></address>
+  </h3>
+
+  <div class="meta meta--listing">
+    <address class="meta__author">
+      <a class="meta__author-link" rel="author" href="#">Jack Boylan</a>
+    </address>
     <time class="meta__time" pubdate datetime="xxxx-mm-dd">{{ .Date.Format "1 January 2006" }}</time>
   </div>
 </article>

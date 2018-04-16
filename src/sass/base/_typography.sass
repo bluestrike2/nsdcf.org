@@ -22,10 +22,12 @@ body
 h1, h2, h3, h4
   font-family: $family-serif
   font-weight: 400
+  margin-bottom: 0
 
 h5, h6
   font-family: $family-sans-serif
   font-weight: 600
+  margin-bottom: 0
 
 h1
   font-size: scale(h2)
@@ -65,7 +67,7 @@ h5
 
 p
   line-height: scale(base, line)
-  margin-top: scale(base, margin)
+  margin: scale(base, margin) 0 0
 
 a
   color: color("tertiary")
@@ -74,8 +76,8 @@ a
     color: color("primary")
     text-decoration: none
 
-.main a
-  text-decoration: underline
+// .main a
+//   text-decoration: underline
 
 =logo-name
   font-family: $family-serif

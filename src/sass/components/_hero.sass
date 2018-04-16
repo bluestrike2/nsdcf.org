@@ -7,6 +7,7 @@
   justify-content: center
   text-align: center
   min-height: 100vh
+
   +respond("tablet-portrait")
     justify-content: left
     text-align: left
@@ -17,13 +18,16 @@
 
 .hero-content
   padding: $gutter
+
   +respond("tablet-portrait")
     align-self: flex-end
     max-width: 80%
+
   +respond("tablet-landscape")
     position: absolute
     bottom: 0
     right: 0
+
   // +respond("desktop")
   //   margin: 0 $gutter2 $gutter2 0
   //   padding: 0
@@ -33,6 +37,7 @@
 
   &__title
     margin: 0
+
     // +respond("desktop")
     //   font-size: scale(h1)
     //   width: 10em
