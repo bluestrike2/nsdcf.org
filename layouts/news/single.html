@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <article>
+    <header class="mast mast--single">
+      <h1 class="mast__title">{{ .Title }}</h1>
+
+      <div class="intro__meta">
+        <address class="meta__author">
+          <a class="meta__author-link" rel="author" href="#">John Doe</a>
+        </address>
+        <time class="meta__time" pubdate datetime="xxxx-mm-dd">{{ .Date.Format "1 January 2006" }}</time>
+      </div>
+
+      <!-- <figure class="mast__cover">
+        <img class="mast__cover-img" src="" />
+      </figure> -->
+    </header>
+
+    <div class="content content--news-single">{{ .Content }}</div>
+  </article>
+{{ end }}
