@@ -34,7 +34,7 @@
   <body class="{{ with .Type }}page--{{ . }}{{ end }}
                {{ with .Kind }}page--{{ . }}{{ end }}
                {{ if .Params.layout_hero }}page--has-hero{{ end }}">
-    {{ partial "header/browser-upgrade" . }}
+
     {{ block "nav" . }}
       {{ partial "header/header" . }}
       {{ partial "header/nav" . }}
