@@ -1,1 +1,28 @@
-//
+.form
+  &__input
+    background: none
+    border: 0
+    border-bottom: scale(xxx-small) solid color(tertiary)
+    color: color(primary, base)
+    font-family: $family-serif
+    margin-bottom: 1em
+    outline: 0
+    padding: scale(small)
+
+    &:focus
+      background: color(background, lightest)
+
+
+    &::placeholder
+      color: color(primary, lightest)
+
+  &__label
+    font-size: scale(small)
+    font-weight: 600
+
+  &__button
+    background: color(tertiary)
+    color: color(background, lightest)
+    font-family: $family-sans-serif
+    padding: scale(small)
+    border: none
