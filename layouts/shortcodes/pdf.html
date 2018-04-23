@@ -1,0 +1,4 @@
+{{ $pdf := $.Page.Resources.GetMatch (.Get 0 )}}
+{{ $content := .Get 1}}
+
+<a href="{{ $pdf.RelPermalink }}" class="link--{{ $pdf.Params.icon }}" target="_blank" alt="{{ $pdf.Params.title }}">{{$content}}</a>

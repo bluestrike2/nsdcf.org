@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <article>
+    {{ $mast_img := .Resources.GetMatch "mast*.jpg" }}
+
+    <header class="mast mast--single mast--cover"
+            style="background:linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url({{ $mast_img.RelPermalink }}) center center / cover no-repeat;">
+
+      <h1 class="mast__title">{{ .Title }}</h1>
+
+      <h2 class="mast__subtitle">{{ dateFormat "Monday, Jan 2, 2006" "2018-05-24" }}</h2>
+
+    </header>
+
+    <div class="content content--news-single">{{ .Content }}</div>
+  </article>
+{{ end }}

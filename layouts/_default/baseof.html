@@ -33,6 +33,7 @@
 
   <body class="{{ with .Type }}body--{{ . }}{{ end }}
                {{ with .Kind }}body--{{ . }}{{ end }}
+               {{ with .Layout }}body--{{ . }}{{ end }}
                {{ if .Params.layout_hero }}body--has-hero{{ end }}">
 
     {{ block "nav" . }}
