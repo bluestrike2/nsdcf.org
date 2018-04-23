@@ -1,3 +1,8 @@
+=meta__divider-after
+  content: "\2014"
+  color: color(primary, lightest)
+  margin: 0 .25em
+
 .meta
   font-size: scale(small)
 
@@ -8,12 +13,26 @@
     //font-weight: 600
 
     &::after
-      content: "\2014"
-      color: #9b9aa1
-      margin: 0 .25em
+      +meta__divider-after
 
   &__author-link
     //
 
   &__time
     //
+
+.meta-categories
+  +reset-list
+  display: inline-block
+
+  &::after
+    +meta__divider-after
+
+  &__item
+    display: inline-block
+
+    &::after
+      content: ", "
+
+    &:last-of-type::after
+      content: none
