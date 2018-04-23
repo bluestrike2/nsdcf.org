@@ -7,7 +7,9 @@
 
       <h1 class="mast__title">{{ .Title }}</h1>
 
-      <h2 class="mast__subtitle">{{ dateFormat "Monday, Jan 2, 2006" "2018-05-24" }}</h2>
+      <h3 class="mast__subtitle">
+        <time class="mast__time" datetime="{{ .Params.eventDate }}">{{ dateFormat "Monday, Jan 2, 2006" (.Params.eventDate) }}</time>
+      </h3>
 
     </header>
 

@@ -1,15 +1,15 @@
 +++
-author = "Jack Boylan"
-categories = ["alumni"]
-date = "2018-02-25T17:07:33+00:00"
+author      = "Jack Boylan"
+categories  = ["alumni"]
+date        = "2018-02-25T17:07:33+00:00"
 description = ""
 draft       = false
-title       = "Second Annual Knight of Distinguished Alumni"
-title_alt   = "Join Us in Celebrating a Knight of Distinguished Alumni"
-eventDate  = "2018-5-24T118:00:00-04:00"
-url         = "/alumni-dinner"
+eventDate   = "2018-05-24T18:00:00-05:00"
 layout      = "event-dinner-layout"
 layout_hero = true
+title       = "Second Annual Knight of Distinguished Alumni"
+title_alt   = "Join Us in Celebrating a Knight of Distinguished Alumni"
+url         = "/alumni-dinner"
 
 [[resources]]
   name  = "reservations"
@@ -17,7 +17,6 @@ layout_hero = true
   title = "Reservation Form"
   [resources.params]
     icon = "pdf"
-
 +++
 
 You are cordially invited to join the Norwin School District Community Foundation on Thursday, May 24, 2018 for a celebration of Norwin's past, present, and future as we honor the achievements of of some of our most distinguished alumni and graduating students.
