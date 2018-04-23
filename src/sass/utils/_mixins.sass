@@ -9,19 +9,17 @@
   background-image: url(#{$url-1x})
   background-image: -webkit-image-set(url(#{$url-1x}) 1x, url(#{$url-2x}) 2x)
 
-// =supports($test)
-//   @if test == #{$test}
-//     // @supports(display: grid) will return true for certain versions of Microsoft Edge
-//     // that implement an older grid specification that doesn't support grid-template-areas,
-//     // grid-areas, or the minmax() function. Instead, test for @supports(grid-area: auto)
-//     @supports(grid-area: auto)
-//       @content
-//   @else if test == "clip-path"
-//     @supports(clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%))
-//       @content
-//   @else
-//     @supports(unquote(#{$test}))
-//       @content
+=supports($rule)
+  @if $rule == "grid"
+    // @supports(display: grid) will return true for certain versions of Microsoft Edge
+    // that implement an older grid specification that doesn't support grid-template-areas,
+    // grid-areas, or the minmax() function. Instead, test for @supports(grid-area: auto)
+    @supports(grid-area: auto)
+      @content
+
+  @else if $rule == "clip-path"
+    @supports(clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%))
+      @content
 
 // Miscellania
 
