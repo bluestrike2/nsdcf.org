@@ -5,7 +5,7 @@
     border-bottom: scale(xxx-small) solid color(tertiary)
     color: color(primary, base)
     font-family: $family-serif
-    margin-bottom: 1em
+    margin-bottom: $gutter
     outline: 0
     padding: scale(small)
 
@@ -23,6 +23,10 @@
   &__button
     background: color(tertiary)
     color: color(background, lightest)
+    cursor: pointer
     font-family: $family-sans-serif
     padding: scale(small)
     border: none
+
+    &:hover
+      background-color: color(tertiary, light)

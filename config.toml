@@ -30,48 +30,49 @@ sectionPagesMenu = "main"
     city          = "North Huntingdon"
     state         = "PA"
     postal        = "15642"
-    newsletter_signup = ""
+    newsletter_description = "Community & school district news, events, and other relevant information via occassional email."
 
 [[menu.main]]
   name        = "Our Story"
   weight      = 10
   identifier  = "story"
   url         = "/story"
+
 [[menu.main]]
   name        = "Programs"
   weight      = 20
   identifier  = "programs"
   url         = "/programs"
+
 [[menu.main]]
   name        = "Alumni"
   weight      = 30
   identifier  = "alumni"
   url         = "/alumni"
+
 [[menu.main]]
   name        = "News"
   weight      = 40
   identifier  = "news"
   url         = "/news"
+
 [[menu.main]]
   name        = "Get Involved"
   weight      = 50
   identifier  = "get-involved"
   url         = "/get-involved"
 
-[[menu.footer]]
+[[menu.legal]]
   name = "Charitable Information"
   weight = 20
   identifier = "charitable-information"
   url = "/charitable-information"
-[[menu.footer]]
-  name = "Privacy"
+
+[[menu.legal]]
+  name = "Privacy Policy"
   weight = 30
   identifier = "privacy"
   url = "/privacy"
-[[menu.footer]]
-  name = "Norwin School District"
-  weight = 40
-  url = "http://www.norwinsd.org"
 
 [sitemap]
   ChangeFreq  = ""

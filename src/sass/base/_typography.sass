@@ -15,12 +15,11 @@ html
   font-size: calc( 20px + ( ( 20 - 16 ) * (100vw - 400px) / (1200 - 400) ) )
 
 body
-  font-family: $family-sans-serif
+  font-family: $family-serif
   font-weight: 400
   line-height: $base-line
 
 h1, h2, h3, h4
-  font-family: $family-serif
   font-weight: 400
   margin-bottom: 0
 
@@ -90,3 +89,8 @@ a
   color: color("primary", "base")
   &:hover
     color: color("accent", "base")
+
+.logo
+  letter-spacing: -1px
+  line-height: $base-line
+  max-width: 30ch
