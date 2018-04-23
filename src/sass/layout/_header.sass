@@ -6,23 +6,30 @@
   width: 100%
   z-index: z-index("header-links")
 
-  // +respond("desktop")
-  //   background: color(background, base)
-  //   padding: .707em scale("base")
-  //   position: fixed
-  //   // height and width are reversed after transform; header is rotated
-  //   width: 100vh
-  //   transform: rotate(-90deg) translateX(-100%)
-  //   transform-origin: left top
-  //   z-index: z-index("header")
+  +respond("desktop")
+    background: none
+    // background: color(primary)
+    padding: .707em scale("base")
+    position: fixed
+    // height and width are reversed after transform; header is rotated
+    width: 100vh
+    transform: rotate(-90deg) translateX(-100%)
+    transform-origin: left top
+    z-index: z-index("header")
+
+    // .html--no-js &
+    //   background: color(primary)
+
+    .body--has-hero &
+      background-color: color(primary)
 
   &__inner
     display: flex
     align-items: center
     justify-content: space-between
-    // +respond("desktop")
-    //   align-items: center
-    //   height: 100%
+    +respond("desktop")
+      align-items: center
+      height: 100%
 
 .hamburger
   display: flex
@@ -35,9 +42,9 @@
   transition: transform 350ms ease-out
   // Hamburger icon is always above everything except page transitions and loaders
 
-  // +respond("desktop")
-  //   order: 3
-  //   transform: rotate(90deg)
+  +respond("desktop")
+    order: 3
+    transform: rotate(90deg)
 
   &--active
     transform: rotate(-45deg)
@@ -129,11 +136,7 @@
   margin: 0
   padding: 0
 
-  // +respond("desktop")
-  //   align-self: flex-end
-
   &__item
-
     width: 100%
 
   &__link
@@ -145,8 +148,8 @@
     padding: scale(xx-small) 0
     text-align: center
 
-    // +respond("desktop")
-    //   font-size: scale(h2)
+    +respond("desktop")
+      font-size: scale(h2)
 
     &--active,
     &:hover
