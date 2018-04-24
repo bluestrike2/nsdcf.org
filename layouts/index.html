@@ -19,7 +19,7 @@
     </div>
 
     {{ range first 4 (where .Data.Pages "Section" "news") }}
-      {{ .Render "listing-short" }}
+      {{ .Render "li" }}
     {{ end }}
   </section>
 {{ end }}

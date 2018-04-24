@@ -12,9 +12,9 @@
 
     {{ range $index, $page := $paginator.Pages }}
       {{ if and (eq $index 0) (eq $paginator.PageNumber 1) }}
-        {{ .Render "listing-summary" }}
+        {{ .Render "summary" }}
       {{ else }}
-        {{ .Render "listing-short" }}
+        {{ .Render "li" }}
       {{ end }}
     {{ end }}
 
