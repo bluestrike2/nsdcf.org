@@ -1,32 +1,124 @@
+=base-input
+  appearance: none
+  background: color(background, light)
+  border: 1px solid color(background, light)
+  color: color(primary, base)
+  font-family: $family-serif
+  outline: none
+
+  &:focus
+    background: color(background, lightest)
+    border-color: color(background, base)
+
+  &::placeholder
+    color: color(primary, lightest)
+
 .form
-  &__input
-    background: none
-    border: 0
-    border-bottom: scale(xxx-small) solid color(tertiary)
-    color: color(primary, base)
-    font-family: $family-serif
-    margin-bottom: $gutter
-    outline: 0
-    padding: scale(small)
-
-    &:focus
-      background: color(background, lightest)
-
-
-    &::placeholder
-      color: color(primary, lightest)
-
-  &__label
-    font-size: scale(small)
-    font-weight: 600
-
   &__button
     background: color(tertiary)
+    border: none
+    border-radius: .25em
     color: color(background, lightest)
     cursor: pointer
     font-family: $family-sans-serif
+    margin-top: scale(base)
     padding: scale(small)
-    border: none
+    outline: none
 
     &:hover
       background-color: color(tertiary, light)
+
+    &:focus
+      box-shadow: 0px 0px .25em color(tertiary, light)
+
+  &__description
+    display: block
+    font-size: scale(small)
+    padding: 0
+
+  &__field
+    margin-top: scale(x-small)
+
+  &__fieldset
+    border: 0
+    padding: 0
+
+  &__input
+    +base-input
+    display: block
+    margin: scale(xx-small) 0 scale(base)
+    padding: scale(x-small) scale(small)
+    width: 100%
+
+  &__label
+    display: block
+    font-size: scale(small)
+    font-weight: 600
+
+  &__select
+    background: none
+    border: 1px solid #ccc
+    color: color(primary, base)
+    font-family: $family-serif
+    outline: none
+    padding: scale(x-small) scale(small)
+
+  &__textarea
+    +base-input
+    line-height: $base-line
+    padding: scale(x-small) scale(small)
+    margin: scale(xx-small) 0 0
+    width: 100%
+
+
+.checkbox
+  &__input
+    position: absolute
+    opacity: 0
+    z-index: -1
+
+    & + label::after
+      content: none
+
+    &:checked + label
+      &::before
+        background: color(tertiary, light)
+
+      &::after
+        content: ""
+        border-color: color(background, lightest)
+
+    &:focus + label::before
+      box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem color(tertiary, light)
+      outline: 0
+
+  &__label
+    padding-left: $gutter
+    position: relative
+
+    &::before
+      background: color(background, base)
+      border: none
+      border-radius: .185em
+      content: ""
+      display: inline-block
+      height: 1em
+      width: 1em
+      position: absolute
+      left: 0px
+      top: 3px
+
+    &::after
+      border-left: .125em solid
+      border-bottom: .125em solid
+      content: ""
+      display: inline-block
+      height: .25em
+      width: .65em
+      position: absolute
+      left: .2em
+      top: .425em
+      transform: rotate(-45deg)
+
+  &__span
+    font-size: scale(small)

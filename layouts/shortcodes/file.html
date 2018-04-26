@@ -1,0 +1,4 @@
+{{ $file := .Resources.GetMatch (.Get 0 )}}
+{{ $content := .Get 1}}
+
+<a href="{{ $file.RelPermalink }}" {{ with $file.Params.icon }}class="link--{{.}}" {{end}} target="_blank" {{ with $file.Params.title }}alt="{{.}}"{{end}}>{{$content}}</a>

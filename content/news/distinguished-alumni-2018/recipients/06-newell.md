@@ -1,0 +1,6 @@
++++
+attending  = false
+class      = "1988"
+title      = "Heather Newell"
+salutation = "Dr."
++++

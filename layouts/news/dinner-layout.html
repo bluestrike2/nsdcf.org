@@ -1,0 +1,161 @@
+{{ define "main" }}
+  <article itemscope itemtype="http://schema.org/Event">
+    {{ $mast_img := .Resources.GetMatch "mast" }}
+
+    <header class="mast mast--cover"
+            style="background:linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url({{ $mast_img.RelPermalink }}) center center / cover no-repeat;">
+
+      <div class="mast__content">
+        <h1 class="mast__title" itemprop="name" >{{ .Title }}</h1>
+
+        {{ with .Params.eventDate }}
+          <h3 class="mast__subtitle">
+            <time class="mast__time" datetime="{{.}}" itemprop="startDate">{{ dateFormat "Monday, Jan 2, 2006" (.) }}</time>
+          </h3>
+        {{ end }}
+      </div>
+    </header>
+
+    <!-- 1. introduction -->
+    <section class="slide slide--dinner-info grid">
+      {{ .Content }}
+
+      <!-- schedule -->
+      {{ if .Params.schedule }}
+        <h3 class="schedule__h3">{{ .Params.scheduleHeading }}</h3>
+
+        {{ range .Params.schedule }}
+          <div class="schedule-item">
+            <time class="schedule-item__time">
+              {{ if .time }}
+                <time datetime="{{ .time }}">{{ dateFormat "3:04pm" .time }}</time>
+              {{ else if .timeDescr }}
+                {{ .timeDescr }}
+              {{ end }}
+            </time>
+            <span class="schedule-item__heading">{{.name}}</span>
+          </div>
+        {{ end }}
+      {{ end }}
+
+      <!-- credits / support + misc text -->
+      {{ if .Params.credits }}
+        <h3 class="schedule__h3">{{ .Params.creditsHeading }}</h3>
+        {{ range .Params.credits }}
+          <div class="schedule-item">
+            <span class="schedule-item__time">{{.role}}</span>
+            <span class="schedule-item__heading">{{.name}}</span>
+          </div>
+        {{ end }}
+      {{ end }}
+
+      {{ if .Params.supportText }}
+        <p class="schedule__text">{{ .Params.supportText | markdownify }}</p>
+      {{ end }}
+
+      {{ if .Params.miscText }}
+        <p class="schedule__text">{{ .Params.miscText | markdownify }}</p>
+      {{ end }}
+
+      <!-- venue / map -->
+      {{ with .Params.venue }}
+        <figure class="map map--dinner" >
+          <div class="map__map"></div>
+
+          <h3 class="map__heading map__heading--venue">{{ .heading }}</h3>
+
+          <address class="map__address" itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <span itemprop="name">{{ .name }}</span><br />
+            <span itemprop="streetAddress">{{ .street }}</span><br />
+            <span itemprop="addressLocality">{{ .city }}</span>,
+            <span itemprop="addressRegion">{{ .state }}</span>
+            <span itemprop="postalCode">{{ .postal }}</span>
+          </address>
+        </figure>
+      {{ end }}
+    </section>
+
+    <!-- 2. Recipients -->
+    <section class="slide slide--recipients grid">
+      {{ with .Resources.GetMatch "recipients.md" }}
+        <header class="slide__header slide__header--recipients">
+          <h3 class="slide__heading">{{ .Title }}</h3>
+          {{ .Content }}
+        </header>
+      {{ end }}
+
+      {{ range .Resources.Match "recipients/*.md" }}
+        <article class="recipient">
+          <header class="recipient__header">
+            <h4 class="recipient__heading">{{.Params.salutation}} {{ .Title }}</h4>
+            <small class="recipient__small">
+              {{ if .Params.class }}
+                Class of '{{ slicestr .Params.class 2 }}
+              {{ else if .Params.friend }}
+                Distinguished Friend of Norwin
+              {{ end }}
+            </small>
+          </header>
+        </article>
+      {{ end }}
+    </section>
+
+    <!-- 3. Reservations -->
+    <section class="slide slide--dinner-reservations grid">
+      {{ $reservations := .Resources.GetMatch "reservations.md" }}
+      {{ if $reservations }}
+
+        <header class="slide__header slide__header--dinner-reservations">
+          {{ if .Params.tickets.available }}
+            <h3 class="slide__heading">{{ $reservations.Title }}</h3>
+            {{ $reservations.Content }}
+          {{ else }}
+            foo
+          {{ end }}
+        </header>
+      {{ end }}
+
+      {{ if .Params.tickets.available }}
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="form form--dinner-reservations">
+          <!-- paypal variables (hidden) -->
+          {{ partial "paypal-form-variables.html" (dict "email" "alumni.dinner@nsdcf.org") }}
+          <input type="hidden" name="item_name" value="{{ dateFormat "2006" .Params.eventDate }} Knight of Distinguished Alumni Ticket">
+          <input type="hidden" name="amount" value="{{ .Params.tickets.price }}">
+
+          <!-- form inputs -->
+          <div class="form__field">
+            <label class="form__label" for="quantity">Number of Tickets</label>
+            <input class="form__input form__input--required" type="text" spellcheck="false"  name="quantity" placeholder="Number of Tickets" required>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="os0">Guest Name(s)</label>
+            <small class="form__description">Please list each guest name, including your own, on a separate line.</small>
+            <input type="hidden" name="on0" value="Guest Names">
+            <textarea class="form__textarea" name="os0" rows="4" placeholder="Guest names, one per line" required wrap></textarea>
+          </div>
+
+          <div class="form__field">
+            <input type="hidden" name="on1" value="Business Reservation">
+            <div class="checkbox">
+              <input type="checkbox" class="checkbox__input" id="checkbox--business-reservation" name="os1">
+              <label class="checkbox__label" for="checkbox--business-reservation"><span class="checkbox__span">This is a business reservation.</span></label>
+            </div>
+          </div>
+
+          <div class="business-reservation">
+            <small class="form__description form__description--business-reservation">Please enter the business name.</small>
+
+            <input type="hidden" name="on2" value="Business Name">
+            <input type="text" class="form__input form__input--business-reservation" name="os2" spellcheck="false" placeholder="Business name">
+          </div>
+
+          <button class="form__button form__button--paypal" type="submit">
+            Pay with Paypal
+          </button>
+        </form>
+      {{ end }}
+
+    </section>
+  </article>
+{{ end }}

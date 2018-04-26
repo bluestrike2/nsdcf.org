@@ -1,0 +1,42 @@
+.slide
+  &--recipients
+    background-color: color(background)
+
+.map
+  &--dinner
+    margin: 0
+
+.form--dinner-reservations
+  margin-top: $gutter
+
+.schedule-item
+  margin-bottom: scale(small)
+
+  &__time
+    display: block
+    //font-family: $family-sans-serif
+    font-size: scale(small)
+
+  &__heading
+    //font-weight: 600
+
+.business-reservation
+  .html--js &
+    max-height: 0
+    opacity: 0
+    overflow: hidden
+    visibility: hidden
+    transition: max-height .2s ease-out, opacity .2s ease-out, visibility .2s ease-out
+
+  &--is-active
+    .html--js &
+      visibility: visible
+      opacity: 1
+      max-height: 6em
+
+.form
+  &__input--business-reservation
+    margin-bottom: 0
+
+  &__description--business-reservation
+    margin-top: scale(x-small)
