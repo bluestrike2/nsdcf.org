@@ -1,49 +1,41 @@
-// Overrides bulma defaults and sets custom site variables
-
-// NSDCF Brand Color Scheme
-// $slate:             rgb(58, 65, 78)     hsl(219, 14.7%, 26.7%)
-// $slate-dark:        rgb(43, 48, 57)     hsl(219, 14%, 19.6%)
-// $slate-light:       rgb(67, 76, 91)     hsl(218, 15.2%, 31%)
-// $blue:              rgb(88, 106, 140)   hsl(219, 23%, 45%)
-// $blue-light:        rgb(103, 119, 150)  hsl(220, 19%, 50%)
-// $yellow:            rgb(247, 221, 114)  hsl(48, 89.3%, 70.8%)
-// $light-yellow:      rgb(249, 239, 152)  hsl(54, 89%, 78.6%)
-// $light-grey:        rgb(235, 232, 233)  hsl(340, 7%, 91.6%)
-// $off-white:         rgb(246, 246, 246)  hsl(0, 0, 96.5%)
-
-$slate:          hsl(219, 14.7%, 26.7%);
-$slate-light:    hsl(218, 15.2%, 31%);
-$slate-dark:     hsl(219, 14%, 19.6%);
-$blue:           hsl(219, 23%, 45%);
-$blue-light:     hsl(220, 19%, 50%);
-$yellow:         hsl(48, 89.3%, 70.8%);
-$yellow-light:   hsl(54, 89%, 78.6%);
-$grey-light:     hsl(340, 7%, 91.6%);
-$off-white:      hsl(0, 0, 96.5%);
-
-$slate-overlay:  rgba(58, 65, 78, 0.65);
-
+// NSDCF  Color Schemes
 // Color map using colors from NSDCF brand guide. Not used directly for any bulma styles.
-// NOTE - Sass won"t accept the map unless on one line when using the indented sass syntax.
+//
+//         $slate:  rgb(58, 65, 78)     hsl(219, 14.7%, 26.7%) --> PRIMARY COLOR
+//   $slate--dark:  rgb(43, 48, 57)     hsl(219, 14%, 19.6%)
+//  $slate--light:  rgb(67, 76, 91)     hsl(218, 15.2%, 31%)
+//    $blue--dark:  rgb(73, 87, 115)    hsl(220, 22%, 37%)
+//          $blue:  rgb(88, 106, 140)   hsl(219, 23%, 45%)
+//   $blue--light:  rgb(103, 119, 150)  hsl(220, 19%, 50%)
+//  $yellow--dark:  rgb(225, 201, 104)  hsl(48, 67%, 65%)
+//        $yellow:  rgb(247, 221, 114)  hsl(48, 89.3%, 70.8%)
+// $yellow--light:  rgb(249, 239, 152)  hsl(54, 89%, 78.6%)
+//    $grey--dark:  rgb(218, 215, 215)  hsl(0, 4%, 85%)
+//   $grey--light:  rgb(235, 232, 233)  hsl(340, 7%, 91.6%)
+//     $off-white:  rgb(246, 246, 246)  hsl(0, 0, 96.5%)
+
 $colors: (
   "primary":(
-    "base":     $slate,
-    "light":    $slate-light,
-    "dark":     $slate-dark,
+    "dark":     hsl(219, 14%, 19.6%),
+    "base":     hsl(219, 14.7%, 26.7%),
+    "light":    hsl(218, 15.2%, 31%),
     "lightest": hsl(220, 5%, 66%),
-    "overlay":  rgba($slate, 0.35)
+    "overlay":  hsla(219, 14.7%, 26.7%, .35)
   ),
   "accent":(
-    "base":     $yellow,
-    "light":    $yellow-light
+    "dark":     hsl(48, 67%, 65%),
+    "base":     hsl(48, 89.3%, 70.8%),
+    "light":    hsl(54, 89%, 78.6%)
   ),
   "tertiary":(
-    "base":     $blue,
-    "light":    $blue-light
+    "dark":     hsl(220, 22%, 37%),
+    "base":     hsl(219, 23%, 45%),
+    "light":    hsl(220, 19%, 50%)
   ),
   "background":(
-    "base":     $grey-light,
-    "light":    $off-white,
+    "dark":     hsl(0, 4%, 85%),
+    "base":     hsl(340, 7%, 91.6%),
+    "light":    hsl(0, 0, 96.5%),
     "lightest": hsl(0, 0%, 100%)
   ),
   "misc":(
