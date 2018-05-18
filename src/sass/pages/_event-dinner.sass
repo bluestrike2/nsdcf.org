@@ -1,13 +1,23 @@
-.slide
+.kda-slide
+  &--info
+    //
+
   &--recipients
     background-color: color(background)
 
-.map
-  &--dinner
-    margin: 0
+  &__intro
+    margin-bottom: $gutter2
+    +respond("desktop")
+      margin-top: scale(large)
+      margin-bottom: scale(x-large)
 
-.form--dinner-reservations
-  margin-top: $gutter
+    p
+      font-size: scale(h4)
+      +respond("desktop")
+        //
+
+.map--kda
+    margin: 0
 
 .schedule-item
   margin-bottom: scale(small)
@@ -35,6 +45,9 @@
       max-height: 6em
 
 .form
+  &--dinner-reservations
+    margin-top: $gutter
+
   &__input--business-reservation
     margin-bottom: 0
 

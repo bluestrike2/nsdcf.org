@@ -17,8 +17,10 @@
     </header>
 
     <!-- 1. introduction -->
-    <section class="slide slide--dinner-info grid">
-      {{ .Content }}
+    <section class="kda-slide kda-slide--info grid">
+      <div class="kda-slide__intro">
+        {{ .Content }}
+      </div>
 
       <!-- schedule -->
       {{ if .Params.schedule }}
@@ -59,10 +61,10 @@
 
       <!-- venue / map -->
       {{ with .Params.venue }}
-        <figure class="map map--dinner" >
+        <figure class="map map--kda" >
           <div class="map__map"></div>
 
-          <h3 class="map__heading map__heading--venue">{{ .heading }}</h3>
+          <h3 class="map__heading">{{ .heading }}</h3>
 
           <address class="map__address" itemprop="location" itemscope itemtype="http://schema.org/Place">
             <span itemprop="name">{{ .name }}</span><br />
@@ -76,7 +78,7 @@
     </section>
 
     <!-- 2. Recipients -->
-    <section class="slide slide--recipients grid">
+    <section class="kda-slide kda-slide--recipients grid">
       {{ with .Resources.GetMatch "recipients.md" }}
         <header class="slide__header slide__header--recipients">
           <h3 class="slide__heading">{{ .Title }}</h3>
@@ -101,7 +103,7 @@
     </section>
 
     <!-- 3. Reservations -->
-    <section class="slide slide--dinner-reservations grid">
+    <section class="kda-slide kda-slide--reservations grid">
       {{ $reservations := .Resources.GetMatch "reservations.md" }}
       {{ if $reservations }}
 
