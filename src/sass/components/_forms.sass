@@ -5,6 +5,7 @@
   color: color(primary, base)
   font-family: $family-serif
   outline: none
+  padding: scale(small)
 
   &:focus
     background: color(background, lightest)
@@ -15,21 +16,31 @@
 
 .form
   &__button
-    background: color(tertiary)
-    border: none
+    background: color(background, lightest)
+    border: 1px solid color(background, dark)
     border-radius: .25em
-    color: color(background, lightest)
     cursor: pointer
     font-family: $family-sans-serif
     margin-top: scale(base)
-    padding: scale(small)
+    padding: scale(base) $gutter
     outline: none
 
-    &:hover
-      background-color: color(tertiary, light)
-
     &:focus
-      box-shadow: 0px 0px .25em color(tertiary, light)
+      box-shadow: 0px 0px .35em color(background, dark)
+
+    &:hover
+      background-color: color(background, light)
+
+    &--tertiary
+      background: color(tertiary)
+      color: color(background, lightest)
+
+      &:focus
+        box-shadow: 0px 0px .25em color(tertiary, light)
+
+      &:hover
+        background-color: color(tertiary, light)
+
 
   &__description
     display: block
@@ -47,7 +58,6 @@
     +base-input
     display: block
     margin: scale(xx-small) 0 scale(base)
-    padding: scale(x-small) scale(small)
     width: 100%
 
   &__label
@@ -66,10 +76,26 @@
   &__textarea
     +base-input
     line-height: $base-line
-    padding: scale(x-small) scale(small)
     margin: scale(xx-small) 0 0
     width: 100%
 
+
+.button
+  &--svg
+    display: inline-flex
+    align-self: center
+    vertical-align: middle
+
+  &--paypal
+    // Tweak padding size due to dimensions of Paypal logo SVG
+    // for more even appearance
+    color: color(primary, light)
+    padding-bottom: (scale(small)+scale(base))/2
+
+  &__icon
+    &--paypal
+      height: $base-line
+      margin: -.125em 0 0 scale(small)
 
 .checkbox
   &__input

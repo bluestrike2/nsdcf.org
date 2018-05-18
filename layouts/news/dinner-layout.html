@@ -150,8 +150,9 @@
             <input type="text" class="form__input form__input--business-reservation" name="os2" spellcheck="false" placeholder="Business name">
           </div>
 
-          <button class="form__button form__button--paypal" type="submit">
-            Pay with Paypal
+          <button class="form__button button--svg button--paypal" type="submit">
+            <span class="button__label--svg">Pay with</span>
+            {{ partial "svg/paypal.svg" (dict "class" "button__icon button__icon--paypal") }}
           </button>
         </form>
       {{ end }}
