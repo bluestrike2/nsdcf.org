@@ -3,7 +3,28 @@ new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-sections: 
+sections:
+- path: content/alumni
+  label: Alumni
+  create: all
+- path: content/get-involved
+  label: Get involved
+  create: all
+- path: content/news
+  label: News
+  create: all
+- path: content/programs
+  label: Programs
+  create: all
+- path: content/story
+  label: Story
+  create: all
+- path: content
+  label: Pages
+  create: all
+- path: content/charitable-information
+  label: Charitable information
+  create: all
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''

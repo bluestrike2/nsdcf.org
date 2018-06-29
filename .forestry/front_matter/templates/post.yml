@@ -4,23 +4,23 @@ is_partial: false
 fields:
 - name: description
   label: Description
-  type: text
+  type: 
   hidden: false
   default: ''
 - name: draft
   label: Draft
-  type: boolean
+  type: 
   hidden: false
   default: true
 - name: categories
   label: Categories
-  type: tag_list
+  type: 
   hidden: false
   default:
   - ''
 - name: tags
   label: Tags
-  type: tag_list
+  type: 
   hidden: false
   default:
   - ''
