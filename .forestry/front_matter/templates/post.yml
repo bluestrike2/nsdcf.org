@@ -1,8 +1,6 @@
 ---
-pages:
-- news/join-us-for-the-second-annual-knight-of-distinguished-alumni.md
-- news/nominations-for-the-second-annual-knight-of-distinguished-alumni-begin-january-2nd.md
 hide_body: false
+is_partial: false
 fields:
 - name: description
   label: Description
@@ -27,3 +25,5 @@ fields:
   default:
   - ''
   - ''
+pages:
+- content/news/nominations-for-the-second-annual-knight-of-distinguished-alumni-begin-january-2nd.md
