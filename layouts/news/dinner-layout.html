@@ -86,20 +86,25 @@
         </header>
       {{ end }}
 
-      {{ range .Resources.Match "recipients/*.md" }}
-        <article class="recipient">
-          <header class="recipient__header">
-            <h4 class="recipient__heading">{{.Params.salutation}} {{ .Title }}</h4>
-            <small class="recipient__small">
-              {{ if .Params.class }}
-                Class of '{{ slicestr .Params.class 2 }}
-              {{ else if .Params.friend }}
+      {{ range $i, $e := .Resources.Match "recipients/*.md" }}
+        <article class="media media--alumni_recipients">
+          {{ if $e.Params.photo }}
+            <img src="{{ $e.Params.photo }}" class="media__figure" />
+          {{ end }}
+
+          <header class="media__body">
+            <h4 class="media__heading">{{ $e.Params.salutation }} {{ $e.Title }}</h4>
+            <small class="media__small">
+              {{ if $e.Params.class }}
+                Class of '{{ slicestr $e.Params.class 2 }}
+              {{ else if $e.Params.friend }}
                 Distinguished Friend of Norwin
               {{ end }}
             </small>
           </header>
         </article>
       {{ end }}
+
     </section>
 
     <!-- 3. Reservations -->
@@ -112,7 +117,7 @@
             <h3 class="slide__heading">{{ $reservations.Title }}</h3>
             {{ $reservations.Content }}
           {{ else }}
-            foo
+            <p>Reservations are not currently being accepted.</p>
           {{ end }}
         </header>
       {{ end }}
@@ -161,4 +166,7 @@
 
     </section>
   </article>
+  <div class="kda-slide kda-slide--info grid">
+  {{/* {{ partial "debugprint.html" $.Page.Resources }} */}}
+</div>
 {{ end }}

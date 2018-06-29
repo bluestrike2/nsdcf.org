@@ -4,6 +4,8 @@
 
   &--recipients
     background-color: color(background)
+    display: flex
+    flex-wrap: wrap
 
   &__intro
     margin-bottom: $gutter2
@@ -15,6 +17,10 @@
       font-size: scale(h4)
       +respond("desktop")
         //
+
+.slide__header--recipients
+  margin-bottom: $gutter
+  width: 100%
 
 .map--kda
     margin: 0

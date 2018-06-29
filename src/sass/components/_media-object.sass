@@ -1,0 +1,20 @@
+.media
+  margin: $halfGutter 0 0
+
+  &--alumni_recipients
+    display: flex
+    align-items: flex-start
+    +respond("tablet-landscape")
+      width: 50%
+    +respond("desktop-wide")
+      width: 33.3%
+
+  &__figure
+    margin-right: $halfGutter
+    max-width: 25%
+
+  &__body
+    flex: 1
+
+  &__heading
+    margin-top: 0

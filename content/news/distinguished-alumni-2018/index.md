@@ -42,6 +42,10 @@ supportText    = "The Foundation is proud to offer a Chinese auction and raffle 
   name = "recipient-:counter"
 
 [[resources]]
+  src  = "recipients/*.jpg"
+  name = "recipient-photo:counter"
+
+[[resources]]
   name  = "reservations"
   src   = "docs/reservations-alumni-2018.pdf"
   title = "Reservation Form"
