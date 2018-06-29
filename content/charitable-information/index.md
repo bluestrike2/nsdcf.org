@@ -21,11 +21,6 @@ src = "docs/irs_form_990.pdf"
 title = "NSDCF IRS Form 990 Filing"
 [resources.params]
 icon = "pdf"
-[[resources]]
-src = "docs/irs_form_990.pdf"
-title = "NSDCF IRS Form 990 Filing"
-[resources.params]
-icon = "pdf"
 
 +++
 Charitable information and legal filings for the Norwin School District Community Foundation.
