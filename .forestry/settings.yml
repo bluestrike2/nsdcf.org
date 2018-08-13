@@ -4,27 +4,41 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- path: content/alumni
-  label: Alumni
-  create: all
-- path: content/get-involved
-  label: Get involved
-  create: all
-- path: content/news
-  label: News
-  create: all
-- path: content/programs
-  label: Programs
-  create: all
-- path: content/story
-  label: Story
-  create: all
-- path: content
-  label: Pages
-  create: all
-- path: content/charitable-information
+- type: directory
+  path: content/charitable-information
   label: Charitable information
   create: all
+  match: "**/*"
+- type: directory
+  path: content
+  label: Pages
+  create: all
+  match: "*"
+- type: directory
+  path: content/story
+  label: Story
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/programs
+  label: Programs
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/news
+  label: News
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/get-involved
+  label: Get involved
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/alumni
+  label: Alumni
+  create: all
+  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
