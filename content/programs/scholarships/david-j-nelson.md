@@ -1,7 +1,7 @@
 ---
-title: "David J. Nelson Memorial Scholarship"
-date: 2017-12-15T12:27:20-05:00
-draft: false
----
+title: David J. Nelson Memorial Scholarship
+date: 2017-12-15 17:27:20 +0000
+draft: true
 
-85% GPA or higher, love of athletics, broad interests through commitment to music, art or community, shows genuine acceptance of peers regardless of background.
+---
+This scholarship is for a graduating Norwin High School senior with an 85% GPA or higher, love of athletics, broad interests through commitment to music, art or community, and shows genuine acceptance of peers regardless of background. 
