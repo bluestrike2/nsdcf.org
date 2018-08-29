@@ -1,7 +1,7 @@
 ---
-title: "M. Dolores 'Dolly' Fink Memorial Scholarship"
-date: 2017-12-15T12:27:41-05:00
-draft: false
----
+title: M. Dolores 'Dolly' Fink Memorial Scholarship
+date: 2017-12-15 17:27:41 +0000
+draft: true
 
-Awarded to a female student pursuing degree in Physical Education, Health or Nursing.
+---
+This scholarship is for a graduating Norwin High School female student pursuing a degree in Physical Education, Health or Nursing.
