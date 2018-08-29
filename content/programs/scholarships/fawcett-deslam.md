@@ -1,7 +1,7 @@
 ---
-title: "Fawcett Deslam Memorial Scholarship"
-date: 2017-12-15T12:28:00-05:00
-draft: false
----
+title: Fawcett Deslam Memorial Scholarship
+date: 2017-12-15 17:28:00 +0000
+draft: true
 
-Awarded to a student pursuing a degree in elementary education.
+---
+This scholarship is for a graduating Norwin High School senior pursuing a degree in elementary education.
