@@ -1,7 +1,7 @@
 ---
-title: "Norwin Chamber of Commerce Scholarship"
-date: 2017-12-15T12:30:22-05:00
-draft: false
----
+title: Norwin Chamber of Commerce Scholarship
+date: 2017-12-15 17:30:22 +0000
+draft: true
 
-A $2,500 scholarship is awarded each year to a child or grandchild of a Norwin Chamber member or an employee of a Norwin Chamber member. The scholarship is awarded to a high school senior and there is no stipulation on the school district they attend.
+---
+This scholarship is awarded each annually to a Norwin High School senior who exhibits traits of service, leadership, respect, integrity and compassion.  Interested students should contact their guidance counselor and/or the Norwin Chamber of Commerce for additional details concerning this scholarship.
