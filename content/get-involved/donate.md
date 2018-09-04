@@ -1,7 +1,7 @@
 ---
 title: Donate
 date: 2017-12-15 17:08:58 +0000
-draft: true
+draft: false
 
 ---
 # Donate

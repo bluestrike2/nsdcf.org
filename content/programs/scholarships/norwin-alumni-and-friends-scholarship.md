@@ -2,7 +2,7 @@
 categories = [""]
 date = "2018-08-29T16:46:36-04:00"
 description = "Norwin Alumni and Friends Scholarship"
-draft = true
+draft = false
 tags = ["", ""]
 title = "Norwin Alumni and Friends Scholarship"
 

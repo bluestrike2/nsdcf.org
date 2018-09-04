@@ -2,7 +2,7 @@
 categories = [""]
 date = "2018-08-29T16:40:12-04:00"
 description = "James L Dudley Memorial Scholarship"
-draft = true
+draft = false
 tags = ["", ""]
 title = "James L. Dudley Memorial Scholarship"
 
