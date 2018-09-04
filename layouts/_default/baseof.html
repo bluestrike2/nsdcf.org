@@ -26,8 +26,18 @@
     {{ end }}
     {{ partial "head/favicons" . }}
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="/css/main.css">
+
+    {{ $sass := resources.Get "sass/main.sass" | toCSS | postCSS }}
+
+    {{ if .Site.IsServer }}
+      <link rel="stylesheet" href="{{ $sass.Permalink }}">
+    {{ else }}
+      {{ $css := $sass | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+    {{ end }}
+
     {{ block "style" . }}{{ end }}
+
     <script>(function(H){H.className=H.className.replace(/\bhtml--no-js\b/,'html--js')})(document.documentElement)</script>
   </head>
 
@@ -35,6 +45,7 @@
                {{ with .Kind }}body--{{ . }}{{ end }}
                {{ with .Layout }}body--{{ . }}{{ end }}
                {{ if .Params.layout_hero }}body--has-hero{{ end }}">
+
 
     {{ block "nav" . }}
       {{ partial "header/header" . }}
