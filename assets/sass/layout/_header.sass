@@ -36,8 +36,8 @@
 .hamburger
   display: flex
   order: 2
-  width: $base-line
-  height: $base-line--headings
+  width: $base-line--headings
+  height: $base-font-size
   flex-direction: column
   justify-content: space-between
   cursor: pointer
@@ -55,14 +55,14 @@
       background-color: color("background")
 
       &--start
-        transform: rotate(-90deg) translateX(5px)
+        transform: rotate(-90deg) translateX(4px)
 
       &--end
-        transform: rotate(-90deg) translateX(-5px)
+        transform: rotate(-90deg) translateX(-4px)
 
   &__line
     background-color: color("primary")
-    border-radius: 2px
+    border-radius: 3px
     height: 4px
     width: 100%
 
