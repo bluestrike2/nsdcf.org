@@ -10,7 +10,7 @@ The Norwin School District Community Foundation is proud to sponsor its annual *
 
 For 2018, the NSDCF's goal is raise $5000 for the following programs:
 
-#### [Community Scholarship Programs]({{< ref "/programs/scholarships" >}})
+#### Community Scholarship Programs
 
 The NSDCF manages over twenty-three community scholarship endowment funds for Norwin students. Our goal is to help grow five of our smallest funds so that future students who earn these scholarships will benefit from greater financial support as they begin their post-secondary educations:
 
@@ -24,6 +24,10 @@ The NSDCF manages over twenty-three community scholarship endowment funds for No
 
 The Education Innovation Grant helps Norwin teachers implement innovative instruction methods to enrinch and enhance student learning by providing start-up funds. Previous grant recipients, including the *CPR* and *Stop the Bleed* curriculums, have gone on to receive district funding as part of the larger Norwin curriculum.
 
-On this Day of Giving, please make a donation online at the NSDCF website. Your support can help make a difference for the Norwin community.
+#### Your Support is Crucial
+
+On this Day of Giving, please make a donation online at the NSDCF website. Donors may choose to donate to a specific program, or to the NSDF's efforts in general. Your support can help make a difference for the Norwin community.
+
+Alternatively, donations may be made via check made payable to the Norwin School District Community Foundation and sent to *281 McMahon Drive North Huntingdon, PA 15642*  with "Day of Giving" in the memo line and the name of a specific program for the donation, if desired.
 
 The Norwin School District Community Foundation is a 501(c)(3) nonprofit organization which was established in 2007 to develop and support educational programs and activities which benefit Norwin students, increase community philanthropy, and administer scholarship funds for Norwin graduates.
