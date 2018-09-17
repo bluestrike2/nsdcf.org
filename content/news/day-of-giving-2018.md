@@ -14,13 +14,13 @@ For 2018, the NSDCF's goal is raise $5000 for the following programs:
 
 The NSDCF manages over twenty-three community scholarship endowment funds for Norwin students. Our goal is to help grow five of our smallest funds so that future students who earn these scholarships will benefit from greater financial support as they begin their post-secondary educations:
 
-* [*David J. Karas Memorial Scholarship*]({{< ref "karas.md" >}}) for students with oustanding records of school and community service as well as moral character.
-* [*Elynor Mae Bruce Sutter Scholarship*]({{< ref "sutter.md" >}}) for music education and piano and choral perfomance.
-* [*J. Walter Miles Memorial Scholarship*]({{< ref "miles.md" >}}) for math and science students who go on to attend either Cornell University or the University of Pittsburgh.
-* [*M. Dolores 'Dolly' Fink Scholarship*]({{< ref "fink.md" >}}) for female students studying health, nursing, or physical education.
-* [*Pastarini Scholarship*]({{< ref "pastarini.md" >}}) for students who demonstrated excellence in music performance at Norwin and plan to study vocal music, music education, history, education, or leadership.
+* [*David J. Karas Memorial Scholarship*]({{< ref "/programs/index.md#karas" >}}) for students with oustanding records of school and community service as well as moral character.
+* [*Elynor Mae Bruce Sutter Scholarship*]({{< ref "/programs/index.md#sutter" >}}) for music education and piano and choral perfomance.
+* [*J. Walter Miles Memorial Scholarship*]({{< ref "/programs/index.md#miles" >}}) for math and science students who go on to attend either Cornell University or the University of Pittsburgh.
+* [*M. Dolores 'Dolly' Fink Scholarship*]({{< ref "/programs/index.md#fink" >}}) for female students studying health, nursing, or physical education.
+* [*Pastarini Scholarship*]({{< ref "/programs/index.md#pastarini" >}}) for students who demonstrated excellence in music performance at Norwin and plan to study vocal music, music education, history, education, or leadership.
 
-#### [Educator Innovation Grant Programs]({{< ref "/programs/grants" >}})
+#### [Educator Innovation Grant Programs]({{< ref "/programs/index.md#grants" >}})
 
 The Education Innovation Grant helps Norwin teachers implement innovative instruction methods to enrinch and enhance student learning by providing start-up funds. Previous grant recipients, including the *CPR* and *Stop the Bleed* curriculums, have gone on to receive district funding as part of the larger Norwin curriculum.
 
