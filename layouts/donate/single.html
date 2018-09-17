@@ -90,6 +90,8 @@
             <span class="button__label--svg">Pay with</span>
             {{ partial "svg/paypal.svg" (dict "class" "button__icon button__icon--paypal") }}
           </button>
+
+          <p class="donation_form__small_msg">{{ .Params.payByCheck | markdownify }}</p>
         </div>
       </form>
     </div>

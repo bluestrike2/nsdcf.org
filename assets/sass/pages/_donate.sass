@@ -7,43 +7,53 @@
     max-width: 50em
 
 
-.donation_form__fieldgroup
-  margin-bottom: $halfGutter
-  &--btn
-    text-align: center
+  &__fieldgroup
+    margin-bottom: $halfGutter
+    &--btn
+      text-align: center
 
-.donation_form__sub_heading
-  margin-bottom: scale(small)
-  +respond("tablet-landscape")
-    margin-left: -2.25em
+  &__sub_heading
+    margin-bottom: scale(small)
+    +respond("tablet-landscape")
+      margin-left: -2.25em
 
-  &::before
-    content: counter(donation_fieldgroup-counter)
-    counter-increment: donation_fieldgroup-counter
-    display: inline-block
-    height: 1.25em
-    width: 1.25em
-    background: color("tertiary", "light")
-    border-radius: 100%
-    color: #fff
-    font-size: scale(h4)
-    line-height: 1.25em
-    margin-right: scale(x-small)
-    text-align: center
-    vertical-align: middle
+    &::before
+      content: counter(donation_fieldgroup-counter)
+      counter-increment: donation_fieldgroup-counter
+      display: inline-block
+      height: 1.25em
+      width: 1.25em
+      background: color("tertiary", "light")
+      border-radius: 100%
+      color: #fff
+      font-size: scale(h4)
+      line-height: 1.25em
+      margin-right: scale(x-small)
+      text-align: center
+      vertical-align: middle
+      float: left
+
+  &__small_msg
+    font-size: scale(small)
+
 
 .donation_boxes
   display: flex
   align-items: center
   justify-content: center
   flex-wrap: wrap
+  +respond("tablet-landscape")
+    margin: 0 auto
+    max-width: 22em
 
 .donation_box
   //border: 1px solid color(background, dark)
-  width: 50%
-  margin: 0 $halfGutter*.5 $halfGutter
+  //width: 50%
+  margin: 0 $halfGutter*.5 $halfGutter 0
+  flex: 1 1 48%
+  flex-wrap: wrap
   +respond("tablet-portrait")
-    width: 30%
+    flex: 1 1 30%
 
 .donation_box
   &__check
@@ -96,3 +106,7 @@
 .form__select--donate
   width: 100%
   //padding: 1em
+  +respond("tablet-landscape")
+    display: block
+    margin: 0 auto
+    max-width: 22em
