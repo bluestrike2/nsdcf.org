@@ -1,0 +1,45 @@
+{{ define "main" }}
+  <article>
+    <header class="mast mast--single">
+      <h1 class="mast__title">{{ .Title }}</h1>
+
+      <!-- <figure class="mast__cover">
+        <img class="mast__cover-img" src="" />
+      </figure> -->
+    </header>
+
+    <div class="content">{{ .Content }}</div>
+  </article>
+
+  <section class="content programs_section programs_section--odd">
+    {{ with .Resources.GetMatch "scholarships.md" }}
+      <h2 class="programs_section__title">{{ .Title }}</h2>
+      <div class="programs_section__content">{{ .Content }}</div>
+    {{ end }}
+
+    {{ range .Resources.Match "scholarships/*.md" }}
+      {{ partial "programs/li.html" (dict "page" . "class_prefix" "listing_item" "class_modifier" "scholarship") }}
+    {{ end }}
+  </section>
+
+  <section class="content programs_section programs_section--odd">
+    {{ with .Resources.GetMatch "grants.md" }}
+      <h2 class="programs_section__title">{{ .Title }}</h2>
+      <div class="programs_section__content">{{ .Content }}</div>
+    {{ end }}
+  </section>
+
+  <section class="content programs_section programs_section--odd">
+    {{ with .Resources.GetMatch "memorials.md" }}
+      <h2 class="programs_section__title">{{ .Title }}</h2>
+      <div class="programs_section__content">{{ .Content }}</div>
+    {{ end }}
+
+    {{ range .Resources.Match "memorials/*.md" }}
+      {{ partial "programs/li.html" (dict "page" . "class_prefix" "listing_item" "class_modifier" "memorial") }}
+    {{ end }}
+  </section>
+
+
+
+{{ end }}
