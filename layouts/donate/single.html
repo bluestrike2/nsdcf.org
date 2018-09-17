@@ -51,9 +51,9 @@
               </label>
             </div>
             <div class="donation_box">
-              <label class="donation_box__label" for="donation_box--custom">
-                <span class="donation_box__currency">$</span>
-                <input class="donation_box__custom" type="number" name="amount" id="donation_box--custom">
+              <input class="donation_box__check" type="radio" name="amount" value="" id="donation_box--other" >
+              <label class="donation_box__label" for="donation_box--other">
+                <span class="donation_box__amt donation_box__amt--other">Other</span>
               </label>
             </div>
           </div>
@@ -62,23 +62,23 @@
         <div class="donation_form__fieldgroup">
           <h5 class="donation_form__sub_heading">{{ .Params.stepTwoHeading }}</h5>
           <select class="form__select form__select--donate" name="item_number">
-            <option value="Day of Giving 2018—{{ .Params.genericDonationName }}">{{ .Params.genericDonationName }}</option>
+            <option value="NSDCF Day of Giving 2018">{{ .Params.genericDonationName }}</option>
             {{ with .Site.GetPage "/programs" }}
               {{ with .Resources.GetMatch "scholarships.md" }}<optgroup label="{{ .Title }}">{{ end }}
                 {{ range .Resources.Match "scholarships/*.md" }}
-                  <option value="Day of Giving 2018—{{ .Title }}">{{ .Title }}</option>
+                  <option value="NSDCF Day of Giving 2018 ({{ .Title }})">{{ .Title }}</option>
                 {{ end }}
               </optgroup>
 
               {{ with .Resources.GetMatch "grants.md" }}
                 <optgroup label="{{ .Title }}">
-                  <option value="Day of Giving 2018—{{ .Title }}">{{ .Title }}</option>
+                  <option value="NSDCF Day of Giving 2018 ({{ .Title }})">{{ .Title }}</option>
                 </optgroup>
               {{ end }}
 
               {{ with .Resources.GetMatch "memorials.md" }}<optgroup label="{{ .Title }}">{{ end }}
                 {{ range .Resources.Match "memorials/*.md" }}
-                  <option value="Day of Giving 2018—{{ .Title }}">{{ .Title }}</option>
+                  <option value="NSDCF Day of Giving 2018 ({{ .Title }})">{{ .Title }}</option>
                 {{ end }}
               </optgroup>
             {{ end }}
