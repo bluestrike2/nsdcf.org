@@ -6,6 +6,8 @@ draft = false
 title = "Day of Giving 2018"
 +++
 
+## Join us in supporting Norwin Students, on our Annual Day of Giving. [Donate Today](/donate/)
+
 The Norwin School District Community Foundation is proud to sponsor its annual *Day of Giving* on Wednesday, September 19th during Norwin's Homecoming Week. During that 24 hour period, you can join hundreds of other Norwin community members, parents, students, teachers, and friends in giving back to the community.
 
 For 2018, the NSDCF's goal is raise $5000 for the following programs:
