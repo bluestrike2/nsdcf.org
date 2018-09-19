@@ -1,0 +1,120 @@
+{{ define "main" }}
+  <article>
+    <header class="mast mast--single">
+      <h1 class="mast__title">{{ .Title }}</h1>
+    </header>
+
+    <div class="content">{{ .Content }}</div>
+
+    <div class="content donation_form donation_form--alumni">
+      <h3>Become a Member Today</h3>
+      <h5><a href="#alumni--gold" ref="alumni--gold" class="alumni-form__link">Gold Knight Lifetime Membership&mdash;Discounted</a></h5>
+      <div class="alumni-form__item" id="alumni--gold">
+        <small>Lifetime membership includes static cling and membership/discount card</small>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="8EMUHWZ95WZAL">
+          <input type="hidden" name="currency_code" value="USD">
+
+          <fieldset class="form__fieldset">
+            <input type="hidden" name="on0" value="Membership Type">
+            <label class="form__label" for="os0">Membership Level</label>
+            <small class="form__description">Based on year of HS graduation:</small>
+            <select class="form__select" name="os0">
+            	<option value="To 1960">To 1960 $25.00 USD</option>
+            	<option value="1961-65">1961-65 $50.00 USD</option>
+            	<option value="1966-70">1966-70 $75.00 USD</option>
+            	<option value="1971-75">1971-75 $100.00 USD</option>
+            	<option value="1976-80">1976-80 $125.00 USD</option>
+            	<option value="1981-85">1981-85 $150.00 USD</option>
+            	<option value="1986-90">1986-90 $175.00 USD</option>
+            	<option value="1991-95">1991-95 $200.00 USD</option>
+            	<option value="1996-00">1996-00 $225.00 USD</option>
+            	<option value="2000-present">2000-present $250.00 USD</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <input type="hidden" name="on1" value="Norwin Graduate?">
+            <label class="form__label" for="os1">Are you a Norwin Graduate?</label>
+            <select class="form__select" name="os1">
+            	<option value="Yes">Yes </option>
+            	<option value="No">No </option>
+            </select>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <label class="form__label" for="os2">Year of Graduation:</label>
+            <input type="hidden" name="on2" value="Graduation Year">
+            <input type="text" name="os2" maxlength="200">
+          </fieldset>
+
+          <button class="form__button button--svg button--paypal" type="submit">
+            <span class="button__label--svg">Pay with</span>
+            {{ partial "svg/paypal.svg" (dict "class" "button__icon button__icon--paypal") }}
+          </button>
+        </form>
+      </div>
+
+      <h5><a href="#alumni--blue" ref="alumni--blue" class="alumni-form__link">Blue Knight Annual Membership&mdash;$50</a></h5>
+      <div class="alumni-form__item" id="alumni--blue">
+        <small>Annual membership includes static cling, membership/discount card, and NAFA t-shirt.</small>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="78WX2523RLPRW">
+          <input type="hidden" name="currency_code" value="USD">
+
+          <fieldset class="form__fieldset">
+            <input type="hidden" name="on1" value="Norwin Graduate?">
+            <label class="form__label" for="os1">Are you a Norwin Graduate?</label>
+            <select class="form__select" name="os1">
+            	<option value="Yes">Yes </option>
+            	<option value="No">No </option>
+            </select>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <label class="form__label" for="os2">Year of Graduation:</label>
+            <input type="hidden" name="on2" value="Graduation Year">
+            <input type="text" name="os2" maxlength="200">
+          </fieldset>
+
+          <button class="form__button button--svg button--paypal" type="submit">
+            <span class="button__label--svg">Pay with</span>
+            {{ partial "svg/paypal.svg" (dict "class" "button__icon button__icon--paypal") }}
+          </button>
+        </form>
+      </div>
+
+      <h5><a href="#alumni--white" ref="alumni--white" class="alumni-form__link">White Knight Annual Membership&mdash;$20</a></h5>
+      <div class="alumni-form__item" id="alumni--white">
+        <small>Annual membership includes static cling and membership/discount card.</small>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="AKLRMEN942F9A">
+          <input type="hidden" name="currency_code" value="USD">
+
+          <fieldset class="form__fieldset">
+            <input type="hidden" name="on1" value="Norwin Graduate?">
+            <label class="form__label" for="os1">Are you a Norwin Graduate?</label>
+            <select class="form__select" name="os1">
+            	<option value="Yes">Yes </option>
+            	<option value="No">No </option>
+            </select>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <label class="form__label" for="os2">Year of Graduation:</label>
+            <input type="hidden" name="on2" value="Graduation Year">
+            <input type="text" name="os2" maxlength="200">
+          </fieldset>
+
+          <button class="form__button button--svg button--paypal" type="submit">
+            <span class="button__label--svg">Pay with</span>
+            {{ partial "svg/paypal.svg" (dict "class" "button__icon button__icon--paypal") }}
+          </button>
+        </form>
+      </div>
+    </div>
+  </article>
+{{end}}

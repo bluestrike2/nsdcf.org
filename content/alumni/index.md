@@ -1,9 +1,9 @@
----
-title: Norwin Alumni & Friends
-date: 2017-12-15 17:06:03 +0000
-
----
-*As part of the Day of Giving, Alumni lifetime memberhsips are 50% off for September 18, 2018 only. Contact us at [mailto:alumni@nsdcf.org?subject=Day&20Of&20Giving&20-Discounted&20Alumni&20Membership]
++++
+title = "Norwin Alumni & Friends"
+date = "2017-12-15 17:06:03 +0000"
+type = "alumni"
++++
+*As part of the Day of Giving, Alumni lifetime memberhsips are 50% off for September 18th through the 22nd.*
 
 For most graduates (and friends!!) of Norwin High School, there remain fond memories of friendships, teachers and activities. Most would agree that Norwin prepared them well to take that next life step toward further education and/or career. Most are proud to say they are Norwin graduates (or friends) and desire to always see Norwin being that place where students have high quality opportunities to learn and grow.
 
@@ -31,4 +31,4 @@ If you would like to contribute to the Scholarship Fund, send your tax deductibl
 
 ### NORWIN DISTINGUISHED ALUMNI
 
-Many Norwin Alumni have gone on to successful careers and the Norwin Alumni and Friends Association is privileged to have the opportunity to recognize these distinguished alumni for their life achievements at an Annual Dinner where they are honored for their life achievements. Awardees  receive a plaque for home and a second plaque is placed on the "Wall of Fame" across from the entrance to the Norwin High School Auditorium.  **Visit www.nsdcf.org or contact Debbie Kunkle, NAFA President, at djk721@verizon.net for information about the how to nominate a Norwin graduate for consideration to be named a distinguished alumnus** and/or information about the Annual Distinguished Alumni Banquet.
+Many Norwin Alumni have gone on to successful careers and the Norwin Alumni and Friends Association is privileged to have the opportunity to recognize these distinguished alumni for their life achievements at an Annual Dinner where they are honored for their life achievements. Awardees  receive a plaque for home and a second plaque is placed on the "Wall of Fame" across from the entrance to the Norwin High School auditorium.
