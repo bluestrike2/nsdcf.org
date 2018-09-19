@@ -9,3 +9,45 @@
 
   &__heading
     //
+
+.giving-alert
+  background: color(primary, light)
+  color: color(background)
+  padding-bottom: $gutter
+  padding-top: $gutter*2.5
+  text-align: center
+  +respond("desktop")
+    padding-bottom: $halfGutter * 1.5
+    padding-top: $gutter
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 500
+
+
+  &__text
+    font-size: scale(base)
+    margin-top: 0
+
+  &__link
+    color: color(accent)
+    transition: color .25s
+    &:hover
+      color: color(accent, dark)
+
+  &__btn
+    border: 1px solid color(background)
+    border-radius: 2em
+    color: color(background)
+    display: inline-block
+    font-family: $family-sans-serif
+    font-size: scale(small)
+    letter-spacing: 2px
+    margin: $gutter auto 0
+    padding: scale(x-small) scale(h2)
+    transition: color .25s, background-color .25s, border-color .25s
+    text-transform: uppercase
+    &:hover
+      background: color(accent, dark)
+      border-color: color(accent, dark)
+      color: color(primary)

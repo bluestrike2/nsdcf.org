@@ -3,7 +3,7 @@ author = "Jack Boylan"
 date = 2018-09-05T12:38:14-05:00
 categories = ["events"]
 draft = false
-title = "Day of Giving 2018"
+title = "Support Norwin Students on this Year's Day of Giving"
 +++
 
 ## Join us in supporting Norwin Students, on our Annual Day of Giving. [Donate Today](/donate/)
