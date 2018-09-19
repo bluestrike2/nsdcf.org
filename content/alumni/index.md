@@ -3,6 +3,8 @@ title: Norwin Alumni & Friends
 date: 2017-12-15 17:06:03 +0000
 
 ---
+*As part of the Day of Giving, Alumni lifetime memberhsips are 50% off for September 18, 2018 only. Contact us at [mailto:alumni@nsdcf.org?subject=Day&20Of&20Giving&20-Discounted&20Alumni&20Membership]
+
 For most graduates (and friends!!) of Norwin High School, there remain fond memories of friendships, teachers and activities. Most would agree that Norwin prepared them well to take that next life step toward further education and/or career. Most are proud to say they are Norwin graduates (or friends) and desire to always see Norwin being that place where students have high quality opportunities to learn and grow.
 
 The Norwin Alumni and Friends Association is a group of Norwin graduates and others who have come to appreciate and respect Norwin.  To assure that Norwin always remains as a highly regarded premier school district, alumni and friends of Norwin, in partnership with the Norwin School District Community Foundation, have created the Norwin Alumni and Friends Association (NAFA) whose goals are:
@@ -11,7 +13,7 @@ The Norwin Alumni and Friends Association is a group of Norwin graduates and oth
 * To provide members a directory to locate classmates and friends;
 * To provide a forum for alumni to network for business or personal reasons;
 * To provide outings and activities to build ongoing camaraderie and friendships;
-* To partner with the Norwin School District Community Foundation, a  501 (c) (3) charitable organization, to support the Norwin School District through supplemental funding of programs and initiatives to assure quality educational experiences for Norwin students.
+* To partner with the Norwin School District Community Foundation, a  501c3 charitable organization, to support the Norwin School District through supplemental funding of programs and initiatives to assure quality educational experiences for Norwin students.
 
 NAFA will be as effective and fun as its members want it to be.  Become a member and help build the foundation of NAFA to assure it has a positive impact on its members and the Norwin schools, students and community.
 
