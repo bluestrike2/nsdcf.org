@@ -1,10 +1,8 @@
 +++
 author = "Jack Boylan"
-categories = ["alumni"]
-date = "2019-10-01T01:00:00+00:00"
+date = 2019-10-01T01:00:00+00:00
 draft = false
 title = "Now Accepting Nominations for 2019 Distinguished Alumni"
-
 [[resources]]
   name  = "nomination-form"
   src   = "2019-nomination-form.pdf"
@@ -12,6 +10,8 @@ title = "Now Accepting Nominations for 2019 Distinguished Alumni"
   [resources.params]
     icon = "pdf"
 +++
+
+##### {{< file "nomination-form*" "Download the 2019 Distinguished Alumni Nomination Form" >}}
 
 The Norwin Alumni & Friends Association (NAFA) is seeking nominations for the 2019
 Distinguished Alumni Award to be presented at the Third Annual Knight of
@@ -42,5 +42,3 @@ Nominations are due on or before February 1, 2019 at 4:00 PM. Please contact Lau
 Steiner, NAFA Nominating Committee Chair, via email at lauren.steiner11@gmail.com
 with any questions. Nomination forms and supporting documents can also be mailed to
 NAFA *281 McMahon Drive North Huntingdon, PA 15642*.
-
-##### {{< file "nomination-form*" "Download the 2019 Distinguished Alumni Nomination Form" >}}
