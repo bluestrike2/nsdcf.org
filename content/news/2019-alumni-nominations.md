@@ -3,15 +3,9 @@ author = "Jack Boylan"
 date = 2019-10-01T01:00:00+00:00
 draft = false
 title = "Now Accepting Nominations for 2019 Distinguished Alumni"
-[[resources]]
-  name  = "nomination-form"
-  src   = "2019-nomination-form.pdf"
-  title = "Nomination Form, 2019"
-  [resources.params]
-    icon = "pdf"
 +++
 
-##### {{< file "nomination-form*" "Download the 2019 Distinguished Alumni Nomination Form" >}}
+##### [Download the 2019 Nomination Form](/uploads/2019/2019-nomination-form.pdf)
 
 The Norwin Alumni & Friends Association (NAFA) is seeking nominations for the 2019
 Distinguished Alumni Award to be presented at the Third Annual Knight of
