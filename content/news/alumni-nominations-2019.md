@@ -1,6 +1,6 @@
 +++
 author = "Jack Boylan"
-date = 2019-10-01T01:00:00+00:00
+date = 2018-10-01T12:38:27-05:00
 draft = false
 title = "Now Accepting Nominations for 2019 Distinguished Alumni"
 +++
