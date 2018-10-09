@@ -20,6 +20,9 @@
     &--btn
       text-align: center
 
+  &__simple_sub_heading
+    margin-bottom: scale(small)
+
   &__sub_heading
     margin-bottom: scale(small)
     +respond("tablet-landscape")
@@ -111,10 +114,15 @@
     height: 100%
     width: 5ch
 
-.form__select--donate
-  width: 100%
-  //padding: 1em
-  +respond("tablet-landscape")
-    display: block
-    margin: 0 auto
-    max-width: 22em
+.form__select
+  &--donate
+    width: 100%
+    //padding: 1em
+    +respond("tablet-landscape")
+      display: block
+      margin: 0 auto
+      max-width: 22em
+  &--shop
+    margin-right: $gutter
+    +respond("tablet-landscape")
+      min-width: 18em
