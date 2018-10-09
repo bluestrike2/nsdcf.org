@@ -17,7 +17,7 @@ draft = false
 
 Norwin schools are proud to host annual Veterans Day assemblies to recognize the service of Norwin veterans and bring them together with students. This year, the NSDCF is offering these shirts, white in both short and long sleeve, to help show our support.
 
-Twenty-five percent of all proceeds will be donated to local veterans organizations.
+Twenty-five percent of all proceeds will be donated to local veterans organizations. Orders are due by **October 17th**.
 
 <div class="form">
   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
