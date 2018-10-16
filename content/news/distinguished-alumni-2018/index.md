@@ -35,7 +35,7 @@ supportText    = "The Foundation is proud to offer a Chinese auction and raffle 
 
 [[resources]]
   name = "mast"
-  src  = "images/mast.jpg"
+  src  = "images/2018-recipients.jpg"
 
 [[resources]]
   src  = "recipients/*.md"

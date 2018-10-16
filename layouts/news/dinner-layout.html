@@ -2,8 +2,8 @@
   <article itemscope itemtype="http://schema.org/Event">
     {{ $mast_img := .Resources.GetMatch "mast" }}
 
-    <header class="mast mast--cover"
-            style="background:linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url({{ $mast_img.RelPermalink }}) center center / cover no-repeat;">
+    <header class="mast mast--cover mast--dinner"
+            style="background:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url({{ $mast_img.RelPermalink }}) center center / cover no-repeat;">
 
       <div class="mast__content">
         <h1 class="mast__title" itemprop="name" >{{ .Title }}</h1>
