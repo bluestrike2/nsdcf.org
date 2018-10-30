@@ -19,7 +19,7 @@ layout  = "mast"
 
 On Sunday, December 16, 2018, the NSDCF will welcome the River City Brass, joined by the Norwin High School Select Choirs, for the *Magic of Christmas* holiday concert at the Norwin High School auditorium.
 
-**Tickets will be available online starting November 1, 2018.**
+**Tickets will be available online starting November 1, 2018 for $20.**
 
 ### River City Brass: America's Premiere Professional Band
 
