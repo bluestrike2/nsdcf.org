@@ -115,6 +115,34 @@
           </button>
         </form>
       </div>
+
+
+      <h5><a href="#alumni--business" ref="alumni--business" class="alumni-form__link">Preferred Partner Business Membership</a></h5>
+      <div class="alumni-form__item" id="alumni--business">
+        <small><strong>Two-year business membership, discounted to $200 for the month of November.</strong> Businesses wishing to support NAFA will receive the following benefits:</small>
+        <ul>
+          <li>Preferred Partner status on our website along with a brief description of your business.</li>
+          <li>Quarter-page ad space in our quarterly newsletters, giving you the opportunity to promote specials and programs</li>
+          <li>Display sign for your business.</li>
+          <li>One full-page ad in the River City Brass program for the December 16, 2018 concert.</li>
+        </ul>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="3ELMG3J9XYKRE">
+          <input type="hidden" name="currency_code" value="USD">
+
+          <fieldset class="form__fieldset">
+            <label class="form__label" for="os0">Business Name:</label>
+            <input type="hidden" name="on0" value="Business Name">
+            <input type="text" name="os0" maxlength="200">
+          </fieldset>
+
+          <button class="form__button button--svg button--paypal" type="submit">
+            <span class="button__label--svg">Pay with</span>
+            {{ partial "svg/paypal.svg" (dict "class" "button__icon button__icon--paypal") }}
+          </button>
+        </form>
+      </div>
     </div>
   </article>
 {{end}}
