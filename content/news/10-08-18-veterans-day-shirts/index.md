@@ -15,9 +15,11 @@ draft = false
 
 ## Help show your support for Norwin veterans this Veterans Day
 
+*After repeated requests, the NSDCF is proud to extend its offering of the 2018 Veterans Day shirts. Shirts may be ordered online until November 30th.*
+
 Norwin schools are proud to host annual Veterans Day assemblies to recognize the service of Norwin veterans and bring them together with students. This year, the NSDCF is offering these shirts, white in both short and long sleeve, to help show our support.
 
-Twenty-five percent of all proceeds will be donated to local veterans organizations. Orders are due by **October 17th**.
+Twenty-five percent of all proceeds will be donated to local veterans organizations. Orders are due by **November 30th**.
 
 <div class="form">
   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -83,4 +85,4 @@ Twenty-five percent of all proceeds will be donated to local veterans organizati
   </form>
 </div>
 
-<p class="donation_form__small_msg"><br /><strong>Please Note:</strong> Prices include $1 handling fee. Shirts ordered online must be picked up locally at the Norwin Public Library's Coffee Shop on November 7th between 5pm and 7pm, as we are regrettably unable to ship orders. Please <a href="mailto:alumni@nsdcf.org">email us</a> with any questions.</p>
+<p class="donation_form__small_msg"><br /><strong>Please Note:</strong> Prices include $1 handling fee. Online orders may be picked up in-person on December 13th, from 5 to 7pm, at Circleville United Methodist Church, 11600 Parkway Drive, North Huntingdon, PA 15642. Please <a href="mailto:alumni@nsdcf.org">email us</a> with any questions.</p>
