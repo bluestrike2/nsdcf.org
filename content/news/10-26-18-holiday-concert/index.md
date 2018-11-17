@@ -74,7 +74,7 @@ Additional information about River City Brass can be found on [www.rivercitybras
 
 ### Norwin High School Chamber Singers
 
-Also joining the River City Brass will be the Norwin High School Chamber Singers, directed by Mrs. Lauren Scheirer, and the Bel Canto Women's Choir and Show Choir, directed by Mrs. Bridget Faulk, who will be comining to provide vocal accompaniment during select pieces.
+Also joining the River City Brass will be the Norwin High School Chamber Singers, directed by Mrs. Lauren Scheirer, and the Bel Canto Women's Choir and Show Choir, directed by Mrs. Bridget Faulk, who will be combining to provide vocal accompaniment during select pieces.
 
 ### About the NSDCF
 
