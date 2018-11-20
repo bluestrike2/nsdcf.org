@@ -2,6 +2,10 @@
 title = "Norwin Alumni & Friends"
 date = "2017-12-15 17:06:03 +0000"
 type = "alumni"
+layout  = "mast"
+[[resources]]
+  src  = "alumni-mast.jpg"
+  name = "mast"
 +++
 
 For most graduates (and friends!!) of Norwin High School, there remain fond memories of friendships, teachers and activities. Most would agree that Norwin prepared them well to take that next life step toward further education and/or career. Most are proud to say they are Norwin graduates (or friends) and desire to always see Norwin being that place where students have high quality opportunities to learn and grow.

@@ -1,6 +1,12 @@
 {{ define "main" }}
   <article>
-    <header class="mast mast--single">
+    {{ if eq .Params.layout "mast" }}
+      {{ $mast_img := .Resources.GetMatch "mast" }}
+      <header class="mast mast--single_cover" style="background:linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url({{ $mast_img.RelPermalink }}) center center / cover no-repeat;">
+    {{ else }}
+      <header class="mast mast--single">
+    {{ end }}
+    
       <h1 class="mast__title">{{ .Title }}</h1>
     </header>
 
@@ -26,11 +32,7 @@
             	<option value="1966-70">1966-70 $150.00 USD</option>
             	<option value="1971-75">1971-75 $200.00 USD</option>
             	<option value="1976-80">1976-80 $250.00 USD</option>
-            	<option value="1981-85">1981-85 $300.00 USD</option>
-            	<option value="1986-90">1986-90 $350.00 USD</option>
-            	<option value="1991-95">1991-95 $400.00 USD</option>
-            	<option value="1996-00">1996-00 $450.00 USD</option>
-            	<option value="2000-present">2000-present $500.00 USD</option>
+            	<option value="1981-85">1981-present $300.00 USD</option>
             </select>
           </fieldset>
 
@@ -58,7 +60,7 @@
 
       <h5><a href="#alumni--blue" ref="alumni--blue" class="alumni-form__link">Blue Knight Annual Membership&mdash;$50</a></h5>
       <div class="alumni-form__item" id="alumni--blue">
-        <small>Annual membership includes static cling, membership/discount card, and NAFA t-shirt.</small>
+        <small>Blue Knight Annual Membership includes NAFA t-shirt, static cling, and membership/discount card.</small>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="78WX2523RLPRW">
@@ -88,7 +90,7 @@
 
       <h5><a href="#alumni--white" ref="alumni--white" class="alumni-form__link">White Knight Annual Membership&mdash;$20</a></h5>
       <div class="alumni-form__item" id="alumni--white">
-        <small>Annual membership includes static cling and membership/discount card.</small>
+        <small>White Knight annual membership includes static cling and membership/discount card.</small>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="AKLRMEN942F9A">
