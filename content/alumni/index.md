@@ -8,6 +8,8 @@ layout  = "mast"
   name = "mast"
 +++
 
+*Between Friday, November 22 and Monday, November 26, NAFA is pleased to announce that lifetime memberships will be available at a fifty percent discount. Discounted lifetime memberships do not include complimentary shirt or stadium blanket.*
+
 For most graduates (and friends!!) of Norwin High School, there remain fond memories of friendships, teachers and activities. Most would agree that Norwin prepared them well to take that next life step toward further education and/or career. Most are proud to say they are Norwin graduates (or friends) and desire to always see Norwin being that place where students have high quality opportunities to learn and grow.
 
 The Norwin Alumni and Friends Association is a group of Norwin graduates and others who have come to appreciate and respect Norwin.  To assure that Norwin always remains as a highly regarded premier school district, alumni and friends of Norwin, in partnership with the Norwin School District Community Foundation, have created the Norwin Alumni and Friends Association (NAFA) whose goals are:
