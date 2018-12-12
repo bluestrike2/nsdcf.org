@@ -50,6 +50,7 @@ sectionPagesMenu = "main"
     identifier  = "alumni"
     url         = "/alumni"
 
+
   [[menu.main]]
     name        = "News"
     weight      = 40

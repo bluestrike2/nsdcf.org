@@ -10,6 +10,10 @@
       <h1 class="mast__title">{{ .Title }}</h1>
     </header>
 
-    <div class="content">{{ .Content }}</div>
+    <div class="content">
+      {{ .Content }}
+    </div>
   </article>
-{{end}}
+
+  {{ partial "alumni-side-nav.html" . }}
+{{ end }}
