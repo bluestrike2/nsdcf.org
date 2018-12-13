@@ -36,4 +36,4 @@ The NSDCF's donation will be used to support the [North Huntingdon chapter's](ht
 
 The Honor Guard of VFW Post 781 of Irwin, Pennsylvania is a volunteer group of veterans who are called upon to provide military funeral honors for qualified veterans when requested. Military honors are a final recognition of a veterans' service on behalf of a grateful nation.
 
-VFW Post 781 is the Irwin, Pennsylvania post for the Veterans of Foreign Wars, the United States' largest and oldest war verterans service organization, ans is located at 100 Billott Avenue.
+VFW Post 781 is the Irwin, Pennsylvania post for the Veterans of Foreign Wars, the United States' largest and oldest war verterans service organization, and is located at 100 Billott Avenue.
