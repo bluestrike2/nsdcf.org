@@ -4,6 +4,7 @@ categories = ["alumni"]
 date = "2017-12-15T13:30:39+00:00"
 draft = false
 title = "Distinguished Alumni 2018 Nominations"
+aliases = ["/news/distinguished-alumni-2018-nominations.md"]
 +++
 
 The Norwin Alumni and Friends Association will host the second annual Knight of Distinguished Alumni Banquet on Thursday, May 24, 2018 at Stratigos Banquet Centre. The event will feature a cash bar and full buffet dinner followed by the presentation of the 2018 Class of Distinguished Alumni.

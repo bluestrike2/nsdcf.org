@@ -9,6 +9,7 @@ layout_hero = true
 title       = "Second Annual Knight of Distinguished Alumni"
 titleAlt    = "Join Us in Celebrating a Knight of Distinguished Alumni"
 url         = "/alumni-dinner"
+aliases     = ["/news/distinguished-alumni-2018"]
 
 creditsHeading = "Credits"
 miscHeading    = "Questions"

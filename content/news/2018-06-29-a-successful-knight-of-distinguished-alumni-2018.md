@@ -5,7 +5,7 @@ description = "2018 Distinguished Alumni Dinner"
 draft = false
 tags = ["", ""]
 title = "A Successful Knight of Distinguished Alumni"
-
+aliases = ["/news/a-successful-knight-of-distinguished-alumni-2018"]
 +++
 On May 24, 2018, an enthusiastic crowd of 217 friends and family of the 2018 Distinguished Alumni Honorees gathered to celebrate the achievements of these outstanding Norwin graduates.  Those honored included **William Caruthers, Esq. (1973), Hon. Mark Critz (1980), Dr. Constance DeMore (1991), Dr. Robin Dillon (1973), Dr. Heather Newell (1988), Mr. Dan Priatko (1980) and Mr. Rich Siniawski (1966)**.  In addition, **Mr. Casey Harper** was honored as a **Distinguished Friend** of Norwin.
 

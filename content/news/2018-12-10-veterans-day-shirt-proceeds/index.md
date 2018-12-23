@@ -4,6 +4,7 @@ date  = 2018-12-10T15:20:00-05:00
 categories = ["news"]
 draft = false
 layout = "mast"
+aliases = ["/news/12-10-18-veterans-day-shirt-proceeds"]
 
 [[resources]]
   name = "mast"
@@ -16,7 +17,7 @@ layout = "mast"
   src  = "vfw-honor-guard02.jpg"
 +++
 
-Recently, the Norwin School District Community Foundation [offered shirts]({{< ref "10-08-18-veterans-day-shirts/index.md" >}}) to the Norwin community meant to celebrate and honor the sacrifices and service of our nation's veterans with a unique Norwin design.
+Recently, the Norwin School District Community Foundation [offered shirts]({{< ref "2018-10-08-veterans-day-shirts/index.md" >}}) to the Norwin community meant to celebrate and honor the sacrifices and service of our nation's veterans with a unique Norwin design.
 
 At each of the Veteran's Day assemblies held throughout the Norwin School District this year, veterans on stage were greeted with the sight of hundreds of Norwin students of all ages wearing shirts proudly declaring *U__Knight__ed We Stand*.
 

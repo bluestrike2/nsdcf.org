@@ -32,6 +32,9 @@ sectionPagesMenu = "main"
     postal        = "15642"
     newsletter_description = "Community & school district news, events, and other relevant information via occassional email."
 
+[permalinks]
+  news = "/news/:year/:month/:title/"
+
 [[menu.main]]
   name        = "Our Story"
   weight      = 10

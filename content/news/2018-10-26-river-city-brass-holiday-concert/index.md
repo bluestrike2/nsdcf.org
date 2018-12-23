@@ -1,10 +1,14 @@
 +++
 title = "Join us for our Holiday Concert with the River City Brass"
-aliases = ["/concert"]
 categories = ["events"]
 date    = 2018-10-26T06:36:00-05:00
 draft   = false
 layout  = "mast"
+aliases = [
+            "/concert",
+            "/news/10-26-18-holiday-concert"
+          ]
+
 [[resources]]
   src  = "river-city-brass_logo.svg"
   name = "logo"
