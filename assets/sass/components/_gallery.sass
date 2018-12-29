@@ -1,0 +1,25 @@
+.gallery
+  +supports(grid)
+    display: grid
+    grid-gap: .4em
+    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr))
+    grid-auto-flow: dense
+    grid-auto-rows: 15em
+    // break out of container
+    margin: $gutter2 calc(50% - 50vw)
+    margin-left: calc((50% - 50vw) + 3.1805em)
+
+  &__img
+    height: 100%
+    width: 100%
+    object-fit: cover
+
+  &__item
+    +respond("tablet-portrait")
+      &:first-child
+        grid-area: 1 / 1 / span 2 / span 2
+        .gallery--big &
+          grid-column: 1 / -1
+
+      &:nth-child(3n)
+        grid-column: span 2

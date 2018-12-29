@@ -1,0 +1,12 @@
+{{ $img := $.Page.Resources.Match (.Get 0) }}
+
+
+<div class="gallery{{ with .Get 1 }} gallery--{{.}}{{end}}">
+  {{ with $img }}
+    {{ range . }}
+      <figure class="gallery__item">
+        <img class="gallery__img" src="{{ .RelPermalink }}" />
+      </figure>
+    {{ end }}
+  {{ end }}
+</div>
