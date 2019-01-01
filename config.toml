@@ -33,7 +33,7 @@ sectionPagesMenu = "main"
     newsletter_description = "Community & school district news, events, and other relevant information via occassional email."
 
 [permalinks]
-  news = "/news/:year/:month/:title/"
+  news = "/news/:year/:month/:slug"
 
 [[menu.main]]
   name        = "Our Story"
