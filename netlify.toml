@@ -1,6 +1,8 @@
 [build]
-  command = "hugo -D --ignoreCache -v"
+  command = "hugo --minify"
   publish = "public"
 
 [context.production.environment]
   HUGO_VERSION = "0.53"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
