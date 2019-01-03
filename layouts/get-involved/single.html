@@ -4,6 +4,19 @@
       <h1 class="mast__title">{{ .Title }}</h1>
     </header>
 
-    <div class="content">{{ .Content }}</div>
+    <div class="content">
+      {{ .Content }}
+
+      {{ with .Resources.Match "docs/**.pdf" }}
+        <h6 class="side-nav__title">Resources</h6>
+        <ul class="resources">
+          {{ range . }}
+            <li class="resources__li">
+              <a href="{{ .RelPermalink }}" target="_blank">{{.Title}}</a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
   </article>
 {{ end }}
