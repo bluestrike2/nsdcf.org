@@ -1,6 +1,6 @@
 +++
 date = "2017-12-15T12:44:58.000-05:00"
-title = "Education Improvement Tax Credit"
+title = "Educational Improvement Tax Credit"
 [[resources]]
 src = "docs/pa-dced-approval.pdf"
 title = "NSDCF Pennsylvania EITC Program Approval"
