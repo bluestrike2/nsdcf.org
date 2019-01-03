@@ -7,8 +7,14 @@ title = "Starting an Endowment"
     parent = "get-involved"
     weight = 30
 
-[resources]
-  src = "*.pdf"
+[[resources]]
+  src = "docs/scholarship_endowment_agreement.pdf"
+  title = "Endowed Scholarship Agreement"
+
+[[resources]]
+  src = "docs/scholarship_unendowed_agreement.pdf"
+  title = "Unendowed Scholarship Agreement"
+
 +++
 
 Starting an endowment fund with the Norwin School District Community Foundation is a great way to benefit Norwin students and programs for years to come. Because of our unique relationship with Norwin School District and the efforts of our volunteer board, there are minimal overhead or administrative costs for the Foundation to bear. This means the great majority of your donation or endowment will be implemented as you desire.
