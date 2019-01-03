@@ -3,6 +3,13 @@ title = "Get Involved"
 date  = "2017-12-17 21:41:41 +0000"
 layout  = "mast"
 
+[menu]
+  [menu.main]
+    name        = "Get Involved"
+    identifier  = "get-involved"
+    weight      = 50
+    url         = "/get-involved"
+
 [[resources]]
   src  = "mast.jpg"
   name = "mast"

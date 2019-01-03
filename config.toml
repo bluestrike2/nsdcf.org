@@ -10,7 +10,6 @@ metaDataFormat  = "toml"
 summaryLength   = 50
 pluralizelisttitles = false
 title           = "Norwin School District Community Foundation"
-sectionPagesMenu = "main"
 
 [params]
   description = ""
@@ -53,18 +52,11 @@ sectionPagesMenu = "main"
     identifier  = "alumni"
     url         = "/alumni"
 
-
   [[menu.main]]
     name        = "News"
     weight      = 40
     identifier  = "news"
     url         = "/news"
-
-  [[menu.main]]
-    name        = "Get Involved"
-    weight      = 50
-    identifier  = "get-involved"
-    url         = "/get-involved"
 
 [[menu.legal]]
   name = "Charitable Information"
