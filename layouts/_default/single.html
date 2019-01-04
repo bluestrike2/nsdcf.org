@@ -2,12 +2,15 @@
   <article>
     <header class="mast mast--single">
       <h1 class="mast__title">{{ .Title }}</h1>
-
-      <!-- <figure class="mast__cover">
-        <img class="mast__cover-img" src="" />
-      </figure> -->
     </header>
 
-    <div class="content">{{ .Content }}</div>
+    <div class="content">
+      {{ .Content }}
+      {{ if .Params.hasResources }}
+        <aside class="content__aside">
+          {{ partial "resource_links" . }}
+        </aside>
+      {{ end }}
+    </div>
   </article>
 {{ end }}

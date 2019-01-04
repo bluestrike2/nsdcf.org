@@ -11,17 +11,18 @@
           {{ partial "resource_links" . }}
         </aside>
       {{ end }}
+
+      <section class="program_list">
+        {{ range .Resources.Match "*.md" }}
+          {{ $shortName := .Name | strings.TrimPrefix "scholarship_" | strings.TrimSuffix ".md" }}
+
+          <article class="program_listing" id="{{ $shortName }}">
+            <h5 class="program_listing__title">{{ .Title }}</h5>
+            {{ .Content | markdownify }}
+          </article>
+        {{ end }}
+      </section>
+      
     </div>
   </article>
-
-  <section class="content program_list">
-    {{ range .Resources.Match "*.md" }}
-      {{ $shortName := .Name | strings.TrimPrefix "scholarship_" | strings.TrimSuffix ".md" }}
-
-      <article class="program_listing" id="{{ $shortName }}">
-        <h5 class="program_listing__title">{{ .Title }}</h5>
-        {{ .Content | markdownify }}
-      </article>
-    {{ end }}
-  </section>
 {{ end }}
