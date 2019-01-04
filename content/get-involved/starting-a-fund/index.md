@@ -1,6 +1,7 @@
 +++
 date = "2017-12-15T12:45:19.000-05:00"
-title = "Starting an Endowment"
+title = "Starting a Fund"
+aliases = ["/get-involved/starting-an-endowment"]
 
 [menu]
   [menu.main]
@@ -12,7 +13,7 @@ title = "Starting an Endowment"
   title = "Endowed Scholarship Agreement"
   [resources.params]
     icon = "pdf"
-    
+
 [[resources]]
   src = "docs/scholarship_unendowed_agreement.pdf"
   title = "Unendowed Scholarship Agreement"
@@ -21,7 +22,7 @@ title = "Starting an Endowment"
 
 +++
 
-Starting an endowment fund with the Norwin School District Community Foundation is a great way to benefit Norwin students and programs for years to come. Because of our unique relationship with Norwin School District and the efforts of our volunteer board, there are minimal overhead or administrative costs for the Foundation to bear. This means the great majority of your donation or endowment will be implemented as you desire.
+Starting an endowment or fund with the Norwin School District Community Foundation is a great way to benefit Norwin students and programs for years to come. Because of our unique relationship with Norwin School District and the efforts of our volunteer board, there are minimal overhead or administrative costs for the Foundation to bear. This means the great majority of your donation or endowment will be implemented as you desire.
 
 Currently, the NSDCF manages 25 scholarship funds created by local individuals and/or families. Since 2007, total scholarships have exceeded $300,000.
 
