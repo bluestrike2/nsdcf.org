@@ -16,8 +16,13 @@
           <a class="footer-menu__link" itemprop="url" href="{{.URL}}">{{ .Name }}</a>
         </li>
       {{ end }}
+      {{ range .Site.Menus.footer }}
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" itemprop="url" href="{{.URL}}">{{ .Name }}</a>
+        </li>
+      {{ end }}
       <li class="footer-menu__item">
-        <a class="footer-menu__link footer-menu__link--external" itemprop="url" href="http://www.norwinsd.org" target="_blank">Norwin School District</a>
+        <a class="footer-menu__link footer-menu__link--external" itemprop="url" href="https://norwinsd.org" target="_blank">Norwin School District</a>
       </li>
     </ul>
   </nav>

@@ -58,17 +58,11 @@ title           = "Norwin School District Community Foundation"
     identifier  = "news"
     url         = "/news"
 
-[[menu.legal]]
-  name = "Charitable Information"
-  weight = 20
-  identifier = "charitable-information"
-  url = "/charitable-information"
-
-  [[menu.legal]]
-    name = "Privacy Policy"
-    weight = 30
-    identifier = "privacy"
-    url = "/privacy"
+[[menu.footer]]
+  name = "Legal Info"
+  weight = 10
+  identifier = "legal"
+  url = "/legal"
 
 [sitemap]
   ChangeFreq  = ""
