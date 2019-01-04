@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <header class="mast">
+    <h1 class="mast__title">{{ .Title }}</h1>
+  </header>
+
+  <article class="list-intro">
+    {{ .Content }}
+  </article>
+
+  <section class="list">
+    {{ $paginator := .Paginate (where .Data.Pages "Section" .Section) }}
+
+    {{ range $index, $page := $paginator.Pages }}
+      {{ if and (eq $index 0) (eq $paginator.PageNumber 1) }}
+        {{ .Render "summary" }}
+      {{ else }}
+        {{ .Render "li" }}
+      {{ end }}
+    {{ end }}
+
+    {{ if gt $paginator.TotalPages 1 }}
+      {{ template "_internal/pagination.html" . }}
+    {{ end }}
+  </section>
+{{ end }}
