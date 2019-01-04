@@ -4,7 +4,14 @@
       <h1 class="mast__title">{{ .Title }}</h1>
     </header>
 
-    <div class="content">{{ .Content }}</div>
+    <div class="content">
+      {{ .Content }}
+      {{ if .Params.hasResources }}
+        <aside class="content__aside">
+          {{ partial "resource_links" . }}
+        </aside>
+      {{ end }}
+    </div>
   </article>
 
   <section class="content program_list">
@@ -13,7 +20,7 @@
 
       <article class="program_listing" id="{{ $shortName }}">
         <h5 class="program_listing__title">{{ .Title }}</h5>
-        {{ .Content }}
+        {{ .Content | markdownify }}
       </article>
     {{ end }}
   </section>

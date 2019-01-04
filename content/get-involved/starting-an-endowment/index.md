@@ -10,10 +10,14 @@ title = "Starting an Endowment"
 [[resources]]
   src = "docs/scholarship_endowment_agreement.pdf"
   title = "Endowed Scholarship Agreement"
-
+  [resources.params]
+    icon = "pdf"
+    
 [[resources]]
   src = "docs/scholarship_unendowed_agreement.pdf"
   title = "Unendowed Scholarship Agreement"
+  [resources.params]
+    icon = "pdf"
 
 +++
 
