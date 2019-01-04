@@ -8,16 +8,13 @@
   </article>
 
   <section class="list">
-    {{ $paginator := .Paginate (where .Data.Pages "Section" .Section) }}
-
-    {{ range $index, $page := $paginator.Pages }}
-      {{ if and (eq $index 0) (eq $paginator.PageNumber 1) }}
-        {{ .Render "summary" }}
-      {{ else }}
-        {{ .Render "li" }}
-      {{ end }}
+    {{ range .Pages.ByWeight }}
+      <article class="listing listing--summary">
+        <h3 class="listing__title">
+          <a href="{{ .Permalink }}" class="listing__link">{{ .Title }}</a>
+        </h3>
+        <div class="listing__summary">{{ .Summary }}</div>
+      </article>
     {{ end }}
-
-    {{ template "_internal/pagination.html" . }}
   </section>
 {{ end }}
