@@ -2,6 +2,7 @@
 title = "Privacy Policy"
 date  = 2017-12-15T12:39:48-05:00
 draft = false
+noSummary = true
 +++
 
 Your privacy is of the utmost importance to us. It is the Norwin School District Community Foundation's ("NSDCF") policy to respect your privacy regarding any information we may collect on www.nsdcf.org.

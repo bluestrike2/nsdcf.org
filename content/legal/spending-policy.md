@@ -4,6 +4,7 @@ shortTitle = "Spending Policy"
 date  = 2018-09-24T20:48:41-04:00
 draft = false
 dateApproved = 2012-01-01
+noSummary = true
 +++
 
 The Norwin School District Community Foundation is the steward of endowed funds that were created by gifts from a number of donors. The earnings on the endowed funds are a source of income for scholarships, grant making, and the administration of the Foundation. The Board of Directors recognizes that the capital in the funds should be protected against the effects of inflation to preserve as much as possible the purchasing power of the funds (i.e. maintain value of the funds on an inflation-adjusted basis).

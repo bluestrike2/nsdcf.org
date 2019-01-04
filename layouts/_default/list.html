@@ -13,7 +13,9 @@
         <h3 class="listing__title">
           <a href="{{ .Permalink }}" class="listing__link">{{ .Title }}</a>
         </h3>
-        <div class="listing__summary">{{ .Summary }}</div>
+        {{ if not .Params.noSummary }}
+          <div class="listing__summary">{{ .Summary }}</div>
+        {{ end }}
       </article>
     {{ end }}
   </section>

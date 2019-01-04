@@ -1,8 +1,9 @@
 +++
 title = "Investment Policy"
-date  = 2018-09-24T20:53:19-04:00
+date  = "2018-09-24T20:53:19-04:00"
 draft = false
-dateApproved = 2012-01-01
+dateApproved = "2012-01-01"
+noSummary = true
 +++
 
 The following guidelines have been adopted by the Board of Directors of the Norwin School District Community Foundation and are to be shared with active portfolio managers responsible for investing the long term investments held for endowment purposes. The intention of the Norwin School District Community Foundation is to use the funds to provide scholarships to students of Norwin School District, and to enhance educational programs offered by the Norwin School District.
