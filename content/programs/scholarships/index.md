@@ -6,6 +6,6 @@ weight = "10"
   src = "scholarship_*.md"
 +++
 
-The Norwin School District Community Foundation facilitates 21 scholarships to benefit graduating Norwin High School seniors in their quest to achieve higher education at a university, college, or technical school.<!--more-->
+The NSDCF oversees 25 scholarships to benefit graduating Norwin High School seniors in their quest to achieve higher education at a university, college, or technical school. Since 2007, total scholarships have exceeded $300,000.<!--more-->
 
 Each scholarship has specific criteria of eligibility for the award and a selection committee that screens the applications and chooses the awardee(s).
