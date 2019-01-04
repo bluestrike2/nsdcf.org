@@ -1,20 +1,8 @@
 +++
 title       = "Foundation Programs & Philanthropic Efforts"
 short_title = "Programs"
-type        = "programs"
 date        = "2017-12-15T12:06:13-05:00"
 draft       = false
-
-[[resources]]
-  src  = "*.md"
-
-[[resources]]
-  src  = "scholarships/*.md"
-  name = "scholarship-:counter"
-
-[[resources]]
-  src  = "memorials/*.md"
-  name = "memorial-:counter"
 +++
 
 # Helping our students achieve success
