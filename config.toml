@@ -2,6 +2,10 @@ baseURL         = "https://nsdcf.org"
 buildDrafts     = false
 buildFuture     = false
 canonifyURLs    = false
+
+# Generate _redirects file instead of separate redirect files for each alias.
+# disableAliases  = true
+
 relativeURLs    = false
 enableRobotsTXT = true
 googleAnalytics = "UA-XXXXX-Y"
@@ -10,29 +14,6 @@ metaDataFormat  = "toml"
 summaryLength   = 50
 pluralizelisttitles = false
 title           = "Norwin School District Community Foundation"
-
-[params]
-  description = ""
-  title_abbrev = "NSDCF"
-
-  [params.social]
-    facebook        = "https://www.facebook.com/NSDCommunityFoundation"
-    facebook_alumni = "https://www.facebook.com/groups/NorwinAlumFriends"
-    twitter         = ""
-    twitter_alumni  = ""
-
-  [params.contact]
-    email         = "hello@nsdcf.org"
-    email_alumni  = "alumni@nsdcf.org"
-    phone         = "724.861.3000"
-    street        = "281 McMahon Drive"
-    city          = "North Huntingdon"
-    state         = "PA"
-    postal        = "15642"
-    newsletter_description = "Community & school district news, events, and other relevant information via occassional email."
-
-[permalinks]
-  news = "/news/:year/:month/:slug"
 
 [[menu.main]]
   name        = "Our Story"
@@ -63,6 +44,50 @@ title           = "Norwin School District Community Foundation"
   weight = 10
   identifier = "legal"
   url = "/legal"
+
+[mediaTypes]
+  [mediaTypes."text/netlify"]
+    delimiter = ""
+
+[outputs]
+  home = ["HTML", "RSS", "REDIR"]
+
+[outputFormats]
+  [outputFormats.REDIR]
+    mediatype = "text/netlify"
+    baseName = "_redirects"
+    isPlainText = true
+    notAlternative = true
+
+  [outputFormats.HEADERS]
+    mediatype = "text/netlify"
+    baseName = "_headers"
+    isPlainText = true
+    notAlternative = true
+
+
+[params]
+  description = ""
+  title_abbrev = "NSDCF"
+
+  [params.social]
+    facebook        = "https://www.facebook.com/NSDCommunityFoundation"
+    facebook_alumni = "https://www.facebook.com/groups/NorwinAlumFriends"
+    twitter         = ""
+    twitter_alumni  = ""
+
+  [params.contact]
+    email         = "hello@nsdcf.org"
+    email_alumni  = "alumni@nsdcf.org"
+    phone         = "724.861.3000"
+    street        = "281 McMahon Drive"
+    city          = "North Huntingdon"
+    state         = "PA"
+    postal        = "15642"
+    newsletter_description = "Community & school district news, events, and other relevant information via occassional email."
+
+[permalinks]
+  news = "/news/:year/:month/:slug"
 
 [sitemap]
   ChangeFreq  = ""
