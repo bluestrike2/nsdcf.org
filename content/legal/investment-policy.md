@@ -2,7 +2,7 @@
 title = "Investment Policy"
 date  = "2018-09-24T20:53:19-04:00"
 draft = false
-dateApproved = "2012-01-01"
+dateApproved = "2008-01-28"
 noSummary = true
 +++
 
@@ -10,7 +10,7 @@ The following guidelines have been adopted by the Board of Directors of the Norw
 
 ### Distributions
 
-The Board of Directors will make periodic distributions, consistent with the terms
+The Board of Directors will make periodic distributions, consistent with the terms outlined in the Spending Policy.
 
 ### Objectives
 
@@ -20,8 +20,8 @@ The Norwin School District Community Foundation has adopted a long-term time hor
 
 | Category          | Target  | Range   | Comment
 | ------------------|---------|---------|--------
-| Fixed Income      | 30-40%  | 30-60%  | Maximum commitment to bonds for the overall assets of the portfolio is set at 60%. |
-| Equity            | 50-60%  | 40-80%  | Maximum commitment to equity for the overall assets of the portfolio is set at 80%. |
+| Fixed Income      | 30-40%  | 30-60%  | The maximum commitment to bonds for the overall assets of the portfolio is set at 60%. |
+| Equity            | 50-60%  | 40-80%  | The maximum commitment to equity for the overall assets of the portfolio is set at 80%. |
 | Cash & Equivalent | 0-15%   |         | |
 
 #### Fixed Income Guidelines
@@ -30,9 +30,10 @@ The Norwin School District Community Foundation has adopted a long-term time hor
 2. The maximum remaining maturity (or estimated average life on the mortgage-backed issues, or secure mortgage backed securities held in Mutual Funds) on each bond is limited to 7 years.
 3. There are no position limits or restrictions with respect to U.S. Government Treasury and Agency Issues.
 4. Corporate securities are limited, by issuer, to 5% of the total fixed income assets under management.
-5. At the time of purchase the minimum corporate bond rating shall be an A or better (Moody’s or S & P). Should a bond fall below the minimum rating, the Investment Manager(s) will have discretion to sell the security.
+5. At the time of purchase the minimum corporate bond rating shall be an A or better (Moody’s or S&P). Should a bond fall below the minimum rating, the Investment Manager(s) will have discretion to sell the security.
 6. Zero coupon bonds are not considered as acceptable investments.
 7. International fixed income investments may be used if deemed appropriate by the Investment Manager(s).
+
 
 #### Equity Guidelines
 
@@ -52,6 +53,12 @@ The Norwin School District Community Foundation has adopted a long-term time hor
 ### Investment Management and Accountability
 
 The Board of Directors of the Norwin School District Community Foundation shall oversee investment of the Norwin School District Community Foundation Fund and is authorized to review the performance of the Investment Manager(s) and compare their performance with relevant benchmarks.
+
 The Treasurer will review and evaluate performance on a semi-annual basis and report to the Board annually. The Investment Manager(s) will be available for semi-annual meetings and will provide semi-annual reports detailing all asset information and performance results. The Board will receive information regarding fund performance at each quarterly meeting.
-Investment Policy Review
-The Board of Directors will review the Investment Policy annually, and make any changes to the policy it deems necessary.
+
+### Investment Policy Review
+
+The Board of Directors will review the Investment Policy annually, and
+make any changes to the policy it deems necessary.
+
+*Board Approved: 1-28-08*
