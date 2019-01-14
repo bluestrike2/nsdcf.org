@@ -13,6 +13,7 @@
     height: 100%
     width: 100%
     object-fit: cover
+    object-position: 50% 30%
 
   &__item
     +respond("tablet-portrait")
@@ -23,3 +24,9 @@
 
       &:nth-child(3n)
         grid-column: span 2
+        //grid-row: span 2
+
+      &:nth-child(5n)
+        grid-row: span 2
+        grid-column: span 2
+        //grid-area: auto / 2 / auto / 4
