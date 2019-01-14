@@ -1,4 +1,12 @@
 <article class="listing listing--summary">
+  {{ if eq .Params.layout "mast" }}
+    {{ $original := .Resources.GetMatch "mast" }}
+    {{ with $original }}
+      {{ $scaled := .Fill "960x500" }}
+      <img src="{{ $scaled.Permalink }}" class="listing__thumb" />
+    {{ end }}
+  {{ end }}
+
   <h3 class="listing__title">
     <a href="{{ .Permalink }}" class="listing__link">{{ .Title }}</a>
   </h3>
