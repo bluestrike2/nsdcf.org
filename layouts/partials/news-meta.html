@@ -1,15 +1,19 @@
 <div class="meta">
-  <ul class="meta-categories">
-    {{ range .Params.categories }}
-      <li class="meta-categories__item">
-        <a href="{{ "news/topics/" | absURL}}{{ . | urlize }}" class="meta-categories__link">{{ title . }}</a>
-      </li>
-    {{ end }}
-  </ul>
+  {{ if .Params.categories }}
+    <ul class="meta-categories">
+      {{ range .Params.categories }}
+        <li class="meta-categories__item">
+          <!-- <a href="{{ "news/topics/" | absURL}}{{ . | urlize }}" class="meta-categories__link">{{ title . }}</a>-->
+          <span class="meta-categories__link">{{ title . }}</span>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
 
   {{ if .Params.author }}
     <address class="meta__author">
-      <a class="meta__author-link" rel="author" href="#">{{ title .Params.author }}</a>
+      <!-- <a class="meta__author-link" rel="author" href="#">{{ title .Params.author }}</a> -->
+      <span class="meta__author-link" rel="author">{{ title .Params.author }}</span>
     </address>
   {{ end }}
 
