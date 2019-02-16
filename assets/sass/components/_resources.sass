@@ -15,3 +15,12 @@
   color: color("primary", "lightest")
   font-family: $family-sans-serif
   font-size: scale("small")
+
+.resource_link
+  display: inline-block
+  font-size: scale(h5)
+  line-height: scale(h5, line)
+  margin-top: $gutter
+
+  &--pdf::after
+    content: " (PDF)"
