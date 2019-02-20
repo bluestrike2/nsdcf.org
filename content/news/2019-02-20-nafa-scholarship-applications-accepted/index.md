@@ -3,6 +3,11 @@ date = 2019-02-20T11:16:27-05:00
 title = "Apply Now for the 2019 NAFA Scholarship"
 author = "Jack Boylan"
 draft = false
+layout  = "mast"
+
+[[resources]]
+  src  = "mast.jpg"
+  name = "mast"
 
 [[resources]]
   src   = "nafa_scholarship_application_2019.pdf"
