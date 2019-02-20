@@ -113,8 +113,8 @@
       {{ if $reservations }}
 
         <header class="slide__header slide__header--dinner-reservations">
+          <h3 class="slide__heading">{{ $reservations.Title }}</h3>
           {{ if .Params.tickets.available }}
-            <h3 class="slide__heading">{{ $reservations.Title }}</h3>
             {{ $reservations.Content }}
           {{ else }}
             <p>Reservations are not currently being accepted.</p>

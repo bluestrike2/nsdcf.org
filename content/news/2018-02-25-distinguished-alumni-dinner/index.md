@@ -70,7 +70,7 @@ supportText    = "The Foundation is proud to offer a Chinese auction and raffle 
   timeDescr = "After Dinner"
 
 [tickets]
-  available    = true
+  available    = false
   deadlineDate = "2018-05-23T23:59:00-05:00"
   childAges    = "Ages 4-10"
   childPrice   = "19.00"
