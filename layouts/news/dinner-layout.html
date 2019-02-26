@@ -78,95 +78,96 @@
     </section>
 
     <!-- 2. Recipients -->
-    <section class="kda-slide kda-slide--recipients grid">
-      {{ with .Resources.GetMatch "recipients.md" }}
-        <header class="slide__header slide__header--recipients">
-          <h3 class="slide__heading">{{ .Title }}</h3>
-          {{ .Content }}
-        </header>
-      {{ end }}
-
-      {{ range $i, $e := .Resources.Match "recipients/*.md" }}
-        <article class="media media--alumni_recipients">
-          {{ if $e.Params.photo }}
-            <img src="{{ $e.Params.photo }}" class="media__figure" />
-          {{ end }}
-
-          <header class="media__body">
-            <h4 class="media__heading">{{ $e.Params.salutation }} {{ $e.Title }}</h4>
-            <small class="media__small">
-              {{ if $e.Params.class }}
-                Class of '{{ slicestr $e.Params.class 2 }}
-              {{ else if $e.Params.friend }}
-                Distinguished Friend of Norwin
-              {{ end }}
-            </small>
+    {{ if .Resources.GetMatch "recipients.md" }}
+      <section class="kda-slide kda-slide--recipients grid">
+        {{ with .Resources.GetMatch "recipients.md" }}
+          <header class="slide__header slide__header--recipients">
+            <h3 class="slide__heading">{{ .Title }}</h3>
+            {{ .Content }}
           </header>
-        </article>
-      {{ end }}
+        {{ end }}
 
-    </section>
+        {{ range $i, $e := .Resources.Match "recipients/*.md" }}
+          <article class="media media--alumni_recipients">
+            {{ if $e.Params.photo }}
+              <img src="{{ $e.Params.photo }}" class="media__figure" />
+            {{ end }}
+
+            <header class="media__body">
+              <h4 class="media__heading">{{ $e.Params.salutation }} {{ $e.Title }}</h4>
+              <small class="media__small">
+                {{ if $e.Params.class }}
+                  Class of '{{ slicestr $e.Params.class 2 }}
+                {{ else if $e.Params.friend }}
+                  Distinguished Friend of Norwin
+                {{ end }}
+              </small>
+            </header>
+          </article>
+        {{ end }}
+
+      </section>
+    {{ end }}
 
     <!-- 3. Reservations -->
-    <section class="kda-slide kda-slide--reservations grid">
-      {{ $reservations := .Resources.GetMatch "reservations.md" }}
-      {{ if $reservations }}
+    {{ $reservations := .Resources.GetMatch "reservations.md" }}
+    {{ if $reservations }}
+      <section class="kda-slide kda-slide--reservations grid">
 
-        <header class="slide__header slide__header--dinner-reservations">
-          <h3 class="slide__heading">{{ $reservations.Title }}</h3>
-          {{ if .Params.tickets.available }}
-            {{ $reservations.Content }}
-          {{ else }}
-            <p>Reservations are not currently being accepted.</p>
-          {{ end }}
-        </header>
-      {{ end }}
 
-      {{ if .Params.tickets.available }}
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="form form--dinner-reservations">
-          <!-- paypal variables (hidden) -->
-          {{ partial "paypal-form-variables.html" (dict "email" "alumni.dinner@nsdcf.org") }}
-          <input type="hidden" name="item_name" value="{{ dateFormat "2006" .Params.eventDate }} Knight of Distinguished Alumni Ticket">
-          <input type="hidden" name="amount" value="{{ .Params.tickets.price }}">
+          <header class="slide__header slide__header--dinner-reservations">
+            <h3 class="slide__heading">{{ $reservations.Title }}</h3>
+            {{ if .Params.tickets.available }}
+              {{ $reservations.Content }}
+            {{ else }}
+              <p>Reservations are not currently being accepted.</p>
+            {{ end }}
+          </header>
 
-          <!-- form inputs -->
-          <div class="form__field">
-            <label class="form__label" for="quantity">Number of Tickets</label>
-            <input class="form__input form__input--required" type="text" spellcheck="false"  name="quantity" placeholder="Number of Tickets" required>
-          </div>
+        {{ if .Params.tickets.available }}
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="form form--dinner-reservations">
+            <!-- paypal variables (hidden) -->
+            {{ partial "paypal-form-variables.html" (dict "email" "alumni.dinner@nsdcf.org") }}
+            <input type="hidden" name="item_name" value="{{ dateFormat "2006" .Params.eventDate }} Knight of Distinguished Alumni Ticket">
+            <input type="hidden" name="amount" value="{{ .Params.tickets.price }}">
 
-          <div class="form__field">
-            <label class="form__label" for="os0">Guest Name(s)</label>
-            <small class="form__description">Please list each guest name, including your own, on a separate line.</small>
-            <input type="hidden" name="on0" value="Guest Names">
-            <textarea class="form__textarea" name="os0" rows="4" placeholder="Guest names, one per line" required wrap></textarea>
-          </div>
-
-          <div class="form__field">
-            <input type="hidden" name="on1" value="Business Reservation">
-            <div class="checkbox">
-              <input type="checkbox" class="checkbox__input" id="checkbox--business-reservation" name="os1">
-              <label class="checkbox__label" for="checkbox--business-reservation"><span class="checkbox__span">This is a business reservation.</span></label>
+            <!-- form inputs -->
+            <div class="form__field">
+              <label class="form__label" for="quantity">Number of Tickets</label>
+              <input class="form__input form__input--required" type="text" spellcheck="false"  name="quantity" placeholder="Number of Tickets" required>
             </div>
-          </div>
 
-          <div class="business-reservation">
-            <small class="form__description form__description--business-reservation">Please enter the business name.</small>
+            <div class="form__field">
+              <label class="form__label" for="os0">Guest Name(s)</label>
+              <small class="form__description">Please list each guest name, including your own, on a separate line.</small>
+              <input type="hidden" name="on0" value="Guest Names">
+              <textarea class="form__textarea" name="os0" rows="4" placeholder="Guest names, one per line" required wrap></textarea>
+            </div>
 
-            <input type="hidden" name="on2" value="Business Name">
-            <input type="text" class="form__input form__input--business-reservation" name="os2" spellcheck="false" placeholder="Business name">
-          </div>
+            <div class="form__field">
+              <input type="hidden" name="on1" value="Business Reservation">
+              <div class="checkbox">
+                <input type="checkbox" class="checkbox__input" id="checkbox--business-reservation" name="os1">
+                <label class="checkbox__label" for="checkbox--business-reservation"><span class="checkbox__span">This is a business reservation.</span></label>
+              </div>
+            </div>
 
-          <button class="form__button button--svg button--paypal" type="submit">
-            <span class="button__label--svg">Pay with</span>
-            {{ partial "svg/paypal.svg" (dict "class" "button__icon button__icon--paypal") }}
-          </button>
-        </form>
-      {{ end }}
+            <div class="business-reservation">
+              <small class="form__description form__description--business-reservation">Please enter the business name.</small>
 
-    </section>
+              <input type="hidden" name="on2" value="Business Name">
+              <input type="text" class="form__input form__input--business-reservation" name="os2" spellcheck="false" placeholder="Business name">
+            </div>
+
+            <button class="form__button button--svg button--paypal" type="submit">
+              <span class="button__label--svg">Pay with</span>
+              {{ partial "svg/paypal.svg" (dict "class" "button__icon button__icon--paypal") }}
+            </button>
+          </form>
+        {{ end }}
+
+      </section>
+    {{ end }}
+
   </article>
-  <div class="kda-slide kda-slide--info grid">
-  {{/* {{ partial "debugprint.html" $.Page.Resources }} */}}
-</div>
 {{ end }}
