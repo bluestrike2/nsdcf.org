@@ -1,6 +1,6 @@
 +++
-title      = "Ms. Barbara McKee"
+title      = "Ms. Barb McKee"
 position2  = "Norwin School District Resident/Alumnus"
-photo      = "board/barbara-McKee.jpg"
+photo      = "board/barb-mckee.jpg"
 weight     = "40"
 +++

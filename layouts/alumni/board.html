@@ -16,11 +16,9 @@
 
         {{ range $.Resources.Match "**.md" }}
           <div class="media_vert media_vert--board">
-            {{ if .Params.photo }}
-              <figure class="media_vert__fig">
-                <img src="{{ .Params.photo }}" class="media_vert__img" />
-              </figure>
-            {{ end }}
+            <figure class="media_vert__fig">
+              <img src="{{ .Params.photo }}" class="media_vert__img" />
+            </figure>
 
             <header class="media_vert__meta">
               <h4 class="media_vert__heading">{{ .Title }}</h4>
