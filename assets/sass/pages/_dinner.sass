@@ -11,22 +11,48 @@
     margin-bottom: $gutter2
     +respond("desktop")
       margin-top: scale(large)
-      margin-bottom: scale(x-large)
+      //margin-bottom: scale(x-large)
 
     p
       font-size: scale(h4)
       +respond("desktop")
         //
 
+.kda-info
+  +respond("tablet-landscape")
+    display: flex
+    flex-flow: wrap
+
+.kda-info-item
+  +respond("tablet-landscape")
+    flex: 0 0 50%
+
 .slide__header--recipients
   margin-bottom: $gutter
   width: 100%
 
-.map--kda
-    margin: 0
+.slide__header--reservations p
+  +respond("desktop")
+    padding-right: scale("xx-large")
+
+.map
+  margin: 0
+  +respond("tablet-landscape")
+    padding-left: $gutter
+  &__img
+    max-height: 15em
+    width: 100%
+    object-fit: cover
+  &__heading
+    margin-top: $halfGutter
+
+.schedule__h3
+  margin-top: 0
 
 .schedule-item
   margin-bottom: scale(small)
+  +respond("tablet-landscape")
+    padding-right: $gutter*2
 
   &__time
     display: block
