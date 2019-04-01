@@ -1,5 +1,5 @@
 +++
-title   = "Scholarship Programs"
+title   = "Student Scholarships"
 date    = "2019-01-03T17:43:52-05:00"
 weight = "10"
 [[resources]]

@@ -1,0 +1,90 @@
+{{ define "main" }}
+  <article>
+    <header class="mast mast--single">
+      <h1 class="mast__title">{{ .Title }}</h1>
+    </header>
+
+    <div class="content">
+      {{ .Content }}
+      {{ if .Params.hasResources }}
+        <aside class="content__aside">
+          {{ partial "resource_links" . }}
+        </aside>
+      {{ end }}
+
+      <section class="camp_form foldable">
+        <h3 class="camp_form__heading">NAFA Summer Camp Scholarship Application</h3>
+
+        <form name="camp_scholarships" method="POST" action="/programs/summer-camp/thank-you" netlify-honeypot="bot-field" netlify>
+            <label class="form__label" for="student_name">Student Name</label>
+            <small class="form__description"></small>
+            <input class="form__input" type="text" name="student_name" placeholder="Student Name" required />
+
+          <div class="form__half-fields">
+            <div class="form__field form__half-field">
+              <label class="form__label" for="grade">Grade</label>
+              <small class="form__description">Grade entering in the fall of 2019</small>
+              <input class="form__input" type="text" name="grade" placeholder="Grade" required />
+            </div>
+
+            <div class="form__field form__half-field">
+              <label class="form__label" for="school">School</label>
+              <small class="form__description">School entering in the fall of 2019</small>
+              <input class="form__input" type="text" name="school" placeholder="School" required />
+            </div>
+          </div>
+
+          <div class="form__half-fields">
+            <div class="form__field form__half-field">
+              <label class="form__label" for="school">Parent/Guardian Name</label>
+              <input class="form__input" type="text" name="parent_name" placeholder="Parent/Guardian Name" required />
+            </div>
+
+            <div class="form__field form__half-field">
+              <label class="form__label" for="school">Parent/Guardian Email</label>
+              <input class="form__input" type="email" name="parent_name" placeholder="Parent/Guardian Email" required />
+            </div>
+          </div>
+
+          <h5>Student Statement</h5>
+
+          <label class="form__p">I am interested in participating in the Norwin summer camp program because:</label>
+
+          <textarea class="form__textarea" name="os0" rows="4" placeholder="I am interested because..." required wrap></textarea>
+
+          <h5>Parental Permission</h5>
+
+          <div class="checkbox">
+            <input type="checkbox" class="checkbox__input checkbox__input--p" name="parental_permission" id="parental_permission" required>
+            <label class="checkbox__label checkbox__label--p" for="parental_permission">
+              <p class="checkbox__p">If my child is awarded a summer camp scholarship by the Norwin Alumni & Friends Association, I agree to complete all necessary camp registration materials and will provide transportation daily to and from the camp.</p>
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" class="checkbox__input checkbox__input--p" name="financial_need" id="financial_need" required>
+            <label class="checkbox__label checkbox__label--p" for="financial_need">
+              <p class="checkbox__p">I certify that without this scholarship, my child would be unable to attend a camp.</p>
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" class="checkbox__input checkbox__input--p" name="agree_to_contact" id="agree_to_contact" required>
+            <label class="checkbox__label checkbox__label--p" for="agree_to_contact">
+              <p class="checkbox__p">If for any reason my child is unable to attend the camp, I will contact Kathy Herchko at <a href="mailto:kherchko@norwinsd.org" target="_blank">kherchko@norwinsd.org</a> or by phone at 724.861.3005 as soon as possible so that the scholarship may be awarded to another child.</p>
+            </label>
+          </div>
+
+          <p class="form__input_h" style="display:none!important">
+            <label>Don’t fill this out if you're human: <input name="h-nme" tabindex="-1" autocomplete="off" /></label>
+          </p>
+
+          <button class="form__button" type="submit">
+            <span class="button__label">Submit</span>
+          </button>
+        </form>
+      </section>
+
+    </div>
+  </article>
+{{ end }}

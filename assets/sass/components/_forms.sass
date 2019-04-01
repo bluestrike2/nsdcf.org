@@ -48,7 +48,16 @@
     padding: 0
 
   &__field
-    margin-top: scale(x-small)
+    margin-top: 0
+
+  &__half-fields
+    +respond("tablet-landscape")
+      display: flex
+  &__half-field
+    +respond("tablet-landscape")
+      width: 50%
+      &:first-child
+        padding-right: $gutter
 
   &__fieldset
     border: 0
@@ -99,6 +108,8 @@
       margin: -.125em 0 0 scale(small)
 
 .checkbox
+  margin-top: $halfGutter
+
   &__input
     position: absolute
     opacity: 0
@@ -123,6 +134,10 @@
     padding-left: $gutter
     position: relative
 
+    &--p
+      display: inline-block
+
+
     &::before
       background: color(background, base)
       border: none
@@ -146,6 +161,9 @@
       left: .2em
       top: .425em
       transform: rotate(-45deg)
+
+  &__p
+    margin-top: 0
 
   &__span
     font-size: scale(small)
