@@ -89,6 +89,6 @@ aliases     = ["/news/distinguished-alumni-2019","/alumni-dinner"]
     icon = "pdf"
 +++
 
-You are cordially invited to join the Norwin School District Community Foundation on Thursday, May 23, 2019 for a celebration of Norwin's past, present, and future as we honor the achievements of of some of our most distinguished alumni and graduating students, sponsored by Duncan Financial Group.
+You are cordially invited to join the Norwin School District Community Foundation on Thursday, May 23, 2019 for a celebration of Norwin's past, present, and future as we honor the achievements of some of our most distinguished alumni and graduating students, sponsored by Duncan Financial Group.
 
 Reservations are required for this event at $37.00 per person. [Make yours today]({{< ref "#reservations" >}}).
