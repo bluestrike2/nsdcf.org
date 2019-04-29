@@ -11,7 +11,7 @@ draft       = false
 layout      = "dinner-layout"
 layout_hero = true
 url         = "/distinguished-alumni"
-aliases     = ["/news/distinguished-alumni-2019","/alumni-dinner"]
+aliases     = ["/news/distinguished-alumni-2019","/distinguishedalumni","/alumni-dinner","/alumnidinner"]
 
 
 [tickets]
