@@ -1,6 +1,6 @@
 +++
 attending  = true
-awardType  = "Alumni"
+award      = "Alumni"
 class      = "1988"
 title      = "Heather Newell"
 degree     = "Ed.D."

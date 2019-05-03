@@ -1,6 +1,6 @@
 +++
 attending  = true
-awardType  = "Alumni"
+award      = "Alumni"
 class      = "1986"
 title      = "John Tirpak"
 +++

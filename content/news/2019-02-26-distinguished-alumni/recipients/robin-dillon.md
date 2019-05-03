@@ -1,8 +1,8 @@
 +++
 attending  = true
-awardType  = "Alumni"
+award      = "Alumni"
 class      = "1973"
-title      = "Robin Dillon"
+title      = "Robin Sleigh Dillon"
 degree     = "Ph.D."
 previousYear = "2018 Honoree"
 +++

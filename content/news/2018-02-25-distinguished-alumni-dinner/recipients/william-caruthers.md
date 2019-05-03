@@ -1,6 +1,6 @@
 +++
 attending  = true
-awardType  = "Alumni"
+award      = "Alumni"
 class      = "1973"
 field      = "Public Service, Education, & Philanthropy"
 title      = "William F. Caruthers II"

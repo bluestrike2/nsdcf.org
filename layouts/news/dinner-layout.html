@@ -108,10 +108,12 @@
             <header class="media__body">
               <h4 class="media__heading">{{ $e.Params.salutation }} {{ $e.Title }}</h4>
               <small class="media__small">
-                {{ if $e.Params.class }}
-                  Class of '{{ slicestr $e.Params.class 2 }}
-                {{ else if $e.Params.friend }}
+                {{ if eq $e.Params.award "Scholarship" }}
+                  NAFA Scholarship Recipient, {{ $e.Params.class }}
+                {{ else if (eq $e.Params.award "Friend") }}
                   Distinguished Friend of Norwin
+                {{ else if $e.Params.class }}
+                  Class of '{{ slicestr $e.Params.class 2 }}
                 {{ end }}
               </small>
             </header>

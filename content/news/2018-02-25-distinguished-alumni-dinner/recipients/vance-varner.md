@@ -1,6 +1,6 @@
 +++
 attending  = true
-awardType  = "Scholarship"
+award      = "Scholarship"
 class      = "2017"
 field      = ""
 title      = "Vance Varner"

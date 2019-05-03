@@ -1,6 +1,6 @@
 +++
 attending  = true
-awardType  = "Alumni"
+award      = "Alumni"
 class      = "1966"
 field      = "Public Service"
 title      = "Rich Siniawski"

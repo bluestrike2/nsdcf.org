@@ -10,7 +10,7 @@ The Norwin Alumni & Friends Association, in coordination with the Norwin School 
 
 Throughout their lives, these honorees have demonstrated how the quality education they received, along with the support of a nurturing community, can serve as a springboard to great achievements:
 
-* Robin Dillon &#39;73, PhD, *Education*
+* Robin Sleigh Dillon &#39;73, PhD, *Education*
 * Rebecca Gediminskas &#39;74, DNP, *Public Service, Medicine, Education*
 * Ted Kopas &#39;91, *Government*
 * Tim Kotch &#39;74, *Education*
@@ -18,6 +18,6 @@ Throughout their lives, these honorees have demonstrated how the quality educati
 * Heather Newell &#39;88, EdD, *Education*
 * John Tirpak &#39;86, *Public Service, Theology*
 * Robert Neil Faust, Distinguished Friend of Norwin *(posthumous)*
-* NAFA 2019 Scholarship Awardee, *To Be Announced*
+* Victoria Saunders, *NAFA 2019 Scholarship Awardee*
 
 Each honoree will be recognized at the [2019 Knight of Distinguished Alumni Recognition]({{< ref "/2019-02-26-distinguished-alumni" >}}) Dinner to be held on Thursday, May 23, 2019 at the Stratigos Banquet Center. Reservations will be available through our website starting on April 1st.

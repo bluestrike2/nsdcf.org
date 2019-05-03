@@ -3,8 +3,8 @@ title         = "{{ replace .Name "-" " " | title }}"
 salutation    = ""
 # attending - Is a boolean field—meaning its value is either 'true' or 'false' and indicates whether the recipient will be attending this year's event. If false, it is denoted on their profile so as to avoid confusion.
 attending     = true
-# awardType - Is limited to one of three values: "Alumni" for alumni recipients (default), "Friend" for a non-alumni recipient honored as "Friends of Norwin", or "Scholarship" for the graduating Norwin senior receiving one the Association's annual scholarship.
-awardType     = "Alumni"
+# award - Is limited to one of three values: "Alumni" for alumni recipients (default), "Friend" for a non-alumni recipient honored as "Friends of Norwin", or "Scholarship" for the graduating Norwin senior receiving one the Association's annual scholarship.
+award     = "Alumni"
 # field - Is the nominee's field of accomplishment, and should match what is printed in the event program. The field should be surrouned in quote marks (i.e., "Business"), and if more than one is selected, each should be separated by a comma (i.e. "Business", Communications) inside the brackets. The options are limited to: Business, Communications, Education, Fine Arts, Government, Law, Medicine, Military Service, Performing Arts, Philanthropy, Public Service, Science, Technology, Theology.
 field         = [""]
 # photo - Is a field for the relative path to the recipient's photo. It should always start with "recipients/" and include the ".jpg" file extension, e.g. "recipients/first-last.jpg"

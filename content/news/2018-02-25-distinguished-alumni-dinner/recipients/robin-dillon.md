@@ -1,6 +1,6 @@
 +++
 attending  = false
-awardType  = "Alumni"
+award      = "Alumni"
 class      = "1973"
 title      = "Robin Dillon"
 salutation = "Dr."

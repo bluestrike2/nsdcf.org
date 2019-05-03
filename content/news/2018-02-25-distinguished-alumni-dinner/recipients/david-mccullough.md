@@ -1,6 +1,6 @@
 +++
 attending  = true
-awardType  = "Alumni"
+award      = "Alumni"
 class      = "1972"
 field      = "Performing Arts"
 title      = "David McCullough"

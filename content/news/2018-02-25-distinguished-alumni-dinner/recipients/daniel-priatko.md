@@ -1,6 +1,6 @@
 +++
 attending  = true
-awardType  = "Alumni"
+award      = "Alumni"
 class      = "1980"
 field      = "Military Service"
 title      = "Daniel Priatko"
