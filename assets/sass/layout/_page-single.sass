@@ -9,10 +9,10 @@
 
 .img--side
   +respond("tablet-portrait")
-    margin: scale(h2, margin) auto 0
+    margin: $gutter auto 0
     max-width: 50%
   +respond("tablet-landscape")
-    margin: scale(h2, margin)*2 0 $gutter $gutter
+    margin: $gutter 0 $gutter $gutter
     float: right
     //max-width: 25%
   +respond("desktop-wide")
