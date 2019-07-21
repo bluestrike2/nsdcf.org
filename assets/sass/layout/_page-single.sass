@@ -25,3 +25,11 @@
   img
     display: block
     max-width: 100%
+
+.list--col
+  list-style: none
+  +respond("tablet-portrait")
+    column-count: 2
+
+.list__li
+  padding-bottom: scale("xx-small")
