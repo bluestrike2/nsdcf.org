@@ -1,6 +1,6 @@
 +++
-title      = "Dr. William H. Kerr"
+title      = "Dr. Jeffrey M. Taylor"
 position2  = "Norwin School District Superintendent"
-photo      = "board/william-kerr.jpg"
+photo      = "board/jeffrey-taylor.jpg"
 weight     = "50"
 +++
