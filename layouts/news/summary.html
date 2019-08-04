@@ -13,5 +13,5 @@
 
   {{ partial "news-meta" . }}
 
-  <div class="listing__summary">{{ .Summary | plainify }}</div>
+  <div class="listing__summary">{{ .Summary | plainify | markdownify }}</div>
 </article>

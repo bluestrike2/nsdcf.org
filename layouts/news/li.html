@@ -4,5 +4,5 @@
   </h3>
 
   {{ partial "news-meta" . }}
-  <div class="listing__summary"><p>{{ .Summary | plainify }}</p></div>
+  <div class="listing__summary"><p>{{ .Summary | plainify | markdownify }}</p></div>
 </article>
