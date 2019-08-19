@@ -12,3 +12,5 @@ layout = "join"
 ### Become a Member Today
 
 Don't miss your chance to become a NAFA member and enjoy all of the benefits of membership as you help us connect past and present generations of Norwin alumni, students, and friends.
+
+Join online today, or if you'd prefer to pay by check, print out the membership form below. 
