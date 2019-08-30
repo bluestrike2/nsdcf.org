@@ -1,0 +1,62 @@
+.legal-list__section_heading
+  font-weight: 600
+  display: inline-block
+  //margin-bottom: $gutter
+
+.legal-list__inline_subheading
+  display: inline-block
+  font-family: $family-serif
+  font-variant: small-caps
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  margin-top: 0
+
+.legal-list__inline_subheading2
+  display: inline-block
+  font-family: $family-serif
+  font-variant: small-caps
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  margin-top: 0
+
+.legal-list__section_p
+  margin-bottom: $base-line
+
+.body--legal .content > ol
+  counter-reset: item
+  padding-left: 0
+  margin-left: 0
+  ol
+    padding-left: 0
+  li
+    list-style: none
+    padding-left: 0
+    margin-left: 0
+    &::before
+      display: inline-block
+      padding-right: 1em
+      font-variant: small-caps
+      font-variant-numeric: lining-nums
+      //text-transform: lowercase
+      text-align: right
+      +respond("tablet-landscape")
+        width: 3.5em
+        margin-left: -3.5em
+
+  > li
+    display: block
+    &:before
+      content: counters(item, ".", upper-roman) "."
+      counter-increment: item
+
+    > ol
+      counter-reset: subitem
+      > li::before
+        content: counters(item, ".", upper-roman) "." counters(subitem, ".") ". "
+        counter-increment: subitem
+      > li > ol
+        counter-reset: subitem2
+        margin-bottom: $halfGutter
+        > li::before
+          content: counters(item, ".", upper-roman) "." counters(subitem, ".") "." counters(subitem2, ".") ". "
+          counter-increment: subitem2
