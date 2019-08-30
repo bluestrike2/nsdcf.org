@@ -1,5 +1,5 @@
 .legal-list__section_heading
-  font-weight: 600
+  font-style: italic
   display: inline-block
   //margin-bottom: $gutter
 
@@ -37,6 +37,7 @@
       padding-right: 1em
       font-variant: small-caps
       font-variant-numeric: lining-nums
+      font-size: scale(small)
       //text-transform: lowercase
       text-align: right
       +respond("tablet-landscape")
@@ -46,17 +47,19 @@
   > li
     display: block
     &:before
-      content: counters(item, ".", upper-roman) "."
+      content: counters(item, ".", decimal) "."
       counter-increment: item
 
     > ol
       counter-reset: subitem
       > li::before
-        content: counters(item, ".", upper-roman) "." counters(subitem, ".") ". "
+        content: counters(item, ".", decimal) "." counters(subitem, ".") ". "
         counter-increment: subitem
+        font-size: scale(small)
       > li > ol
         counter-reset: subitem2
         margin-bottom: $halfGutter
         > li::before
-          content: counters(item, ".", upper-roman) "." counters(subitem, ".") "." counters(subitem2, ".") ". "
+          content: counters(item, ".", decimal) "." counters(subitem, ".") "." counters(subitem2, ".") ". "
           counter-increment: subitem2
+          font-size: scale(small)
