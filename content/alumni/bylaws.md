@@ -28,7 +28,7 @@ layout = "legal"
          Life membership shall consist of dues paying alumni and friends who pay the life membership dues in a single payment or with an initial payment of equivalent to annual membership dues with the balance paid within 12 months.
       3. <h6 class="legal-list__inline_subheading2">Annual Membership</h6>  
          Annual membership shall consist of those alumni and friends who pay dues in a single payment annually.
-   2. <h5 class="legal-list__inline_subheading">Revocation and Suspension of Membership</h5>
+   2. <h5 class="legal-list__inline_subheading">Revocation and Suspension of Membership</h5>  
       The rights and privileges of membership may be revoked or suspended for causes adversely impacting NAFA or Norwin School District at a meeting held two weeks after written notice of intent to take such action by a two-thirds vote of the Board of Directors. The action of membership revocation and suspension shall not apply to the Executive Director or the officers as alternate procedures are given in Article V, Section 2 for such action.
 4. <h3 class="legal-list__section_heading">Executive Committee</h3>
    1. The NAFA Executive Committee shall manage the affairs of NAFA and shall consist of the following voting members:
