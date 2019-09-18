@@ -11,7 +11,7 @@ aliases = ["/days-of-giving", "/day-of-giving"]
  name = "mast"
 +++
 
-The Norwin School District Community Foundation is sponsoring Days of Giving in conjunction with Norwin’s Homecoming Week festivities that include the Athletic Hall of Fame Banquet on Thursday night, the Homecoming Court and football game on Friday night, and the Homecoming parade on Saturday morning. This annual event provides an opportunity for you to give back to your school community through a tax-deductible donation for educational programs and scholarships benefitting Norwin students from Wednesday, September 25th through Sunday, September 29th.
+The Norwin School District Community Foundation is sponsoring its 2019 *Days of Giving* in conjunction with Norwin’s Homecoming Week festivities that include the Athletic Hall of Fame Banquet on Thursday night, the Homecoming Court and football game on Friday night, and the Homecoming parade on Saturday morning. This annual event provides an opportunity for you to give back to your school community through a tax-deductible donation for educational programs and scholarships benefitting Norwin students from Wednesday, September 25th through Sunday, September 29th.
 
 Our goal for the 2019 campaign is to raise $7,500 that will be applied to one or more of the following programs:
 
