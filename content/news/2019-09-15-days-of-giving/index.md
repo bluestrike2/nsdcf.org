@@ -4,7 +4,6 @@ title   = "Support the NSDCF and the Norwin Community through the 2019 Days of G
 author = "Jack Boylan"
 draft   = false
 layout  = "mast"
-aliases = ["/days-of-giving", "/day-of-giving"]
 
 [[resources]]
  src = "days_of_giving.jpg"

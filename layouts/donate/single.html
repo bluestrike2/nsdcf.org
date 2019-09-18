@@ -62,26 +62,11 @@
         <div class="donation_form__fieldgroup">
           <h5 class="donation_form__sub_heading">{{ .Params.stepTwoHeading }}</h5>
           <select class="form__select form__select--donate" name="item_number">
-            <option value="NSDCF Day of Giving 2018">{{ .Params.genericDonationName }}</option>
-            {{ with .Site.GetPage "/programs" }}
-              {{ with .Resources.GetMatch "scholarships.md" }}<optgroup label="{{ .Title }}">{{ end }}
-                {{ range .Resources.Match "scholarships/*.md" }}
-                  <option value="NSDCF Day of Giving 2018 ({{ .Title }})">{{ .Title }}</option>
-                {{ end }}
-              </optgroup>
-
-              {{ with .Resources.GetMatch "grants.md" }}
-                <optgroup label="{{ .Title }}">
-                  <option value="NSDCF Day of Giving 2018 ({{ .Title }})">{{ .Title }}</option>
-                </optgroup>
-              {{ end }}
-
-              {{ with .Resources.GetMatch "memorials.md" }}<optgroup label="{{ .Title }}">{{ end }}
-                {{ range .Resources.Match "memorials/*.md" }}
-                  <option value="NSDCF Day of Giving 2018 ({{ .Title }})">{{ .Title }}</option>
-                {{ end }}
-              </optgroup>
-            {{ end }}
+            <option value="{{ .Params.genericDonationName }}">{{ .Params.genericDonationName }}</option>
+            <option value="Five Smallest Community Scholarship Funds">Five Smallest Community Scholarship Funds</option>
+            <option value="K-12 STEM Programs">K-12 STEM Programs</option>
+            <option value="Educator Innovation Grants">Educator Innovation Grants</option>
+            <option value="NAFA's Fundraising for the Generations Initiative">NAFA's Fundraising for the Generations Initiative</option>
           </select>
         </div>
 
