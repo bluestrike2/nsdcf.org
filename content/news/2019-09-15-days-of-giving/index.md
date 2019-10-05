@@ -6,7 +6,7 @@ draft   = false
 layout  = "mast"
 
 [banner]
- active     = true
+ active     = false
  expiryDate = 2019-09-30T00:00:01-05:00
  text       = "You can help make a difference in the lives of Norwin students by giving back during the 2019 Days of Giving."
  linkText   = "Make your donation today."
