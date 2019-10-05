@@ -3,11 +3,7 @@ date = 2019-02-26T14:34:00-05:00
 title = "Sponsor an ad in the 2019 Knight of Distinguished Alumni Program Booklet"
 author = "Jack Boylan"
 draft = false
-layout  = "mast"
-
-[[resources]]
-  src  = "mast.png"
-  name = "mast"
+alternateMast = true
 
 [[resources]]
   src   = "docs/alumni_program_sponsorship-2019.pdf"
