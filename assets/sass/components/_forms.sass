@@ -1,11 +1,14 @@
-=base-input
+=base-input-no-bg
   appearance: none
-  background: color(background, light)
-  border: 1px solid color(background, light)
+  border: 1px solid color(background, dark)
   color: color(primary, base)
   font-family: $family-serif
   outline: none
   padding: scale(small)
+=base-input
+  +base-input-no-bg
+  background: color(background, light)
+
 
   &:focus
     background: color(background, lightest)
@@ -94,10 +97,14 @@
       width: 100%
 
   &__textarea
-    +base-input
+    +base-input-no-bg
+    transition: background .2s ease-out;
     line-height: $base-line
     margin: scale(xx-small) 0 0
+    padding: scale(xx-small)
     width: 100%
+    &:focus
+      background: color(background, light)
 
 
 .button

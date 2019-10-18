@@ -11,6 +11,7 @@
         <input type="hidden" name="cmd" value="_donations">
         <input type="hidden" name="currency_code" value="USD">
         <input type="hidden" name="business" value="hello@nsdcf.org">
+        <input type="hidden" name="hosted_button_id" value="M5W8BYCM5P2ZS" />
 
         <div class="donation_form__fieldgroup">
           <h5 class="donation_form__sub_heading">{{ .Params.stepOneHeading }}</h5>
@@ -61,13 +62,16 @@
 
         <div class="donation_form__fieldgroup">
           <h5 class="donation_form__sub_heading">{{ .Params.stepTwoHeading }}</h5>
-          <select class="form__select form__select--donate" name="item_number">
-            <option value="{{ .Params.genericDonationName }}">{{ .Params.genericDonationName }}</option>
-            <option value="Five Smallest Community Scholarship Funds">Five Smallest Community Scholarship Funds</option>
-            <option value="K-12 STEM Programs">K-12 STEM Programs</option>
-            <option value="Educator Innovation Grants">Educator Innovation Grants</option>
-            <option value="NAFA's Fundraising for the Generations Initiative">NAFA's Fundraising for the Generations Initiative</option>
+          <select class="form__select form__select--donate" id="directed_donation" name="item_name">
+            {{ range .Params.donationOptions }}
+              <option value="{{.}}">{{.}}</option>
+            {{ end }}
           </select>
+
+          <div class="directed_donation_other">
+            <label class="donation_label donation_label--directed" for="item_number"><p class="donation_label__p">If other, please specify the name of the program or scholarship fund you would like to direct your donation towards:</p></label>
+            <textarea name="item_number" placeholder="Name of program or fund" class="form__textarea donation_textarea donation_textarea--directed" id="directed_donation_other__textarea"></textarea>
+          </div>
         </div>
 
         <div class="donation_form__fieldgroup--btn">
