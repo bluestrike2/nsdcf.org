@@ -1,0 +1,33 @@
+# main menu
+
+[[main]]
+  name        = "Our Story"
+  weight      = 10
+  identifier  = "story"
+  url         = "/story"
+
+[[main]]
+  name        = "Programs"
+  weight      = 20
+  identifier  = "programs"
+  url         = "/programs"
+
+[[main]]
+  name        = "Alumni"
+  weight      = 30
+  identifier  = "alumni"
+  url         = "/alumni"
+
+[[main]]
+  name        = "News"
+  weight      = 40
+  identifier  = "news"
+  url         = "/news"
+
+# footer menu
+
+[[footer]]
+  name = "Legal Info"
+  weight = 10
+  identifier = "legal"
+  url = "/legal"

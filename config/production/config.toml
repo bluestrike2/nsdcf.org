@@ -1,0 +1,8 @@
+# Production env config
+
+# Generate _redirects file instead of separate redirect files for each alias.
+disableAliases  = true
+
+# Disabled in development for speed. Used for lastMod
+# and Git commit info
+enableGitInfo = true

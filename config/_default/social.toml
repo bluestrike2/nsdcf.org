@@ -1,0 +1,8 @@
+# Note: cannot capitalize due to Hugo bug re: case sensitivity of .Site variables
+facebook              = "https://facebook.com/NSDCommunityFoundation"
+facebookpageid        = "309890076436034"
+twitter               = "NSDCF"
+youtube               = "https://youtube.com/channel/UCUiTso6Y1jtwL5_ZEFN7FQQ"
+alumni_facebook       = "https://facebook.com/groups/NorwinAlumFriends"
+alumni_facebookpageid = ""
+alumni_twitter        = "NorwinAlumni"

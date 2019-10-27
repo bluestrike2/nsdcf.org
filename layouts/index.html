@@ -23,7 +23,7 @@
       <h2 class="home-listings__heading">Latest News</h2>
     </div>
 
-    {{ range first 4 (where .Data.Pages "Section" "news") }}
+    {{ range first 4 (where $.Site.RegularPages "Section" "news") }}
       {{ .Render "li" }}
     {{ end }}
   </section>

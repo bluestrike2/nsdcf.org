@@ -4,42 +4,47 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ block "title" . }}{{ if .Title}}{{ .Title }} &middot; {{ end }}{{ .Site.Params.title_abbrev }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ if .Title}}{{ .Title }} &middot; {{ end }}{{ .Site.Params.shortTitle }}{{ end }}</title>
     {{ hugo.Generator }}
-    {{ with .Description }}
-      <meta name="description" content="{{ . }}">
-    {{ end }}
-    {{ partial "head/name-author" . }}
+
+    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+    <meta property="og:locale" content="en_us">
+    {{ with .Site.Social.facebookpageid }}<meta property="fb:pages" content="{{.}}">{{ end }}
     {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/twitter_cards.html" . }}
-    {{ partial "head/ogimage" . }}
-    {{ if .IsHome }} {{ partial "head/site-verification" . }} {{ end }}
+    {{ template "_internal/twitter_cards.html" . -}}
+    {{ partial "head/schema-data.html" . }}
+
+    {{ if .Params.imageAlt -}}
+      <meta name="twitter:image:alt" content="{{ .Params.imageAlt }}">
+    {{ else -}}
+      <meta name="twitter:image:alt" content="{{ $.Site.Params.imageAlt }}">
+    {{- end }}
+
     {{ range .AlternativeOutputFormats -}}
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
-
     <link rel="canonical" href="{{ .Permalink }}">
-    {{ if (isset .Params "prev") }}
+
+    {{ if (isset .Params "prev") -}}
       <link rel="prev" href="{{ .Params.prev }}">
     {{ end }}
-    {{ if (isset .Params "next") }}
+    {{ if (isset .Params "next") -}}
       <link rel="next" href="{{ .Params.next }}">
     {{ end }}
-    {{ partial "head/favicons" . }}
-    <link rel="manifest" href="site.webmanifest">
+
+    {{- partial "head/site-preload" . -}}
+    {{- partial "head/site-manifest" . -}}
 
     {{ $sass := resources.Get "sass/main.sass" | toCSS | postCSS }}
-
-    {{ if .Site.IsServer }}
+    {{- if .Site.IsServer -}}
       <link rel="stylesheet" href="{{ $sass.Permalink }}">
-    {{ else }}
-      {{ $css := $sass | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
-    {{ end }}
-
+    {{- else -}}
+      {{ $stylesheet := $sass | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $stylesheet.Permalink }}" integrity="{{ $stylesheet.Data.Integrity }}">
+    {{- end }}
     {{ block "style" . }}{{ end }}
 
-    <script>(function(H){H.className=H.className.replace(/\bhtml--no-js\b/,'html--js')})(document.documentElement)</script>
+    {{- partial "head/site-inline-js.html" -}}
   </head>
 
   <body class="{{ with .Type }}body--{{ . }}{{ end }}

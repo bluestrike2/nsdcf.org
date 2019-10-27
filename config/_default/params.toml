@@ -1,0 +1,29 @@
+description = "The Norwin School District Community Foundation works to help Norwin teachers, parents, and students benefit further from their education through grants, scholarship programs, community outreach, and more."
+logo        = "images/nsdcf-logo.png"
+shortTitle  = "NSDCF"
+
+# Default image for og:image and twitter:image if none specified in frontmatter.
+images   = ["images/card-nsdcf.jpg"]
+imageAlt = "Norwin School District students walking onto football field for graduation ceremony"
+
+ISO8601 = "2006-01-02T15:04:05-0700"
+
+[alumni]
+  description = ""
+  logo        = "images/nafa-logo.png"
+  title       = "Norwin Alumni & Friends Association"
+  shortTitle  = "NAFA"
+  schemaURL   = "https://alumni.nsdcf.org"
+  url         = "/alumni"
+
+[contact]
+  email         = "hello@nsdcf.org"
+  alumniEmail   = "alumni@nsdcf.org"
+  phone         = "+1-724-861-3000"
+  fax           = ""
+  street        = "281 McMahon Drive"
+  city          = "North Huntingdon"
+  state         = "PA"
+  postal        = "15642"
+  country       = "USA"
+  newsletterDescription = "Receive the latest community and school district news, events, and other relevant information via occassional email."
