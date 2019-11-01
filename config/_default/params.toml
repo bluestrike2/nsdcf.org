@@ -1,6 +1,8 @@
 description = "The Norwin School District Community Foundation works to help Norwin teachers, parents, and students benefit further from their education through grants, scholarship programs, community outreach, and more."
 logo        = "images/nsdcf-logo.png"
 shortTitle  = "NSDCF"
+title       = "Norwin School District Community Foundation"
+
 
 # Default image for og:image and twitter:image if none specified in frontmatter.
 images   = ["images/card-nsdcf.jpg"]

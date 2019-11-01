@@ -64,7 +64,7 @@
   </div>
 
   <div class="logo footer-logo">
-    <a href="{{ .Site.BaseURL }}" class="footer-logo__link" itemprop="name">{{ .Site.Title }}</a>
+    <a href="{{ .Site.BaseURL }}" class="footer-logo__link" itemprop="name">{{ .Site.Params.title }}</a>
   </div>
 
   <div class="footer-col footer-col--legal">
@@ -78,6 +78,6 @@
   </div>
 
   <div class="copyright">
-    <p class="copyright__p">&copy; 2018 {{ .Site.Title }}. All Rights Reserved.</p>
+    <p class="copyright__p">&copy; 2018 {{ .Site.Params.title }}. All Rights Reserved.</p>
   </div>
 </footer>

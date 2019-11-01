@@ -36,7 +36,7 @@
         "@type": "Organization",
         "additionalType": "https://en.wikipedia.org/wiki/Charitable_organization",
         "@id": {{ print .Site.BaseURL "#organization" }},
-        "name": {{ .Site.Title }},
+        "name": {{ .Site.Params.title }},
         "alternateName": {{ .Site.Params.shortTitle }},
         "url": {{ .Site.BaseURL }},
         "sameAs": [
@@ -80,7 +80,7 @@
       "@type": "WebSite",
       "@id": {{ print .Site.BaseURL "#website" }},
       "url": {{ .Site.BaseURL }},
-      "name": {{ .Site.Title }},
+      "name": {{ .Site.Params.title }},
       "copyrightHolder": {
         "@id": {{ print .Site.BaseURL "#organization" }}
       }

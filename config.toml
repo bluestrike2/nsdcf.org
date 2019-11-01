@@ -10,7 +10,6 @@ languageCode        = "en-us"
 metaDataFormat      = "toml"
 summaryLength       = 50
 pluralizeListTitles = false
-title               = "Norwin School District Community Foundation"
 
 [mediaTypes]
   [mediaTypes."text/netlify"]
