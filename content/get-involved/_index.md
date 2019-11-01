@@ -12,7 +12,7 @@ layout  = "mast"
 
 [[resources]]
   src  = "mast.jpg"
-  name = "mast"
+  name = "featured"
 +++
 
 ## You can help support Norwin students.

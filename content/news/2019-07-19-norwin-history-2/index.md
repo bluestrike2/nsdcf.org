@@ -8,7 +8,7 @@ summary = "On the Muse property, at the entrance to the Joseph Funk farm, stood 
 
 [[resources]]
  src = "irwin_main_street.jpg"
- name = "mast"
+ name = "featured"
 +++
 
 *This is the second in a series of articles about the history of Norwin and its school system, written by Dr. Ronald B. Surmacz with original research by C.C. Pearsall.*

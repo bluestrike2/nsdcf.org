@@ -6,7 +6,7 @@ layout     = "mast"
 
 [[resources]]
   src  = "mast.jpg"
-  name = "mast"
+  name = "featured"
 +++
 
 For the first annual Knight of Distinguished Alumni, 174 guests came from across the country to honor the the accomplishments of Norwin alumni.

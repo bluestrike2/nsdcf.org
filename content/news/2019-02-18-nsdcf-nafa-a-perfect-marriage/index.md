@@ -7,7 +7,7 @@ layout  = "mast"
 
 [[resources]]
   src  = "mast.jpg"
-  name = "mast"
+  name = "featured"
 +++
 
 Norwin School District Community Foundation (NSDCF) was formed as a 501(c)3 charitable non-profit in 2007. Initially, the primary function of NSDCF was to facilitate scholarships. In subsequent years, the Foundation began to provide Educator Innovation Grants to encourage the enrichment and enhancement of learning opportunities for K-12 student in Norwin Schools.

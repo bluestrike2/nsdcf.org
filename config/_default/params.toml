@@ -7,6 +7,8 @@ title       = "Norwin School District Community Foundation"
 # Default image for og:image and twitter:image if none specified in frontmatter.
 images   = ["images/card-nsdcf.jpg"]
 imageAlt = "Norwin School District students walking onto football field for graduation ceremony"
+featuredWidth  = "1600"
+featuredHeight = "1067"
 
 ISO8601 = "2006-01-02T15:04:05-0700"
 

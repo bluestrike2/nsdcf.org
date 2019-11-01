@@ -7,7 +7,7 @@ layout  = "mast"
 
 [[resources]]
   src  = "mast.jpg"
-  name = "mast"
+  name = "featured"
 
 [[resources]]
   src   = "nafa_scholarship_application_2019.pdf"

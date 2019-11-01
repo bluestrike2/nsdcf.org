@@ -69,7 +69,7 @@ eventComplete = false
   serviceFee   = "1.15"
 
 [[resources]]
-  name = "mast"
+  name = "featured"
   src  = "images/2018-recipients.jpg"
 
 [[resources]]

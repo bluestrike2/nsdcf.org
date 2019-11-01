@@ -8,9 +8,7 @@
     {{ hugo.Generator }}
 
     <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
-    <meta property="og:locale" content="en_us">
-    {{ with .Site.Social.facebookpageid }}<meta property="fb:pages" content="{{.}}">{{ end }}
-    {{ template "_internal/opengraph.html" . }}
+    {{ partial "head/open-graph.html" . }}
     {{ template "_internal/twitter_cards.html" . -}}
     {{ partial "head/schema-data.html" . }}
 

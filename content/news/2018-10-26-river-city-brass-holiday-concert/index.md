@@ -14,7 +14,7 @@ aliases = [
   name = "logo"
 [[resources]]
   src  = "mast.jpg"
-  name = "mast"
+  name = "featured"
 +++
 
 ## The *Magic Of Christmas* Holiday Concert

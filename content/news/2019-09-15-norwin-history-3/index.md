@@ -8,7 +8,7 @@ summary = "The first two-room school in North Huntingdon Township was built in L
 
 [[resources]]
  src = "irwin_street_scene.jpg"
- name = "mast"
+ name = "featured"
 +++
 
 *This is the third in a series of articles about the history of Norwin and its school system, written by Dr. Ronald B. Surmacz with original research by C.C. Pearsall.*

@@ -7,7 +7,7 @@ layout = "mast"
 aliases = ["/news/12-10-18-veterans-day-shirt-proceeds"]
 
 [[resources]]
-  name = "mast"
+  name = "featured"
   src  = "mast.jpg"
 [[resources]]
   src  = "wreaths-across-america.jpg"

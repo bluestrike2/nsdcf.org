@@ -74,7 +74,7 @@ aliases     = ["/news/distinguished-alumni-2019","/distinguishedalumni","/alumni
   postal  = "15642"
 
 [[resources]]
-  name = "mast"
+  name = "featured"
   src  = "mast.png"
 
 [[resources]]

@@ -7,7 +7,7 @@ layout  = "mast"
 
 [[resources]]
   src  = "mast.jpg"
-  name = "mast"
+  name = "featured"
 +++
 
 Why, all of a sudden, is there this need to create an alumni association for Norwin?  Perhaps, the real question should be, why has it taken so long?

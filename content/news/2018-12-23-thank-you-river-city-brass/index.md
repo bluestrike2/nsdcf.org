@@ -10,7 +10,7 @@ layout  = "mast"
   name = "logo"
 [[resources]]
   src  = "mast.jpg"
-  name = "mast"
+  name = "featured"
 [[resources]]
   src  = "photos/*.jpg"
 +++

@@ -1,6 +1,11 @@
 {{- .Scratch.Set "sameAs" (slice (print $.Site.Social.facebook) (print "https://twitter.com/" $.Site.Social.twitter) (print $.Site.Social.youtube)) -}}
 {{- .Scratch.Set "sameAsAlumni" (slice (print $.Site.Social.alumni_facebook) (print "https://twitter.com/" $.Site.Social.alumni_twitter)) -}}
 
+{{/* Use feature image Resource for Webpage type, common to all  */}}
+{{- $images := .Resources.ByType "image" -}}
+{{- $featured := $images.GetMatch "*feature*" -}}
+{{- $featured := cond (ne $featured nil) $featured ($images.GetMatch "{*cover*,*thumbnail*}") -}}
+
 {{/* Used for building current breadcrumb ListItem */}}
 {{- $title := .Title -}}
 {{- $kind := .Kind -}}
@@ -102,10 +107,33 @@
       "copyrightYear": {{ .Date.Format "2006" }},
       {{ with .PublishDate }}"datePublished": {{ .Format $.Site.Params.ISO8601 }},{{ end }}
       {{ if not .Lastmod.IsZero }}"dateModified": {{ .Lastmod.Format $.Site.Params.ISO8601 }}{{ end }}
-      {{/*"image": {
-        "@type": "ImageObject",
-        "url": ""
-      }*/}}
+      {{- with $featured }}
+      , "image": {
+          "@type": "ImageObject",
+          "url": {{ $featured.Permalink }},
+          "width": {{ $featured.Width }},
+          "height": {{ $featured.Height }}
+        }
+      {{ end -}}
+      {{- $permalink := print .Permalink (cond (and .IsPage (eq $section "news")) "#blogpost" "#webpage") -}}
+      {{- with .Params.videos }}
+        , "videos": [
+          {{- range $i, $e := . }}
+            {{ if ne $i 0 }},{{end}} {
+              "@type": "VideoObject",
+              "about": {{ print $permalink }},
+              "author": {{ print $.Site.BaseURL "#organization" }},
+              {{ with .caption }}"caption": {{.}},{{ end }}
+              {{ with .description }}"description": {{.}},{{ end }}
+              {{ with .duration }}"duration": {{ print (cond (hasPrefix . "T") . (print "T" .)) | upper}} ,{{ end}}
+              {{ with .url }}"contentUrl": {{.}},{{ end }}
+              {{ with .embedUrl }}"embedUrl": {{.}},{{ end }}
+              {{ with .name }}"name": {{.}},{{ end }}
+              {{ with .thumbnailUrl }}"thumbnailURL": {{ absURL .}}{{end}}
+            }
+          {{ end -}}
+        ]
+      {{ end -}}
     },
 
     {{/* CollectionPage for taxonomy pages & section listings */}}
@@ -120,10 +148,10 @@
           "itemListElement": [
             {{ range .Pages }}
               {
-                "@type": {{ if eq .Section "news" }}"BlogPosting"{{else}}"Article"{{end}},
+                "@type": {{ if eq $section "news" }}"BlogPosting"{{else}}"Article"{{end}},
                 "name": {{ .Title | title }},
                 {{with .Description}}"description": {{.}},{{end}}
-                "url": {{ if eq .Section "news" }}{{ print .Permalink "#blogpost"}}{{else}}{{ print .Permalink "#article"}},{{end}}
+                "url": {{ if eq $section "news" }}{{ print .Permalink "#blogpost"}}{{else}}{{ print .Permalink "#article"}},{{end}}
                 {{ with .PublishDate }}"datePublished": {{ .Format $.Site.Params.ISO8601 }},{{ end }}
                 {{ if not .Lastmod.IsZero }}"dateModified": {{ .Lastmod.Format $.Site.Params.ISO8601 }}{{ end }}
                 {{ with .Params.author }}"author": {
@@ -136,7 +164,7 @@
       },
     {{ end -}}
 
-    {{- if and .IsPage (eq .Section "news") }}
+    {{- if and .IsPage (eq $section "news") }}
       {
         "@type": "BlogPost",
         "@id": {{ print .Permalink "#blogpost"}},
@@ -148,8 +176,12 @@
         "publisher": {
           "@id": {{ print .Site.BaseURL "#organization" }}
         },
-        {{ with .Params.categories }}"keywords": {{ range . }}{{. | humanize | title}} {{end}},{{end}}
-        "articleSection": {{ .Section }}
+        {{- with .Params.categories }}
+          "keywords": "{{- range $i, $e := . }}
+            {{- if ne $i 0 }},{{ end }}{{- . | humanize | title -}}
+            {{ end -}}",
+        {{end -}}
+        "articleSection": {{ $section }}
       },
     {{ end -}}
 

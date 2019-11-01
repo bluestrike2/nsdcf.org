@@ -67,7 +67,7 @@ url         = "/alumni-dinner"
   postal  = "15642"
 
 [[resources]]
-  name = "mast"
+  name = "featured"
   src  = "files/mast.jpg"
 
 [[resources]]

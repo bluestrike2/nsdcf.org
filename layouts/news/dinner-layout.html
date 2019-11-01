@@ -1,6 +1,6 @@
 {{ define "main" }}
   <article itemscope itemtype="http://schema.org/Event">
-    {{ $mast_img := .Resources.GetMatch "mast" }}
+    {{ $mast_img := .Resources.GetMatch "featured" }}
 
     <header class="mast mast--cover mast--dinner"
             style="background:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url({{ $mast_img.RelPermalink }}) center center / cover no-repeat;">

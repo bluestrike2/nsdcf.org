@@ -7,7 +7,7 @@ layout  = "mast"
 
 [[resources]]
   src  = "irwin_1897.jpg"
-  name = "mast"
+  name = "featured"
 +++
 *This is the first in a series of articles about the history of Norwin and its school system, written by Dr. Ronald B. Surmacz with original research by C.C. Pearsall.*
 <!--more-->
