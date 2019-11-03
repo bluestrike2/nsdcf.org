@@ -1,9 +1,9 @@
 +++
 title = "Norwin Veterans Day 2019 Shirts Now Available: Show your Support"
 date  = 2019-10-04T21:00:00-05:00
-categories = ["news"]
 draft = false
 author = "Jack Boylan"
+"news/categories" = ["Community"]
 
 [[resources]]
   src  = "nsdcf-veterans-day-shirt-2019.png"

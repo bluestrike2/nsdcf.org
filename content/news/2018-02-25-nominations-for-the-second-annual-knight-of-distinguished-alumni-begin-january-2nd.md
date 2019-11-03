@@ -1,11 +1,11 @@
 +++
 author = "Jack Boylan"
-categories = ["alumni"]
 date = "2018-02-25T17:06:49+00:00"
 description = ""
 draft = false
 title = "Nominations for the Second Annual Knight of Distinguished Alumni Begin January 2nd"
 aliases = ["/news/distinguished-alumni-2018-nominations.md"]
+"news/categories" = ["Alumni"]
 +++
 
 The Norwin Alumni and Friends Association will host the second annual Knight of Distinguished Alumni Banquet on _Thursday, May 24, 2018_ at Stratigos Banquet Centre. The event will feature a cash bar and full buffet dinner followed by the presentation of the 2018 Class of Distinguished Alumni. 

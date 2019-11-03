@@ -1,9 +1,9 @@
 +++
 title = "Veterans Day Shirts Now Available: Show your Support"
 date  = 2018-10-08T17:00:00-05:00
-categories = ["news"]
 draft = false
 aliases = ["/news/10-08-18-veterans-day-shirts"]
+"news/categories" = ["Community"]
 
 [[resources]]
   src  = "nsdcf-veterans-day-shirts.png"

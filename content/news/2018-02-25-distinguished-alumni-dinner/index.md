@@ -1,5 +1,5 @@
 +++
-categories  = ["alumni"]
+
 date        = "2018-02-25T17:07:33+00:00"
 description = ""
 draft       = false
@@ -10,6 +10,7 @@ title       = "Second Annual Knight of Distinguished Alumni"
 titleAlt    = "Join Us in Celebrating a Knight of Distinguished Alumni"
 url         = "/distinguished-alumni/2018"
 aliases     = ["/news/distinguished-alumni-2018"]
+"news/categories" = ["Alumni","Events"]
 
 eventComplete = false
 

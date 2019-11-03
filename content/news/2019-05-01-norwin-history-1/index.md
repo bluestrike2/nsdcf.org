@@ -4,6 +4,8 @@ title = "A History of the Norwin School District, Part I"
 author = "Dr. Ronald B. Surmacz"
 draft = false
 layout  = "mast"
+"news/categories" = ["Community"]
+"news/series" = ["Norwin History"]
 
 [[resources]]
   src  = "irwin_1897.jpg"

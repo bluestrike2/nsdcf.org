@@ -1,5 +1,4 @@
 +++
-categories = []
 date = "2018-06-29T10:44:25-04:00"
 description = "2018 Distinguished Alumni Dinner"
 draft = false
@@ -7,6 +6,7 @@ tags = ["", ""]
 title = "Thank you for a successful Knight of Distinguished Alumni"
 aliases = ["/news/a-successful-knight-of-distinguished-alumni-2018"]
 layout     = "mast"
+"news/categories" = ["Alumni","Community","Events"]
 
 [[resources]]
   src  = "mast.jpg"

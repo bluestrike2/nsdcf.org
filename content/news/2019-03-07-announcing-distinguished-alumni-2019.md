@@ -4,6 +4,7 @@ date = 2019-03-07T11:45:00-05:00
 draft = false
 title = "Announcing Norwin's Distinguished Alumni for 2019"
 aliases = ["/news/announcing-distinguished-alumni-2019"]
+"news/categories" = ["Alumni"]
 +++
 
 The Norwin Alumni & Friends Association, in coordination with the Norwin School District Community Foundation, is proud to announce the 2019 class of Distinguished Alumni.

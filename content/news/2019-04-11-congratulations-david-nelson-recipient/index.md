@@ -3,6 +3,7 @@ date = 2019-04-11T16:56:00-05:00
 title = "Congratulations to Rachel Milke, the 2019 David J. Nelson Memorial Scholarship Recipient"
 author = "Jack Boylan"
 draft = false
+"news/categories" = ["Community","Scholarships"]
 
 [[resources]]
   src  = "rachel_milke.jpg"

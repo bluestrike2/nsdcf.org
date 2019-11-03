@@ -3,6 +3,7 @@ date = 2019-05-28T16:26:00-05:00
 title = "Congratulations to our Luck & Loot Raffle Winner"
 author = "Jack Boylan"
 draft = false
+"news/categories" = ["Alumni","Community"]
 
 [[resources]]
   src  = "luck-loot-winner.jpg"

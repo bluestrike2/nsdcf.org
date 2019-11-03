@@ -1,10 +1,10 @@
 +++
 author = "Jack Boylan"
-categories = ["alumni"]
 date = "2019-10-05T09:00:00+00:00"
 draft = false
 title = "Now Accepting Nominations for the 2020 Class of Distinguished Alumni"
 alternateMast = true
+"news/categories" = ["Alumni"]
 
 [banner]
  active     = true

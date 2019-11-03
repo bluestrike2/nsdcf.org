@@ -4,6 +4,7 @@ title = "Apply Now for the 2019 NAFA Scholarship"
 author = "Jack Boylan"
 draft = false
 layout  = "mast"
+"news/categories" = ["Alumni","Scholarships"]
 
 [[resources]]
   src  = "mast.jpg"

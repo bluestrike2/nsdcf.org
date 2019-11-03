@@ -1,10 +1,10 @@
 +++
 title = "NSDCF Donates to Local Norwin Veterans Organizations"
 date  = 2018-12-10T15:20:00-05:00
-categories = ["news"]
 draft = false
 layout = "mast"
 aliases = ["/news/12-10-18-veterans-day-shirt-proceeds"]
+"news/categories" = ["Community"]
 
 [[resources]]
   name = "featured"

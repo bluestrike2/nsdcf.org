@@ -48,17 +48,18 @@ some minor changes */}}
 
 {{/* If it is part of a series, link to related articles */}}
 {{- $permalink := .Permalink }}
-{{- $siteSeries := .Site.Taxonomies.series }}
-{{- with .Params.series }}
-  {{- range $name := . }}
-    {{- $series := index $siteSeries $name }}
-    {{- range $page := first 6 $series.Pages }}
+{{- $siteSeries := (index .Site.Taxonomies "news/series") }}
+{{ if isset .Params "news/series" }}
+  {{- range (index .Params "news/series") }}
+    <meta property="og:see_also" content="{{ printf "/%s/%s/" "news/series" (. | urlize) | absURL }}" />
+    {{- $series := (index $siteSeries (. | urlize)) }}
+    {{- range $page := (first 6 $series.Pages).Reverse }}
       {{- if ne $page.Permalink $permalink }}
         <meta property="og:see_also" content="{{ $page.Permalink }}" />
-      {{ end }}
-    {{ end }}
-  {{ end }}
-{{ end -}}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
 
 {{- if .IsPage }}
   {{- range .Site.Authors }}

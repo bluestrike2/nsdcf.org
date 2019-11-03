@@ -4,6 +4,7 @@ title = "Sponsor an ad in the 2019 Knight of Distinguished Alumni Program Bookle
 author = "Jack Boylan"
 draft = false
 alternateMast = true
+"news/categories" = ["Alumni","Community"]
 
 [[resources]]
   src   = "docs/alumni_program_sponsorship-2019.pdf"

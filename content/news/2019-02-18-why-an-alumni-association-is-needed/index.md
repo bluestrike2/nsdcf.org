@@ -4,6 +4,7 @@ title = "Why is a high school alumni association needed?"
 author = "Jack Boylan"
 draft = false
 layout  = "mast"
+"news/categories" = ["Alumni"]
 
 [[resources]]
   src  = "mast.jpg"

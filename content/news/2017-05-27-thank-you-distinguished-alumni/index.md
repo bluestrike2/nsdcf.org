@@ -3,6 +3,7 @@ title      = "Thank you for making the First Annual Knight of Distinguished Alum
 date       = "2017-05-27T12:35:03+00:00"
 draft      = false
 layout     = "mast"
+"news/categories" = ["Alumni","Events"]
 
 [[resources]]
   src  = "mast.jpg"

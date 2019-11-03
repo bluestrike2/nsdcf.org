@@ -5,6 +5,8 @@ author  = "Dr. Ronald B. Surmacz"
 draft   = false
 layout  = "mast"
 summary = "The first two-room school in North Huntingdon Township was built in Larimer in 1868. The school was first known as Biddle and was used until approximately 1888. Increased enrollment required that a four-room structure be built, with an additional room added at a later date."
+"news/categories" = ["Community"]
+"news/series" = ["Norwin History"]
 
 [[resources]]
  src = "irwin_street_scene.jpg"

@@ -4,7 +4,7 @@ titleAlt    = "Join Us in Celebrating a Knight of Distinguished Alumni"
 shortTitle  = "Knight of Distinguished Alumni"
 # Remember to adjust eventDate to reflect the appropriate date and time.
 eventDate   = "2019-05-23T17:30:00-05:00"
-categories  = ["alumni","events"]
+"news/categories"  =  ["Alumni","Events"]
 date        = 2019-02-26T18:46:01-05:00
 description = ""
 draft       = false

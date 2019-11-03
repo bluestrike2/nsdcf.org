@@ -3,6 +3,7 @@ author = "Jack Boylan"
 date = 2019-08-30T16:04:51-05:00
 draft = false
 title = "NAFA Bylaws Revised"
+"news/categories" = ["Foundation"]
 +++
 
 The Norwin Alumni and Friends Association (NAFA) Board of Directors approved revisions to the [NAFA Bylaws]({{< ref "/alumni/bylaws.md" >}}) on Monday, August 17, 2019. The revisions addressed two main concerns:

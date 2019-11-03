@@ -1,8 +1,8 @@
 +++
 title = "Welcome to Dr. Jeffrey Taylor, Norwin's New Superintendent of Schools"
-categories = ["news"]
 date    = 2019-07-01T12:00:00-05:00
 draft   = false
+"news/categories" = ["Norwin Schools"]
 
 [[resources]]
   src  = "photos/jeffrey-taylor.jpg"

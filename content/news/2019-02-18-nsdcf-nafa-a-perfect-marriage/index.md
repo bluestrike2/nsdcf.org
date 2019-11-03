@@ -4,6 +4,7 @@ title = "The NSDCF and NAFA: A Perfect Marriage"
 author = "Jack Boylan"
 draft = false
 layout  = "mast"
+"news/categories"  = ["Foundation"]
 
 [[resources]]
   src  = "mast.jpg"

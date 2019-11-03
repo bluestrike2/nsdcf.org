@@ -1,8 +1,8 @@
 +++
 title = "Congratulations to the 2019 Norwin Community Scholarship Recipients"
-categories = ["events"]
-date    = 2019-07-20T12:15:00-05:00
-draft   = false
+date  = 2019-07-20T12:15:00-05:00
+draft = false
+"news/categories" = ["Alumni","Scholarships"]
 
 [[resources]]
   src  = "photos/*.jpg"

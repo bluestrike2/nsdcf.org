@@ -43,7 +43,9 @@ pluralizeListTitles = false
   Priority    = "-1"
 
 [taxonomies]
-  category = "categories"
+  author   = "news/authors"
+  category = "news/categories"
+  series   = "news/series"
 
 [blackfriday]
   # https://github.com/gohugoio/hugo/issues/2424

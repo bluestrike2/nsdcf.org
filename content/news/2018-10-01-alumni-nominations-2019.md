@@ -4,6 +4,7 @@ date = 2018-10-01T12:38:27-05:00
 draft = false
 title = "Now Accepting Nominations for 2019 Distinguished Alumni"
 aliases = ["/news/alumni-nominations-2019"]
+"news/categories" = ["Alumni"]
 +++
 
 ***Nominations for the 2019 Distinguished Alumni are no longer being accepted. The Norwin Alumni & Friends Association thanks you for your interest.***

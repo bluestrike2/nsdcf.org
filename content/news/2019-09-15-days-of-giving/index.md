@@ -4,7 +4,7 @@ title   = "Support the NSDCF and the Norwin Community through the 2019 Days of G
 author = "Jack Boylan"
 draft   = false
 layout  = "mast"
-categories = ["Community","Giving"]
+"news/categories" = ["Community","Giving"]
 
 [[videos]]
   title       = "Support Norwin's 2019 Days of Giving"

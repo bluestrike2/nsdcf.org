@@ -140,7 +140,7 @@
     {{- if .IsSection }}
       {
         "@type": "CollectionPage",
-        "@id": {{ print .Permalink "#breadcrumb"}},
+        "@id": {{ print .Permalink "#collection"}},
         "isPartOf": {{ print .Site.BaseURL "#webpage" }},
         "name": {{print "\"" | safeJS }}{{ .Title | humanize | title | safeJS }}{{print "\"" | safeJS }},
         "mainEntity": {
@@ -168,9 +168,20 @@
       {
         "@type": "BlogPost",
         "@id": {{ print .Permalink "#blogpost"}},
-        "isPartOf": {
-          "@id": {{ print .Site.BaseURL "#webpage" }}
-        },
+        "isPartOf": [
+          {
+            "@id": {{ print .Site.BaseURL "#webpage" }}
+          },
+          {{- if isset .Params "news/series" -}}
+            {{- $siteSeries := (index .Site.Taxonomies "news/series") -}}
+            {{- range $i, $series := (index .Params "news/series") -}}
+              {{- $link := (printf "/%s/%s/" "news/series/" (. | urlize) | absURL) }}
+              {{ if ne $i 0 }},{{end}} {
+                "@id": {{ print $link "#collection" }}
+              }
+            {{- end -}}
+          {{- end -}}
+        ],
         "headline": {{print "\"" | safeJS }}{{ .Title | humanize | title | safeJS }}{{print "\"" | safeJS }},
         "mainEntityOfPage": {{ print .Permalink "#webpage" }},
         "publisher": {
