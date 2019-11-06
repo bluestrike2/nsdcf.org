@@ -16,9 +16,11 @@
     // grid-areas, or the minmax() function. Instead, test for @supports(grid-area: auto)
     @supports(grid-area: auto)
       @content
-
   @else if $rule == "clip-path"
     @supports(clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%))
+      @content
+  @else
+    @supports(#{$rule})
       @content
 
 // Miscellania
