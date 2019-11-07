@@ -1,7 +1,6 @@
 +++
 title = "Get Involved"
 date  = "2017-12-17 21:41:41 +0000"
-layout  = "mast"
 
 [menu]
   [menu.main]

@@ -2,7 +2,6 @@
 title = "An Afternoon with River City Brass"
 date    = 2018-12-23T13:12:00-05:00
 draft   = false
-layout  = "mast"
 "news/categories" = ["Events"]
 
 [[resources]]

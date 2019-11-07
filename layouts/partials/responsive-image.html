@@ -1,0 +1,33 @@
+{{- $orig := (.dot.Resources.ByType "image").GetMatch (print "*" .img "*") -}}
+{{- $classes := split .class " " -}}
+{{- $dot  := .dot -}}
+{{- $widths :=  cond (ne .widths nil) (split .widths ",") (slice "400" "600" "768" "1024" "1280" "1366" "1440" "1600" "1680" "1920" "2048") -}}
+{{- range $widths -}}
+  {{- if (ge $orig.Width .) -}}
+    {{- $dot.Scratch.SetInMap "images" . ($orig.Resize (print . "x")) }}
+  {{- end -}}
+{{- end -}}
+{{- $processed := $dot.Scratch.Get "images" -}}
+{{- $counter   := 0 -}}
+
+<figure{{ with $classes }} class="{{ range . }}{{.}} {{end}}"{{end}}>
+  <img sizes="{{- if eq .size "full-width" -}}
+                100vw
+              {{- else if eq .size "content" -}}
+                (min-width: 57em) calc(100vw - 15%),
+                calc(100vw - 1.414em),
+                100vw
+              {{- else if eq .size "quarter" -}}
+                (min-width: 75em) 25vw,
+                calc(25vw - 1.414em),
+              {{- else -}}
+                100vw
+              {{- end -}}"
+       srcset="{{- range $i, $e := $processed -}}
+                 {{ if ne $counter 0 }}, {{end}}{{$e.Permalink}} {{$e.Width}}w{{- $counter = add $counter 1 -}}
+               {{- end -}}"
+       src="{{ $orig.Permalink }}"
+       class="{{ if .imgClass }}{{.imgClass}}{{else}}{{ range first 1 $classes }} {{.}}__img{{ end }}{{ end }}"
+       {{- with .alt }} alt="{{.}}"{{ end }}
+       {{- if .loading }} loading="{{.}}"{{ end }} />
+</figure>

@@ -3,7 +3,6 @@ date = 2019-02-18T10:40:33-05:00
 title = "Why is a high school alumni association needed?"
 author = "Jack Boylan"
 draft = false
-layout  = "mast"
 "news/categories" = ["Alumni"]
 
 [[resources]]

@@ -3,7 +3,6 @@ date    = 2019-09-15T12:00:00-05:00
 title   = "A History of the Norwin School District, Part III"
 author  = "Dr. Ronald B. Surmacz"
 draft   = false
-layout  = "mast"
 summary = "The first two-room school in North Huntingdon Township was built in Larimer in 1868. The school was first known as Biddle and was used until approximately 1888. Increased enrollment required that a four-room structure be built, with an additional room added at a later date."
 "news/categories" = ["Community"]
 "news/series" = ["Norwin History"]
@@ -11,6 +10,9 @@ summary = "The first two-room school in North Huntingdon Township was built in L
 [[resources]]
  src = "irwin_street_scene.jpg"
  name = "featured"
+ [params]
+  alt = "A Street Scene, Irwin, Pennsylvania circa 1900"
+
 +++
 
 *This is the third in a series of articles about the history of Norwin and its school system, written by Dr. Ronald B. Surmacz with original research by C.C. Pearsall.*

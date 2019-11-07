@@ -1,7 +1,6 @@
 +++
 title = "Norwin Alumni & Friends"
 date = "2017-12-15 17:06:03 +0000"
-layout  = "mast"
 [[resources]]
   src  = "alumni-mast.jpg"
   name = "featured"

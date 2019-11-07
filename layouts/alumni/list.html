@@ -1,14 +1,6 @@
 {{ define "main" }}
   <article>
-    {{ if eq .Params.layout "mast" }}
-      {{ $mast_img := .Resources.GetMatch "featured" }}
-      <header class="mast mast--single_cover" style="background:linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url({{ $mast_img.RelPermalink }}) center center / cover no-repeat;">
-    {{ else }}
-      <header class="mast mast--single">
-    {{ end }}
-
-      <h1 class="mast__title">{{ .Title }}</h1>
-    </header>
+    {{ partial "mast" . }}
 
     <div class="content">
       {{ .Content }}

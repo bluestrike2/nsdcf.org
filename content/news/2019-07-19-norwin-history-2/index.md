@@ -3,7 +3,6 @@ date    = 2019-07-19T12:00:00-05:00
 title   = "A History of the Norwin School District, Part II"
 author  = "Dr. Ronald B. Surmacz"
 draft   = false
-layout  = "mast"
 summary = "On the Muse property, at the entrance to the Joseph Funk farm, stood a one-room school called 'Point Pleasant.' It was abandoned about the same time as the original Wray School (early 19th century) and the pupils from both these schools were sent to the new Point Pleasant School located on the farm owned by Peter Lazar."
 "news/categories" = ["Community"]
 "news/series" = ["Norwin History"]

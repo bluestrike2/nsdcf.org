@@ -5,7 +5,6 @@ draft = false
 tags = ["", ""]
 title = "Thank you for a successful Knight of Distinguished Alumni"
 aliases = ["/news/a-successful-knight-of-distinguished-alumni-2018"]
-layout     = "mast"
 "news/categories" = ["Alumni","Community","Events"]
 
 [[resources]]

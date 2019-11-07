@@ -3,7 +3,6 @@ date    = 2019-09-15T12:10:00-05:00
 title   = "Support the NSDCF and the Norwin Community through the 2019 Days of Giving"
 author = "Jack Boylan"
 draft   = false
-layout  = "mast"
 "news/categories" = ["Community","Giving"]
 
 [[videos]]

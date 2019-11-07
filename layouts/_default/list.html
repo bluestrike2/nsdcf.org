@@ -1,7 +1,5 @@
 {{ define "main" }}
-  <header class="mast">
-    <h1 class="mast__title">{{ .Title }}</h1>
-  </header>
+  {{ partial "mast" . }}
 
   <article class="list-intro">
     {{ .Content }}

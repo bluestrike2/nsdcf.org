@@ -3,7 +3,6 @@ date = 2019-05-01T12:00:00-05:00
 title = "A History of the Norwin School District, Part I"
 author = "Dr. Ronald B. Surmacz"
 draft = false
-layout  = "mast"
 "news/categories" = ["Community"]
 "news/series" = ["Norwin History"]
 

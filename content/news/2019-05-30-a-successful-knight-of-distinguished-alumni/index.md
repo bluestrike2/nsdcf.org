@@ -2,7 +2,6 @@
 title = "Thank you for our third successful Knight of Distinguished Alumni"
 date    = 2019-05-30T12:43:00-05:00
 draft   = false
-layout  = "mast"
 "news/categories" = ["Alumni","Events"]
 
 [[resources]]

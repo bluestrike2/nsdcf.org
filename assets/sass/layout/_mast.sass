@@ -3,32 +3,26 @@
   background-color: color(background, base)
 
   &--cover
-    background-position: 50% 50%
-    background-size: cover
     color: color(background, lightest)
-    display: flex
-    height: 100vh
-    margin-left: scale(h1)
+    // display: flex
+    // height: 100vh
+    // margin-left: scale(h1)
 
-  &--single
-    background: color(background, base) url(/images/knight-icon--light.svg) no-repeat
-    background-position: -33vw 35%
-    background-size: cover
+  // &--single
+  //   background: color(background, base) url(/images/knight-icon--light.svg) no-repeat
+  //   background-position: -33vw 35%
+  //   background-size: cover
 
   &--alt-single
     background: color(primary) url(/images/knight-icon.svg) no-repeat
     background-position: -33vw 35%
     background-size: cover
 
-  &--single_cover
+  &--cover
     color: #fff
     .meta-categories__link,
     .meta-categories::after
       color: #fff
-
-
-  &__content
-    align-self: flex-end
 
   &__subtitle
     margin: 0
@@ -36,3 +30,54 @@
   > p
     margin-left: $gutter
     margin-right: $gutter
+
+.mast
+  &--cover
+    min-height: 50vh
+    position: relative
+    +respond("tablet-landscape")
+      // Set margin-bottom only if object-fit isn't supported
+      // to confine fallback img to .mast--cover
+      margin-bottom: 1em
+    +respond("desktop-wide")
+      margin-bottom: $gutter*2
+    @supports(object-fit: cover)
+      margin-bottom: 0
+      min-height: auto
+
+.mast__title
+  //margin-top: 0
+  z-index: 5
+  position: relative
+
+.mast .meta
+  position: relative
+  z-index: 5
+
+.mast-figure
+  &::after
+    background: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.25))
+    content: ""
+    display: block
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+
+  &__img
+    width: auto;
+    height: auto;
+    max-width: 1000%;
+    min-height: 100%;
+    min-width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1
+    @supports(object-fit: cover)
+      height: 100%
+      width: 100%
+      object-fit: cover

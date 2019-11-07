@@ -3,7 +3,6 @@ date = 2019-02-18T10:40:40-05:00
 title = "The NSDCF and NAFA: A Perfect Marriage"
 author = "Jack Boylan"
 draft = false
-layout  = "mast"
 "news/categories"  = ["Foundation"]
 
 [[resources]]

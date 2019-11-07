@@ -1,56 +1,48 @@
 .hero
-  background: color(primary)
-  background-size: cover
-  color: color(background, light)
+  position: relative
+  height: 100vh
   display: flex
-  align-items: center
-  justify-content: center
-  text-align: center
-  min-height: 100vh
-
-  +respond("tablet-portrait")
-    justify-content: left
-    text-align: left
-
-  &--home
-    background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url(/images/home-1.jpg) center center / cover no-repeat
-
+  justify-content: flex-end
 
 .hero-content
-  padding: $gutter*2 $gutter
-  // TEMPORARY STYLE CHANGES
-  a
-    color: color(accent)
-    &:hover
-      color: color(accent, light)
-  h3
-    margin-top: 0
-
+  align-self: flex-end
+  color: color(background, light)
+  padding: 0 $gutter $gutter2
+  position: relative
+  z-index: 5
   +respond("tablet-portrait")
-    align-self: flex-end
     max-width: 80%
-
   +respond("tablet-landscape")
-    position: absolute
-    bottom: 0
-    right: 0
-
-  // TEMPORARY STYLE CHANGES
+    padding-left: 15vw
   +respond("desktop")
-    max-width: 70%
-  +respond("desktop-wide")
-    max-width: 65%
+    padding-right: 5vw
 
-  // +respond("desktop")
-  //   margin: 0 $gutter2 $gutter2 0
-  //   padding: 0
-  //   max-width: none
-  // +respond("desktop-wide")
-  //   margin: 0 scale(large) $gutter2 0
+.hero-content__title
+  margin: 0
 
-  &__title
-    margin: 0
-
-    // +respond("desktop")
-    //   font-size: scale(h1)
-    //   width: 10em
+.hero-figure
+  &::after
+    background: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.25))
+    content: ""
+    display: block
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+  &__img
+    width: auto;
+    height: auto;
+    max-width: 1000%;
+    min-height: 100%;
+    min-width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1
+    @supports(object-fit: cover)
+      height: 100%
+      width: 100%
+      object-fit: cover
