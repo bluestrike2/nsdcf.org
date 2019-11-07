@@ -6,3 +6,6 @@ disableAliases  = true
 # Disabled in development for speed. Used for lastMod
 # and Git commit info
 enableGitInfo = true
+
+timeout = 99999
+ignorecache = false
