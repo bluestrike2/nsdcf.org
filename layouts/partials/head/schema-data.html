@@ -29,6 +29,7 @@
     {{- $.Scratch.Add "breadcrumbs" (slice (dict "url" ($.Scratch.Get "path") "name" . "position" $counter)) -}}
   {{ end -}}
 {{ end -}}
+{{ $len := len ($.Scratch.Get "breadcrumbs") }}
 
 <script type="application/ld+json">
 {
@@ -89,10 +90,10 @@
       "copyrightHolder": {
         "@id": {{ print .Site.BaseURL "#organization" }}
       }
-    },
+    }
 
     {{/* Page - common to all Page types */}}
-    {
+    ,{
       "@type": "WebPage",
       "@id": {{ print .Site.BaseURL "#webpage" }},
       "url": {{ .Permalink }},
@@ -108,7 +109,7 @@
       {{ with .PublishDate }}"datePublished": {{ .Format $.Site.Params.ISO8601 }},{{ end }}
       {{ if not .Lastmod.IsZero }}"dateModified": {{ .Lastmod.Format $.Site.Params.ISO8601 }}{{ end }}
       {{- with $featured }}
-      , "image": {
+      ,"image": {
           "@type": "ImageObject",
           "url": {{ $featured.Permalink }},
           "width": {{ $featured.Width }},
@@ -134,11 +135,11 @@
           {{ end -}}
         ]
       {{ end -}}
-    },
+    }
 
     {{/* CollectionPage for taxonomy pages & section listings */}}
     {{- if .IsSection }}
-      {
+    ,{
         "@type": "CollectionPage",
         "@id": {{ print .Permalink "#collection"}},
         "isPartOf": {{ print .Site.BaseURL "#webpage" }},
@@ -146,73 +147,74 @@
         "mainEntity": {
           "@type":"ItemList",
           "itemListElement": [
-            {{ range .Pages }}
-              {
+            {{ range $i, $e := first 10 .Pages }}
+              {{if $i}},{{end}}{
                 "@type": {{ if eq $section "news" }}"BlogPosting"{{else}}"Article"{{end}},
                 "name": {{ .Title | title }},
                 {{with .Description}}"description": {{.}},{{end}}
-                "url": {{ if eq $section "news" }}{{ print .Permalink "#blogpost"}}{{else}}{{ print .Permalink "#article"}},{{end}}
-                {{ with .PublishDate }}"datePublished": {{ .Format $.Site.Params.ISO8601 }},{{ end }}
-                {{ if not .Lastmod.IsZero }}"dateModified": {{ .Lastmod.Format $.Site.Params.ISO8601 }}{{ end }}
-                {{ with .Params.author }}"author": {
+                "url": {{ if eq $section "news" }}{{ print .Permalink "#blogpost"}}{{else}}{{ print .Permalink "#article"}}{{end}}
+                {{ with .Params.author }},"author": {
                   "@id": {{ print $.Site.BaseURL "news/authors/" (. | urlize) "#author" | safeHTML }}
                 }{{end}}
               }
             {{ end }}
           ]
         }
-      },
+      }
     {{ end -}}
 
+    {{/* News section page */}}
     {{- if and .IsPage (eq $section "news") }}
-      {
-        "@type": "BlogPost",
-        "@id": {{ print .Permalink "#blogpost"}},
-        "isPartOf": [
-          {
-            "@id": {{ print .Site.BaseURL "#webpage" }}
-          },
-          {{- if isset .Params "news/series" -}}
-            {{- $siteSeries := (index .Site.Taxonomies "news/series") -}}
-            {{- range $i, $series := (index .Params "news/series") -}}
-              {{- $link := (printf "/%s/%s/" "news/series/" (. | urlize) | absURL) }}
-              {{ if ne $i 0 }},{{end}} {
-                "@id": {{ print $link "#collection" }}
-              }
-            {{- end -}}
+    ,{
+      "@type": "BlogPost",
+      "@id": {{ print .Permalink "#blogpost"}},
+      "isPartOf": [
+        {
+          "@id": {{ print .Site.BaseURL "#webpage" }}
+        }
+        {{- if isset .Params "news/series" -}}
+          ,
+          {{- $siteSeries := (index .Site.Taxonomies "news/series") -}}
+          {{- range $i, $series := (index .Params "news/series") -}}
+            {{- $link := (printf "/%s/%s/" "news/series/" (. | urlize) | absURL) }}
+            {{ if ne $i 0 }},{{end}} {
+              "@id": {{ print $link "#collection" }}
+            }
           {{- end -}}
-        ],
-        "headline": {{print "\"" | safeJS }}{{ .Title | humanize | title | safeJS }}{{print "\"" | safeJS }},
-        "mainEntityOfPage": {{ print .Permalink "#webpage" }},
-        "publisher": {
-          "@id": {{ print .Site.BaseURL "#organization" }}
-        },
-        {{- with .Params.categories }}
-          "keywords": "{{- range $i, $e := . }}
-            {{- if ne $i 0 }},{{ end }}{{- . | humanize | title -}}
-            {{ end -}}",
-        {{end -}}
-        "articleSection": {{ $section }}
+        {{- end -}}
+      ],
+      "headline": {{print "\"" | safeJS }}{{ .Title | humanize | title | safeJS }}{{print "\"" | safeJS }},
+      "mainEntityOfPage": {{ print .Permalink "#webpage" }},
+      "publisher": {
+        "@id": {{ print .Site.BaseURL "#organization" }}
       },
+      {{- with .Params.categories }}
+        "keywords": "{{- range $i, $e := . }}
+          {{- if ne $i 0 }},{{ end }}{{- . | humanize | title -}}
+          {{ end -}}",
+      {{end -}}
+      "articleSection": {{ $section }}
+    }
     {{ end -}}
 
     {{/* Breadcrumbs */}}
-    {
+    ,{
       "@type": "BreadcrumbList",
       "@id": {{ print .Permalink "#breadcrumb"}},
       "itemListElement": [
         {{- range $i, $e := $.Scratch.Get "breadcrumbs" }}
-          {{ if ne .position 1 }},{{ end }}{
+          {
             "@type": "ListItem",
             "position": {{.position}},
             "item": {
-              "name": {{print "\"" | safeJS }}{{ .name | humanize | title | safeJS }}{{print "\"" | safeJS }},
+              "name": "name",
               "@id": {{ .url }}
             }
-          }
-        {{ end -}}
+          }{{- if ne (add $i 1) $len -}},{{- end -}}
+        {{- end -}}
       ]
     }
+
 
   ]
 }
