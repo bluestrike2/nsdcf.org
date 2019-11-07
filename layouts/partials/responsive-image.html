@@ -1,4 +1,4 @@
-{{- $orig := (.dot.Resources.ByType "image").GetMatch (print "*" .img "*") -}}
+{{- $orig := (.dot.Resources.ByType "image").GetMatch .img -}}
 {{- $classes := split .class " " -}}
 {{- $dot  := .dot -}}
 {{- $widths :=  cond (ne .widths nil) (split .widths ",") (slice "400" "600" "768" "1024" "1280" "1366" "1440" "1600" "1680" "1920" "2048") -}}
@@ -17,6 +17,9 @@
                 (min-width: 57em) calc(100vw - 15%),
                 calc(100vw - 1.414em),
                 100vw
+              {{- else if eq .size "content-half" -}}
+                (min-width: 75em) 50vw,
+                calc(100vw - 1.414em),
               {{- else if eq .size "quarter" -}}
                 (min-width: 75em) 25vw,
                 calc(25vw - 1.414em),

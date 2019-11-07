@@ -14,7 +14,7 @@ draft   = false
   src  = "photos/*.jpg"
 +++
 
-{{< img "logo" "img--quarter img--right" >}}
+{{< svg "logo" "img--quarter img--right" >}}
 
 Last Sunday, hundreds of members of the Norwin community gathered together to enjoy an afternoon concert, *The Magic of Christmas*, with River City Brass to support the NSDCF.
 

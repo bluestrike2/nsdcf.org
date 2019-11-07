@@ -11,7 +11,7 @@ aliases = ["/news/a-successful-knight-of-distinguished-alumni-2018"]
   src  = "mast.jpg"
   name = "featured"
 [[resources]]
-  src  = "photos/*.jpg"
+  src  = "photos/DSC*.jpg"
 +++
 
 On the evening of May 24, two-hundred and fourteen guests came together to celebrate the lifetime accomplishments of ten Distinguished Norwin Alumni, one Distinguished Friend of Norwin, and our graduating NAFA Scholarship recipient.
@@ -26,4 +26,4 @@ The wall opposite the entrance to the Norwin High School Auditorium now holds a 
 
 Nominations for the 2019 Class of Distinguished Alumni will begin in October, 2018.  Any graduate from a Norwin Area Public School is eligible to be nominated.  You can find the criteria for nomination and the nomination for at www.nsdcf.org.
 
-{{< gallery "photos/*" >}}
+{{< gallery "photos/*.jpg" >}}

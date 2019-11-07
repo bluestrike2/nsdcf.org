@@ -15,7 +15,7 @@ aliases = ["/concert","/news/10-26-18-holiday-concert"]
 
 ## The *Magic Of Christmas* Holiday Concert
 
-{{< img "logo" "img--quarter img--right" >}}
+{{< svg "logo" "img--quarter img--right" >}}
 
 On Sunday, December 16, at 3pm, the NSDCF will welcome the River City Brass, joined by the Norwin High School Chamber Singers alongside the Bel Canto Women's Choir and Show Choir, for the *Magic of Christmas* holiday concert at the Norwin High School auditorium.
 

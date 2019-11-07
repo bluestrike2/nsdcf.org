@@ -15,7 +15,7 @@ On May 23, 2019, members of the Norwin community and past graduates came togethe
 
 Those honored included **George Koury, Jr. (1977), Heather Newell (1988), John Tirpak (1986), Rebecca Gediminskas (1974), Robin Sleigh Dillon (1973), Ted Kopas (1991), and Tim Kotch (1974).** In addition to our distinguished alumni, **Robert Neil Faust** was honored as a Distinguished Friend of Norwin and **Victoria Saunders** was received the 2019 NAFA Scholarship.
 
-{{< gallery "photos/*" >}}
+{{< gallery "photos/*.jpg" >}}
 
 The NSDCF would like to thank the following sponsors and  for their support, which was instrumental to the evening's success:
 

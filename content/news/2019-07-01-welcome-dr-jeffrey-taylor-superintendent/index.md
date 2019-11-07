@@ -9,7 +9,7 @@ draft   = false
   name = "photo-1"
 +++
 
-{{< img "photo-1" "img--side" >}}
+{{< img "photo-1" "img--side" "quarter">}}
 
 The Norwin School District recently welcomed Dr. Jeffrey M. Taylor as its Superintendent of Schools on July 1, 2019. The NSDCF is proud to welcome Dr. Taylor, and looks forward to working with him in the future.
 
