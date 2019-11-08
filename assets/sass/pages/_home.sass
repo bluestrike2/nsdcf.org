@@ -11,28 +11,17 @@
     //
 
 .alert
-  background: color(primary, light)
-  color: color(background)
+  background: color(background, light)
+  //color: color(background)
   padding-bottom: $gutter
   text-align: center
   +respond("desktop")
     padding-bottom: $halfGutter * 1.5
     padding-top: $gutter
-    position: fixed
-    top: 0
-    left: 0
-    z-index: 500
-
 
   &__text
     font-size: scale(base)
     margin-top: 0
-
-  &__link
-    color: color(accent)
-    transition: color .25s
-    &:hover
-      color: color(accent, dark)
 
   &__btn
     border: 1px solid color(background)
