@@ -6,6 +6,9 @@ date      = "2019-01-03T17:43:50-05:00"
 weight    = "20"
 hasResources = "true"
 [[resources]]
+  name = "featured"
+  src  = "grants.jpg"
+[[resources]]
   src = "grant_*.pdf"
   [resources.params]
     icon = "pdf"

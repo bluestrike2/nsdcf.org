@@ -1,12 +1,6 @@
 {{ define "main" }}
   <article>
-    <header class="mast mast--single">
-      <h1 class="mast__title">{{ .Title }}</h1>
-
-      <figure class="mast__cover">
-        <img class="mast__cover-img" src="" />
-      </figure>
-    </header>
+    {{ partial "mast" . }}
 
     <div class="content">
       {{ .Content }}

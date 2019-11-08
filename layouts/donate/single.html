@@ -1,8 +1,6 @@
 {{ define "main" }}
   <article>
-    <header class="mast mast--single">
-      <h1 class="mast__title">{{ .Title }}</h1>
-    </header>
+    {{ partial "mast" . }}
 
     <div class="content">{{ .Content }}</div>
 

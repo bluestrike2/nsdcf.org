@@ -5,6 +5,10 @@ weight = "15"
 formHeading = "2019 Summer Camp Application Form"
 layout = "camp"
 type = "camp"
+
+[[resources]]
+  name = "featured"
+  src  = "camp.jpg"
 +++
 
 Each year, after school is out for summer, the Norwin School District offers seventeen STEM-focused summer camp programs that give Norwin students the opportunity to have fun and learn more in doing so. The Norwin Alumni & Friends Association is proud to offer two summer camp scholarships for two qualifying students.<!--more-->

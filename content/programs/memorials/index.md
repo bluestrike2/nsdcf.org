@@ -2,6 +2,10 @@
 title = "Community Memorials"
 date  = "2019-01-03T17:43:55-05:00"
 weight = "30"
+
+[[resources]]
+  name = "featured"
+  src  = "community-memorials.jpg"
 [[resources]]
   src = "memorial_*.md"
 +++
