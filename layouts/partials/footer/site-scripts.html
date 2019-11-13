@@ -4,10 +4,8 @@
 {{ $js := resources.Get "js/main.js" }}
 
 {{ if .Site.IsServer }}
-  <script async type="text/javascript" src="{{ $js.Permalink }}"></script>
+  <script async src="{{ $js.Permalink }}"></script>
 {{ else }}
   {{ $script := $js | minify | fingerprint }}
-  <script async type="text/javascript" src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  <script async src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
 {{ end }}
-
-{{ template "_internal/google_analytics_async.html" . }}

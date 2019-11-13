@@ -6,11 +6,11 @@
             style="background:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url({{ $mast_img.RelPermalink }}) center center / cover no-repeat;">
 
       <div class="mast__content">
-        <h1 class="mast__title" itemprop="name" >{{ .Title }}</h1>
+        <h1 class="mast__title">{{ .Title }}</h1>
 
         {{ with .Params.eventDate }}
           <h3 class="mast__subtitle">
-            <time class="mast__time" datetime="{{.}}" itemprop="startDate">{{ dateFormat "Monday, Jan 2, 2006" (.) }}</time>
+            <time class="mast__time" datetime="{{.}}">{{ dateFormat "Monday, Jan 2, 2006" (.) }}</time>
           </h3>
         {{ end }}
       </div>
@@ -72,12 +72,12 @@
 
                 <h3 class="map__heading">{{ .title }}</h3>
 
-                <address class="map__address" itemprop="location" itemscope itemtype="http://schema.org/Place">
-                  <span itemprop="name">{{ .name }}</span><br />
-                  <span itemprop="streetAddress">{{ .street }}</span><br />
-                  <span itemprop="addressLocality">{{ .city }}</span>,
-                  <span itemprop="addressRegion">{{ .state }}</span>
-                  <span itemprop="postalCode">{{ .postal }}</span>
+                <address class="map__address">
+                  <span>{{ .name }}</span><br />
+                  <span>{{ .street }}</span><br />
+                  <span>{{ .city }}</span>,
+                  <span>{{ .state }}</span>
+                  <span>{{ .postal }}</span>
                 </address>
               </figure>
             {{ end }}

@@ -1,4 +1,4 @@
-<footer class="footer" itemtype="http://schema.org/Organization">
+<footer class="footer">
   <div class="footer-col footer-col--newsletter">
     <h5 class="footer__heading">Join our Mailing List</h5>
     <p class="newsletter__p">{{ .Site.Params.contact.newsletter_description }}</p>
@@ -13,16 +13,16 @@
     <ul class="footer-menu">
       {{ range .Site.Menus.main }}
         <li class="footer-menu__item">
-          <a class="footer-menu__link" itemprop="url" href="{{.URL}}">{{ .Name }}</a>
+          <a class="footer-menu__link" href="{{.URL}}">{{ .Name }}</a>
         </li>
       {{ end }}
       {{ range .Site.Menus.footer }}
         <li class="footer-menu__item">
-          <a class="footer-menu__link" itemprop="url" href="{{.URL}}">{{ .Name }}</a>
+          <a class="footer-menu__link" href="{{.URL}}">{{ .Name }}</a>
         </li>
       {{ end }}
       <li class="footer-menu__item">
-        <a class="footer-menu__link footer-menu__link--external" itemprop="url" href="https://norwinsd.org" target="_blank">Norwin School District</a>
+        <a class="footer-menu__link footer-menu__link--external" href="https://norwinsd.org" target="_blank">Norwin School District</a>
       </li>
     </ul>
   </nav>
@@ -51,27 +51,25 @@
 
   <div class="footer-col footer-col--contact">
     <h5 class="footer__heading"><a href="/contact/">Contact</a></h5>
-    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-      <span itemprop="streetAddress">{{ .Site.Params.contact.street }}</span><br />
-      <span itemprop="addressLocality">{{ .Site.Params.contact.city }}</span>,&nbsp;
-      <span itemprop="addressRegion">{{ .Site.Params.contact.state }}</span>&nbsp;
-      <span itemprop="postalCode">{{ .Site.Params.contact.postal }}</span>
-    </div>
+      <span>{{ .Site.Params.contact.street }}</span><br />
+      <span>{{ .Site.Params.contact.city }}</span>,&nbsp;
+      <span>{{ .Site.Params.contact.state }}</span>&nbsp;
+      <span>{{ .Site.Params.contact.postal }}</span>
     <br />
     <span class="label">Phone </span>
-    <span itemprop="telephone">{{ .Site.Params.contact.phone }}</span><br />
-    <a href="mailto:{{ .Site.Params.contact.email }}" itemprop="email">{{ .Site.Params.contact.email }}</a>
+    <span>{{ .Site.Params.contact.phone }}</span><br />
+    <a href="mailto:{{ .Site.Params.contact.email }}">{{ .Site.Params.contact.email }}</a>
   </div>
 
   <div class="logo footer-logo">
-    <a href="{{ .Site.BaseURL }}" class="footer-logo__link" itemprop="name">{{ .Site.Params.title }}</a>
+    <a href="{{ .Site.BaseURL }}" class="footer-logo__link">{{ .Site.Params.title }}</a>
   </div>
 
   <div class="footer-col footer-col--legal">
     <ul class="footer-menu">
       {{ range .Site.Menus.legal }}
         <li class="footer-menu__item footer-menu__item--legal footer-menu__item--{{ index (split .Name " ") 0| lower }}">
-          <a class="footer-menu__link footer-menu__link--legal" itemprop="url" href="{{.URL}}">{{ .Name }}</a>
+          <a class="footer-menu__link footer-menu__link--legal" href="{{.URL}}">{{ .Name }}</a>
         </li>
       {{ end }}
     </ul>
