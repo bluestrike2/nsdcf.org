@@ -3,5 +3,11 @@
     {{ partial "mast" . }}
 
     <div class="content">{{ .Content }}</div>
+
+    {{ if eq .RelPermalink "/alumni/board/" }}
+      <div class="content content--board">
+        {{ partial "board-members" . }}
+      </div>
+    {{ end }}
   </article>
 {{end}}

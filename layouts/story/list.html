@@ -1,0 +1,15 @@
+{{ define "main" }}
+  {{ partial "mast" . }}
+
+  <article class="content">
+    {{ .Content }}
+  </article>
+
+  {{ with .Site.GetPage "story/board" }}
+    <div class="content content--board">
+      <h3 class="board__heading">{{ .Title | title }}</h3>
+      {{.Content}}
+      {{ partial "board-members" . }}
+    </div>
+  {{ end }}
+{{ end }}

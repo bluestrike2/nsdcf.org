@@ -1,0 +1,23 @@
+{{- $dot := . -}}
+{{ range .Params.members }}
+  <article class="media_vert media_vert--board">
+    {{ $resourceName := (print (replace .name "." "") ".jpg" | urlize) }}
+    {{ if $dot.Resources.GetMatch $resourceName }}
+      {{- partial "responsive-image" (dict "img" (print $resourceName) "size" "quarter" "class" "media_vert__fig" "imgClass" "media_vert__img" "alt" .name "dot" $dot) -}}
+    {{ else }}
+      {{ with $dot.Resources.GetMatch "blank.png" }}
+        <figure class="media_vert__fig">
+          <img class="media_vert__img" src="{{.Permalink}}" />
+        </figure>
+      {{ end }}
+    {{ end }}
+    <header class="media_vert__meta">
+      <h4 class="media_vert__heading">{{with .honorific}}{{.}} {{end}}{{ .name }}{{with .title}}, {{.}}{{end}}</h4>
+      {{ with .positions }}
+        {{ range . }}
+          <span class="media_vert__subheading">{{.}}</span>
+        {{ end }}
+      {{ end }}
+    </header>
+  </article>
+{{ end }}

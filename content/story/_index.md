@@ -2,10 +2,7 @@
 title = "Our Story"
 date  = "2017-12-15 16:58:57 +0000"
 type = "story"
-photos_headline = "Board of Directors"
-[[resources]]
-  src  = "board/*.md"
-  name = "board-:counter"
+
 [[resources]]
   src  = "cover.jpg"
   name = "cover"
