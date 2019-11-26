@@ -3,10 +3,6 @@ linktitle = "NAFA Standing Rules"
 title = "NAFA Standing Rules"
 draft = "false"
 layout = "legal"
-
-[menu.main]
- parent = "alumni"
- weight = "25"
 +++
 
 1. <h3 class="legal-list__section_heading">2019-2020 Standing Rules</h3>

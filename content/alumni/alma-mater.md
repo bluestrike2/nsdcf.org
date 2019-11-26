@@ -2,10 +2,6 @@
 linktitle = "Alma Mater"
 title = "Norwin's Alma Mater"
 draft = "false"
-
-[menu.main]
-  parent = "alumni"
-  weight = "20"
 +++
 
 On a grassy hillside<br />

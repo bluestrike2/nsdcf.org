@@ -1,0 +1,67 @@
+.nav-overlay
+  background: color("primary", "base") url("/images/knight_cropped.svg") top center / cover no-repeat
+  height: 100vh
+  width: 100vw
+  padding: $gutter
+  position: fixed
+  top: 0
+  bottom: 0
+  opacity: 0
+  transition: opacity 0.5s, visibility 0s 0.5s
+  visibility: hidden
+  z-index: z-index("nav-overlay")
+  display: flex
+  align-items: center
+
+  &--active
+    opacity: 1
+    visibility: visible
+    transition: opacity 0.5s
+
+  +respond("tablet-landscape")
+    background-position: bottom left
+    padding: $gutter*3 15%
+    align-items: flex-end
+
+  +respond("tablet-landscape")
+    //padding-bottom: $gutter
+
+.nav
+  list-style: none
+  margin: 0
+  padding: 0
+  text-align: center
+  width: 100%
+
+  +respond("tablet-landscape")
+    text-align: left
+
+.nav__item
+  padding: $halfGutter 0
+
+  +respond("desktop")
+    padding: scale(base) 0
+
+.nav__link
+  color: color("background","white")
+  font-size: scale(h3)
+
+  +respond("tablet-landscape")
+    font-size: scale(h2)
+
+  +respond("desktop")
+    font-size: scale(h1)
+
+  &:hover
+    color: color("accent","base")
+
+  &--active
+    &::before, &::after
+      content: "—"
+      display: inline-block
+      width: $gutter
+    +respond("tablet-landscape")
+      &::before
+        //margin-left: $gutter*-1
+      &::after
+        display: none

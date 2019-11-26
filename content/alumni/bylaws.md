@@ -3,10 +3,6 @@ linktitle = "NAFA Bylaws"
 title = "NAFA Bylaws"
 draft = "false"
 layout = "legal"
-
-[menu.main]
- parent = "alumni"
- weight = "20"
 +++
 
 1. <h3 class="legal-list__section_heading">Name</h3>

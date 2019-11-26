@@ -1,7 +1,10 @@
 .home-slide
+  background: color("background","white")
   +section-padding
   +respond("tablet-landscape")
     min-height: 100vh
+  +respond("desktop")
+    margin-top: 100vh
 
 .list--home
   +section-padding
@@ -11,7 +14,8 @@
     //
 
 .alert
-  background: color(background, light)
+  background: color(background, base)
+  border-bottom: 1px solid color(background, light)
   //color: color(background)
   padding-bottom: $gutter
   text-align: center

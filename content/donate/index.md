@@ -14,6 +14,12 @@ payByCheck          = ""
 url = "/donate"
 aliases = ["/days-of-giving", "/day-of-giving", "/giving"]
 
+[menu]
+  [menu.main]
+    name = "Donate"
+    parent = "get-involved"
+    weight = 60
+    
 [[resources]]
   name = "featured"
   src  = "donate.jpg"

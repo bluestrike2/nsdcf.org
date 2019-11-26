@@ -1,158 +1,143 @@
+// Hamburger menu animation
+$transTime: .3s
+$transDelayTime: .1s
+
 .header
-  padding: scale("base") $gutter
-  position: absolute
+  position: fixed
   left: 0
   top: 0
   width: 100%
-  z-index: z-index("header-links")
+  z-index: z-index("header")
+
+.header__inner
+  background: color("background", "lightest")
+  //background: transparent
+  padding: 0.5em $gutter
+  display: flex
+  align-items: center
+  justify-content: space-between
+  transition: background $transTime
+  z-index: z-index("header__inner")
+
+  +respond("tablet-landscape")
+    justify-content: flex-start
+    padding: 0.5em $gutter
 
   +respond("desktop")
     background: none
-    // background: color(primary)
+    align-items: center
+    justify-content: space-between
     padding: 0 scale(small)
     position: fixed
-    // height and width are reversed after transform; header is rotated
-    // height --> 2.827em
+    top: 0
+    left: 0
     height: scale(h1)
     width: 100vh
     transform: rotate(-90deg) translateX(-100%)
     transform-origin: left top
-    z-index: z-index("header")
+    z-index: z-index("header__inner")
 
-    // .html--no-js &
-    //   background: color(primary)
+    .body--home &
+      @supports(animation-name: foo)
+        left: -0.5 * scale(h1)
+        animation: slideToLeft 3s ease forwards, fadeIn 4s
 
-    .body--has-hero &
-      background-color: color(primary)
-
-  &__inner
-    display: flex
-    align-items: center
-    justify-content: space-between
+  &--scrolled
+    background: color("background", "base")
     +respond("desktop")
-      align-items: center
-      height: 100%
+      background: none
 
 .hamburger
-  display: flex
-  order: 2
-  width: $base-line--headings
-  height: $base-font-size
-  flex-direction: column
-  justify-content: space-between
+  padding: 0
+  border: none
+  color: inherit
+  background-color: transparent
   cursor: pointer
-  transition: transform 350ms ease-out
-  // Hamburger icon is always above everything except page transitions and loaders
+  width: (($gutter+1em)/2)
+  height: $gutter
+  display: block
+  position: relative
+  z-index: z-index("header__inner")
 
   +respond("desktop")
     order: 3
     transform: rotate(90deg)
 
-  &--active
-    transform: rotate(-45deg)
+.hamburger__box
+  display: block
+  position: relative
+  top: -.375em
 
-    .hamburger__line
-      background-color: color("background")
+.hamburger__line
+  height: 1px
+  width: 100%
+  display: block
+  margin: 0 auto
+  line-height: $gutter
+  position: absolute
+  background-color: color("primary")
+  border-radius: 4px
+  transition: $transTime
 
-      &--start
-        transform: rotate(-90deg) translateX(4px)
+  &:nth-of-type(1)
+    top: 0
+    transition: top $transTime ease $transTime, transform $transTime ease $transDelayTime
 
-      &--end
-        transform: rotate(-90deg) translateX(-4px)
+  &:nth-of-type(2)
+    top: 8px
+    transition: opacity 50ms ease 200ms
 
-  &__line
-    background-color: color("primary")
-    border-radius: 3px
-    height: 4px
-    width: 100%
+  &:nth-of-type(3)
+    top: 16px
+    transition: top $transTime ease $transTime, transform $transTime ease $transDelayTime
 
-    // +respond("desktop")
-    //   background-color: color("primary")
+  .hamburger:hover &
+    background-color: color("tertiary","light")
 
-    &--start
-      transition: transform 350ms cubic-bezier(0.54, -0.81, 0.57, 0.57)
-      transform-origin: right
-      width: 50%
+  .hamburger--active &
+    &:nth-of-type(1)
+      top: 10px
+      transform: rotate(45deg)
+      transition: top $transTime ease $transDelayTime, transform $transTime ease-out .5s
+    &:nth-of-type(2)
+      opacity: 0
+    &:nth-of-type(3)
+      top: 10px
+      transform: rotate(-45deg)
+      transition: top $transTime ease $transDelayTime, transform $transTime ease-out .5s
 
-    &--end
-      align-self: flex-end
-      transition: transform 350ms cubic-bezier(0.54, -0.81, 0.57, 0.57)
-      transform-origin: left
-      width: 50%
+  .header--nav-overlay-active &
+    background-color: color("background","white")
 
-    .body--has-hero &
-      background-color: color("background")
+  .header--nav-overlay-active .hamburger:hover &
+    background-color: color("accent","base")
 
 .header-logo
-  flex: 1
-  order: 1
-
-  // +respond("desktop")
-  //   flex: none
-  //   order: 1
-
   &__link
-    color: color("primary")
-    font-size: scale(h4)
-    +logo-name
+    z-index: z-index("header__inner")
 
-    .body--has-hero &
-      color: color("background")
-
-    // +respond("desktop")
-    //   color: color("primary")
-    //   display: block
-    //   font-size: scale(h4)
-
-.nav-overlay
-  background: color(primary, light)
-  display: none
-  padding: 0 $gutter
-
-  +respond("desktop")
-    position: fixed
-    height: 100vh
-    width: 100vw
-    display: none
-
-  &--active
-    display: block
-    background: color(primary) url(/images/knight-icon.svg) no-repeat 50% 50%
-    background-size: cover
-    position: fixed
-    height: 100vh
-    width: 100vw
-    z-index: z-index("nav-overlay")
+    +respond("tablet-landscape")
+      display: block
+      position: absolute
+      left: 15%
 
     +respond("desktop")
-      background-position: left -24vw top -24vh
-      background-size: 80%
+      position: relative
+      left: auto
 
-.nav
-  align-items: center
-  display: flex
-  flex-direction: column
-  justify-content: center
-  list-style: none
-  height: 100vh
-  margin: 0
-  padding: 0
-
-  &__item
-    width: 100%
-
-  &__link
-    color: color(background)
-    display: block
-    font-family: $family-serif
-    font-size: scale(h3)
-    line-height: $base-line
-    padding: scale(xx-small) 0
-    text-align: center
-
-    +respond("desktop")
-      font-size: scale(h2)
-
-    &--active,
     &:hover
-      color: color(accent)
+      filter: brightness(0) saturate(100%) invert(46%) sepia(7%) saturate(1710%) hue-rotate(183deg) brightness(97%) contrast(86%)
+
+    .header--nav-overlay-active &
+      filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(217%) hue-rotate(53deg) brightness(118%) contrast(100%)
+
+      &:hover
+        // filter equivalent to color("accent","base")
+        filter: brightness(0) saturate(100%) invert(100%) sepia(28%) saturate(5026%) hue-rotate(319deg) brightness(108%) contrast(94%)
+
+  &__img
+    display: inline-block
+    //filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)
+    height: $gutter
+    line-height: 1em
+    vertical-align: bottom

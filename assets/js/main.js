@@ -1,7 +1,25 @@
 (function () {
+
+	$(function() {
+	  var header  = $(".header__inner");
+		var mast = $(".mast").offset().top;
+		var mastEnd = $(".mast").offset().top + $(".mast").outerHeight();
+		//+ header.outerHeight();
+
+	  $(window).scroll(function() {
+	    var scroll = $(window).scrollTop();
+	    if (scroll >= mast && scroll <= mastEnd) {
+				header.addClass("header__inner--scrolled");
+	    } else {
+	      header.removeClass("header__inner--scrolled");
+	    }
+	  });
+	});
+
 	$('.hamburger').on('click', function() {
 		$(this).toggleClass('hamburger--active');
 		$('.nav-overlay').toggleClass('nav-overlay--active');
+		$('.header').toggleClass('header--nav-overlay-active');
 	});
 
 	$('#checkbox--business-reservation').change(function () {

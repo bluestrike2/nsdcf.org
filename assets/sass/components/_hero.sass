@@ -1,8 +1,18 @@
 .hero
   position: relative
   height: 100vh
+  width: 100vw
   display: flex
   justify-content: flex-end
+  +respond("desktop")
+    height: calc(100vh - #{scale(small)*2})
+    overflow: hidden
+    margin: scale(small) 0 0 scale(h1)
+    position: fixed
+    z-index: -20
+    @supports(animation-name: foo)
+      left: 100vw
+      animation: slideToLeft 3s ease forwards
 
 .hero-content
   align-self: flex-end
@@ -15,37 +25,27 @@
   +respond("tablet-landscape")
     padding-left: 15vw
   +respond("desktop")
+    animation: fadeIn 5s ease forwards
     padding-right: 5vw
 
 .hero-content__title
   margin: 0
 
-.hero-figure
-  &::after
-    background: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.25))
-    content: ""
-    display: block
-    height: 100%
-    width: 100%
-    position: absolute
-    top: 0
+.hero-figure__img
+  width: auto
+  height: auto
+  max-width: 1000%
+  min-height: 100%
+  min-width: 100vw
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
+  z-index: 1
+  @supports(object-fit: cover)
+    height: 100vh
+    width: 100vw
+    transform: none
     left: 0
-    z-index: 2
-  &__img
-    width: auto;
-    height: auto;
-    max-width: 1000%;
-    min-height: 100%;
-    min-width: 100vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 1
-    @supports(object-fit: cover)
-      height: 100%
-      width: 100%
-      transform: none
-      left: 0
-      top: 0
-      object-fit: cover
+    top: 0
+    object-fit: cover

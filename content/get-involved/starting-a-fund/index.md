@@ -3,11 +3,6 @@ date = "2017-12-15T12:45:19.000-05:00"
 title = "Starting a Fund"
 aliases = ["/get-involved/starting-an-endowment"]
 
-[menu]
-  [menu.main]
-    parent = "get-involved"
-    weight = 30
-
 [[resources]]
   src = "docs/scholarship_endowment_agreement.pdf"
   title = "Endowed Scholarship Agreement"

@@ -1,10 +1,6 @@
 +++
 title = "Alumni Association Board of Directors"
 draft = "false"
-
-[menu.main]
-  parent = "alumni"
-  weight = "20"
   
 [[resources]]
   src  = "*.jpg"
