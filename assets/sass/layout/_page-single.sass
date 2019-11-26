@@ -27,9 +27,21 @@
     max-width: 100%
 
 .list--col
-  list-style: none
   +respond("tablet-portrait")
     column-count: 2
+    column-gap: $gutter
+    margin-top: $gutter
+
+  +respond("desktop-wide")
+    column-count: 3
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+  li
+    display: inline-block
 
 .list__li
   padding-bottom: scale("xx-small")
