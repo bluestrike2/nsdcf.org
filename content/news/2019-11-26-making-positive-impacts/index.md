@@ -8,7 +8,7 @@ author = "Jack Boylan"
   src  = "photos/fall.jpg"
 +++
 
-Thanks to the 30+ donors and the contributions from every school within the Norwin School District, over $4300 was raised during the 2019 Days of Giving with over $3900 directed towards scholarships managed by the NSDCF and the reamining donations applied to STEM, Educator Innovation Grants and NAFA’s Fundraising for the Generations 
+Thanks to the 30+ donors and the contributions from every school within the Norwin School District, over $4300 was raised during the 2019 Days of Giving with over $3900 directed towards scholarships managed by the NSDCF and the reamining donations applied to STEM, Educator Innovation Grants and NAFA’s Fundraising for the Generations.
 
 Over **ninety-nine** percent of the total money raised went directly to supporting Norwin scholarships and programs. 
 
