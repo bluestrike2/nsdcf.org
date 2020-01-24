@@ -1,5 +1,5 @@
 +++
-title  = "Remembering Don Kattick"
+title  = "Remembering Don Kattic"
 date   = 2020-01-23T19:36:00-05:00
 "news/categories" = ["In memoriam"]
 
