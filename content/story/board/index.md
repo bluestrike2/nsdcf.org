@@ -70,8 +70,8 @@ headless = true
   positions = ["Norwin School District Superintendent of Schools"]
   
 [[members]]
-  name      = "Barbara Viola"
-  honorific = "Ms."
+  name      = "Brian S. Carlton"
+  honorific = "Mr."
   positions = ["Norwin School Board Representative"]
 +++
 
