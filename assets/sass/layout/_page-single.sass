@@ -7,6 +7,11 @@
   &--alt
     background-color: color(background)
 
+.content ul
+  +respond("tablet-landscape")
+    padding-left: 0
+    list-style-position: outside
+
 .img--side
   +respond("tablet-portrait")
     margin: $gutter auto 0
