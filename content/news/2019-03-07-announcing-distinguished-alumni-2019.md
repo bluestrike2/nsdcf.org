@@ -21,4 +21,4 @@ Throughout their lives, these honorees have demonstrated how the quality educati
 * Robert Neil Faust, Distinguished Friend of Norwin *(posthumous)*
 * Victoria Saunders, *NAFA 2019 Scholarship Awardee*
 
-Each honoree will be recognized at the [2019 Knight of Distinguished Alumni Recognition]({{< ref "/2019-02-26-distinguished-alumni" >}}) Dinner to be held on Thursday, May 23, 2019 at the Stratigos Banquet Center. Reservations will be available through our website starting on April 1st.
+Each honoree will be recognized at the [2019 Knight of Distinguished Alumni Recognition]({{< ref "/distinguished-alumni/2019/index.md" >}}) Dinner to be held on Thursday, May 23, 2019 at the Stratigos Banquet Center. Reservations will be available through our website starting on April 1st.

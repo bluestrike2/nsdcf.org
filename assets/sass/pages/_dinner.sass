@@ -1,14 +1,21 @@
 .kda-slide
+  &--intro
+    background: color(background, light)
+
   &--info
-    //
+    background-color: color(background)
+    padding-top: $gutter2
 
   &--recipients
-    background-color: color(background)
+    background: color(background, lightest)
     display: flex
     flex-wrap: wrap
 
+  &--recipients-complete
+    background-color: color(background)
+
   &__intro
-    margin-bottom: $gutter2
+    //margin-bottom: $gutter2
     +respond("desktop")
       margin-top: scale(large)
       //margin-bottom: scale(x-large)
@@ -17,6 +24,10 @@
       font-size: scale(h4)
       +respond("desktop")
         //
+
+  &--reservations
+    background-color: color(background)
+
 
 .kda-info
   +respond("tablet-landscape")

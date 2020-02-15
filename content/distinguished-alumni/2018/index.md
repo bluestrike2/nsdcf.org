@@ -1,14 +1,13 @@
 +++
-
 date        = "2018-02-25T17:07:33+00:00"
 description = ""
 draft       = false
 eventDate   = "2018-05-24T17:30:00-05:00"
-layout      = "dinner-layout"
-layout_hero = true
+layout      = "event"
 title       = "Second Annual Knight of Distinguished Alumni"
 titleAlt    = "Join Us in Celebrating a Knight of Distinguished Alumni"
-url         = "/distinguished-alumni/2018"
+shortTitle  = "Knight of Distinguished Alumni"
+#url         = "/distinguished-alumni/2018"
 aliases     = ["/news/distinguished-alumni-2018"]
 "news/categories" = ["Alumni","Events"]
 
@@ -89,4 +88,4 @@ eventComplete = false
     icon = "pdf"
 +++
 
-You are cordially invited to join the Norwin School District Community Foundation on Thursday, May 24, 2018 for a celebration of Norwin's past, present, and future as we honor the achievements of of some of our most distinguished alumni and graduating students.
+On the evening of May 24, two-hundred and fourteen guests came together to celebrate the lifetime accomplishments of ten Distinguished Norwin Alumni, one Distinguished Friend of Norwin, and our graduating NAFA Scholarship recipient.

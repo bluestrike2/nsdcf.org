@@ -1,0 +1,6 @@
+{{ define "main" }}
+  <!-- render post for latest year -->
+  {{ range first 1 .Pages }}
+    {{ .Render "event-partial" }}
+  {{ end }}
+{{ end }}
