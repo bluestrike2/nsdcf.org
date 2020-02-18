@@ -25,3 +25,5 @@ Throughout their lives, these honorees have demonstrated how the quality educati
 * NAFA 2019 Scholarship Awardee *To Be Announced*
 
 Each honoree will be recognized at the *2020 Knight of Distinguished Alumni Recognition Dinner* to be held on Thursday, May 21, 2020 at the Stratigos Banquet Center. Reservations and additional information regarding this event will be available on the [2020 Knight of Distinguished Alumni]({{< ref "distinguished-alumni/2020">}}) section starting on April 1st.
+
+[Advertising opportunities]({{< ref "distinguished-alumni/advertising">}}) in our program book are also available for this year's event.

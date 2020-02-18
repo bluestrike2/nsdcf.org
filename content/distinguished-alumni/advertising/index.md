@@ -58,6 +58,10 @@ paypalInstructions = "After payment is complete, please send a copy of artwork a
   name  = "Event Dessert Bar Sponsor"
   price = "300.00"
   available = true
+  
+[[resources]]
+  name = "featured"
+  src  = "advert_mast.jpg"
 
 [[resources]]
   src  = "2020_distinguished_alumni_program_ads.pdf"
