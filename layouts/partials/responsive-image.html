@@ -33,4 +33,9 @@
        class="{{ if .imgClass }}{{.imgClass}}{{else}}{{ range first 1 $classes }} {{.}}__img{{ end }}{{ end }}"
        {{- with .alt }} alt="{{.}}"{{ end }}
        {{- if .loading }} loading="{{.}}"{{ end }} />
+  {{- if .caption -}}
+    <figcaption>{{.caption}}</figcaption>
+  {{- else if $orig.Params.caption -}}
+    <figcaption>{{$orig.Params.caption}}</figcaption>
+  {{- end -}}
 </figure>

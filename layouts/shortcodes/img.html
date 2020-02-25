@@ -1,3 +1,5 @@
-{{- $class := .Get 1 -}}
-{{- $viewportWidth := default "content" (.Get 2) -}}
-{{- partial "responsive-image" (dict "img" (.Get 0) "size" $viewportWidth "class" (.Get 1) "alt" "text" "dot" $.Page) -}}
+{{- if .IsNamedParams -}}
+  {{- partial "responsive-image" (dict "img" (.Get "src") "size" (default "content" (.Get "size")) "class" (.Get "class") "alt" (.Get "alt") "caption" (.Get "caption") "dot" $.Page) -}}
+{{- else -}}
+  {{- partial "responsive-image" (dict "img" (.Get 0) "class" (.Get 1) "size" (default "content" (.Get 2)) "alt" (.Get 3) "caption" (.Get 4) "dot" $.Page) -}}
+{{- end -}}

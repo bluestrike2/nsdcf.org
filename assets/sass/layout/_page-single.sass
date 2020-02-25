@@ -12,6 +12,12 @@
     padding-left: 0
     list-style-position: outside
 
+.img figcaption
+  font-family: $family-sans-serif
+  font-size: map-get($type-scale-sizes, -2)
+  line-height: $base-line
+  padding: 0 $halfGutter
+
 .img--side
   +respond("tablet-portrait")
     margin: $gutter auto 0
@@ -19,11 +25,12 @@
   +respond("tablet-landscape")
     margin: $gutter 0 $gutter $gutter
     float: right
-    //max-width: 25%
+    max-width: 25%
   +respond("desktop-wide")
     max-width: 20em
   img
     max-width: 100%
+    width: 100%
 
 .img--full
   margin: $gutter 0 $gutter
