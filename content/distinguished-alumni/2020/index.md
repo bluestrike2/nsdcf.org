@@ -3,7 +3,7 @@ title       = "Fourth Annual Knight of Distinguished Alumni"
 titleAlt    = "Join Us in Celebrating a Knight of Distinguished Alumni"
 shortTitle  = "Knight of Distinguished Alumni"
 # Remember to adjust eventDate to reflect the appropriate date and time.
-eventDate   = "2020-05-21T17:30:00-05:00"
+eventDate   = "2020-10-15T17:30:00-05:00"
 "news/categories"  =  ["Alumni","Events"]
 date        = 2020-02-13T12:00:00-05:00
 description = ""
@@ -15,7 +15,7 @@ url         = "/distinguished-alumni"
 [tickets]
   available    = false
   # Remember to change deadline date to appropriate deadline for RSVPs. After this date, the ticket order form will be disabled the next time the site is built.
-  deadlineDate = 2019-04-01T18:46:01-05:00
+  deadlineDate = 2019-10-01T00:00:01-05:00
   childAges    = "Ages 4-10"
   childPrice   = "19.00"
   price        = "38.00"
@@ -83,6 +83,6 @@ url         = "/distinguished-alumni"
     icon = "pdf"
 +++
 
-You are cordially invited to join the Norwin School District Community Foundation on Thursday, May 23, 2019 for a celebration of Norwin's past, present, and future as we honor the achievements of some of our most distinguished alumni and graduating students, sponsored by Duncan Financial Group.
+You are cordially invited to join the Norwin School District Community Foundation on Thursday, October 15, 2020 for a celebration of Norwin's past, present, and future as we honor the achievements of some of our most distinguished alumni and graduating students, sponsored by Duncan Financial Group.
 
-Reservations and additional information will be available on this page starting  April 1st.
+Reservations and additional information will be available on this page starting September 1st.
