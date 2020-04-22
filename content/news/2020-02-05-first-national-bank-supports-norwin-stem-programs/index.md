@@ -16,10 +16,6 @@ draft = false
     caption = "From left to right: Dr. Jeff Taylor, Superintendent, Norwin School District; Ms. Heidi Stratton-Minor, FNB Circleville Office Branch Manager; Dr. John Boylan, Norwin School District Community Foundation President; and Mr. Paul Puleo, a Senior Vice President with FNB."
 +++
 
-
-
----
-
 First National Bank recently donated $10,000 to support STEM Education programs at Norwin School District through the state’s Educational Improvement Tax Credit Program.<!--more-->
 
 {{< img src="fnb-check-presentation" class="img--side img" size="quarter" >}}
