@@ -19,6 +19,18 @@
   padding: 0 $halfGutter
   margin-top: $halfGutter
 
+.img--quote figcaption
+  font-style: italic;
+
+.img__citation
+  display: block
+  margin: 0 0 0 scale(base)
+  font-style: normal
+  &::before
+    display: inline-block
+    content: "\2014"
+    padding-right: scale(small)
+
 .img--side
   +respond("tablet-portrait")
     margin: $gutter auto 0
@@ -29,6 +41,8 @@
     max-width: 25%
   +respond("desktop-wide")
     max-width: 20em
+    &-sm
+      max-width: 10em
   img
     max-width: 100%
     width: 100%

@@ -83,6 +83,6 @@ url         = "/distinguished-alumni"
     icon = "pdf"
 +++
 
-You are cordially invited to join the Norwin School District Community Foundation on Thursday, October 15, 2020 for a celebration of Norwin's past, present, and future as we honor the achievements of some of our most distinguished alumni and graduating students, sponsored by Duncan Financial Group.
+You are cordially invited to join the Norwin School District Community Foundation on Thursday, May 20, 2021 for a celebration of Norwin's past, present, and future as we honor the achievements of some of our most distinguished alumni and graduating students, sponsored by Duncan Financial Group.
 
-Reservations and additional information will be available on this page starting September 1st.
+Reservations and additional information will be available on this page in the coming months.

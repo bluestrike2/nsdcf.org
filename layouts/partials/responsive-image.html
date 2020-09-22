@@ -34,8 +34,16 @@
        {{- with .alt }} alt="{{.}}"{{ end }}
        {{- if .loading }} loading="{{.}}"{{ end }} />
   {{- if .caption -}}
-    <figcaption>{{.caption}}</figcaption>
+    <figcaption>{{.caption}}
+      {{ if .citation }}
+        <p class="img__citation">{{.citation}}</p>
+      {{ end }}
+    </figcaption>
   {{- else if $orig.Params.caption -}}
-    <figcaption>{{$orig.Params.caption}}</figcaption>
+    <figcaption>{{$orig.Params.caption}}
+      {{ if $orig.Params.citation }}
+        <p class="img__citation">{{ $orig.Params.citation }}</p>
+      {{ end }}
+    </figcaption>
   {{- end -}}
 </figure>
