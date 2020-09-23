@@ -136,11 +136,17 @@
     +respond("tablet-landscape")
       min-width: 18em
 
-.directed_donation_other
+.directed_donation_other,
+.donation_form_hidden_items
   .html--js &
     max-height: 0;
-    transition: max-height 1s ease-out;
+    transition: max-height 0.5s ease-out;
     overflow: hidden;
     &--active
-      max-height: 500px;
-      transition: max-height 1s ease-in;
+      max-height: 50em;
+      transition: max-height 0.5s ease-in;
+
+.donation_form_hidden_items
+  .html--js &
+    padding-left: 3em
+    margin-left: -3em

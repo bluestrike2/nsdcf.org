@@ -58,28 +58,32 @@
           </div>
         </div>
 
-        <div class="donation_form__fieldgroup">
-          <h5 class="donation_form__sub_heading">{{ .Params.stepTwoHeading }}</h5>
-          <select class="form__select form__select--donate" id="directed_donation" name="item_name">
-            {{ range .Params.donationOptions }}
-              <option value="{{.}}">{{.}}</option>
-            {{ end }}
-          </select>
+        <div class="donation_form_hidden_items">
+          <div class="donation_form__fieldgroup">
+            <h5 class="donation_form__sub_heading">{{ .Params.stepTwoHeading }}</h5>
+            <select class="form__select form__select--donate" id="directed_donation" name="item_name">
+              {{ range .Params.donationOptions }}
+                <option value="{{.}}">{{.}}</option>
+              {{ end }}
+            </select>
 
-          <div class="directed_donation_other">
-            <label class="donation_label donation_label--directed" for="item_number"><p class="donation_label__p">If other, please specify the name of the program or scholarship fund you would like to direct your donation towards:</p></label>
-            <textarea name="item_number" placeholder="Name of program or fund" class="form__textarea donation_textarea donation_textarea--directed" id="directed_donation_other__textarea"></textarea>
+            <div class="directed_donation_other">
+              <label class="donation_label donation_label--directed" for="item_number"><p class="donation_label__p">If other, please specify the name of the program or scholarship fund you would like to direct your donation towards:</p></label>
+              <textarea name="item_number" placeholder="Name of program or fund" class="form__textarea donation_textarea donation_textarea--directed" id="directed_donation_other__textarea"></textarea>
+            </div>
+          </div>
+
+          <div class="donation_form__fieldgroup--btn">
+            <button class="form__button form__button--donation button--svg button--paypal" type="submit">
+              <span class="button__label--svg">Pay with</span>
+              {{ partial "svg/paypal.svg" (dict "class" "button__icon button__icon--paypal") }}
+            </button>
+
+            <p class="donation_form__small_msg">{{ .Params.payByCheck | markdownify }}</p>
           </div>
         </div>
 
-        <div class="donation_form__fieldgroup--btn">
-          <button class="form__button form__button--donation button--svg button--paypal" type="submit">
-            <span class="button__label--svg">Pay with</span>
-            {{ partial "svg/paypal.svg" (dict "class" "button__icon button__icon--paypal") }}
-          </button>
 
-          <p class="donation_form__small_msg">{{ .Params.payByCheck | markdownify }}</p>
-        </div>
       </form>
     </div>
   </article>

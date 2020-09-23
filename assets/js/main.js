@@ -43,4 +43,10 @@
 		}
 	});
 
+	$(".donation_box__check").change(function(){
+		if($(this).is(":checked")){
+			$(".donation_form_hidden_items").addClass("donation_form_hidden_items--active");
+		}
+	});
+
 })();
