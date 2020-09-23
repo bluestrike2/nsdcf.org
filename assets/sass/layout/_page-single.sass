@@ -1,6 +1,30 @@
 .single
   //
 
+.content-grid
+  display: grid
+  grid-gap: $gutter
+  grid-template-areas: "side" "content"
+  +respond("tablet-landscape")
+    grid-template-columns: 1fr 2fr
+    grid-template-areas: "side content"
+  +respond("desktop")
+    grid-gap: $gutter*2
+
+.content-grid__content
+  grid-area: "content"
+  p:first-of-type
+    margin-top: 0
+    +respond("tablet-landscape")
+      margin-top: scale(base, margin)
+
+.side-heading
+  font-size: scale(h3)
+  grid-area: "side"
+  +respond("desktop")
+    margin-top: scale(base)
+    text-align: right
+
 .content
   +section-padding
 

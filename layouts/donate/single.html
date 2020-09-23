@@ -2,7 +2,41 @@
   <article>
     {{ partial "mast" . }}
 
-    <div class="content">{{ .Content }}</div>
+    <div class="content content-grid">
+      <h3 class="side-heading">{{.Params.subheading | safeHTML }}</h3>
+      <div class="content-grid__content">{{ .Content }}</div>
+    </div>
+
+    {{ if .Resources.Match "highlights/*.md" }}
+      <section class="donate-highlights">
+        <div class="donate-highlights--wrapper">
+          {{ range $i, $e := .Resources.Match "highlights/*.md" }}
+            <div class="donate-highlights-card">
+              <h4 class="donate-highlights__heading">
+                <a href="{{$e.Params.link}}">{{ $e.Title }}</a>
+              </h4>
+              {{ if .Params.statistics }}
+                <dl class="highlights_list_item">
+                  <div class="highlights_list__item">
+                    {{ range .Params.statistics }}
+                      {{ if .number }}<dd class="highlights-number__number {{if eq .type "dollar"}}highlights-number__number--dollar{{end}}">{{.number}}</dt>{{ end }}
+                      {{ if .caption}}<dt>{{.caption}}</dd>{{ end }}
+                    {{ end }}
+                </dl>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+    {{ $scholarshipQuote := .Resources.GetMatch "scholarship-quote.md" }}
+    {{ if $scholarshipQuote }}
+      <blockquote class="content featured-quote">
+        {{ $scholarshipQuote.Content }}
+        <cite class="featured-quote__name">{{ $scholarshipQuote.Title }}<span class="featured-quote__title">{{ $scholarshipQuote.Params.title2 }}</span></cite>
+      </blockquote>
+    {{ end}}
 
     <div class="content donation_form">
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="donation_form__form">
