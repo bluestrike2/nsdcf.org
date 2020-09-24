@@ -26,15 +26,24 @@
   background: color(background, base)
   border-bottom: 1px solid color(background, light)
   //color: color(background)
-  padding-bottom: $gutter
   text-align: center
+  position: absolute
+  top: 2.25em
+  padding: $gutter
+  left: 0
+  width: 100%
+  z-index: 500
   +respond("desktop")
-    padding-bottom: $halfGutter * 1.5
-    padding-top: $gutter
+    position: fixed
+    top: 0
+    padding: $halfGutter scale("large") $halfGutter scale("large")
 
   &__text
     font-size: scale(base)
     margin-top: 0
+    +respond("desktop")
+      //font-size: scale("small")
+      //font-family: $family-sans-serif
 
   &__btn
     border: 1px solid color(background)

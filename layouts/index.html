@@ -1,6 +1,9 @@
 {{ define "title"}}{{ .Site.Params.title}}{{end}}
 
 {{ define "intro" }}
+  {{ range first 1 (where .Site.Pages ".Params.banner.active" true) }}
+    {{ partial "home/banner" . }}
+  {{ end }}
   <section class="hero hero--home">
     {{ partial "responsive-image" (dict "img" "featured" "size" "full-width" "class" "hero-figure" "alt" "text" "dot" .) }}
     <header class="hero-content">
@@ -13,10 +16,6 @@
   <section class="home-slide">
     {{.Content}}
   </section>
-
-  {{ range first 1 (where .Site.Pages ".Params.banner.active" true) }}
-    {{ partial "home/banner" . }}
-  {{ end }}
 
   <section class="list list--home content-grid">
     <div class="home-listings__intro">
