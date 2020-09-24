@@ -4,7 +4,7 @@ link   = "/programs/grants/"
 order = "002"
 [[statistics]]
   [[statistics]]
-    number = "10,000"
+    number = "17,000"
     type = "dollar"
     caption = "in EIG Grants"
   [[statistics]]
