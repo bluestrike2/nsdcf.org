@@ -12,6 +12,55 @@ layout_hero = true
 url         = "/distinguished-alumni"
 #aliases     = ["/news/distinguished-alumni-2020","/distinguishedalumni","/alumni-dinner","/alumnidinner"]
 
+sponsors = [
+  "Andrea Kuklis",
+  "Basket Donors",
+  "Belak Flowers, Inc.",
+  "Brittany Hodgkins from Brittany’s Scentsy",
+  "Carley Painter from Kenny Ross Ford",
+  "Caruthers & Caruthers, P.C.",
+  "Cheryl C. Cook",
+  "The Colonial Grille",
+  "Commercial Bank and Trust",
+  "Darlene Ciocca",
+  "Debbie Flinner",
+  "Diane Mardell, in memory of Heather Dervin",
+  "Eichelberger and Sons, Inc.",
+  "Feathers Artist Market & Gifts",
+  "Hildenbrand Design Center, Inc.",
+  "Interiors by Woleslagle",
+  "Jacktown Ride and Hunt Club",
+  "James W. Shirley Funeral Home, Inc.",
+  "Kristy Gareis from Thirty One",
+  "The Lamp Theatre",
+  "Lisa Blair from Jim Shorkey KIA",
+  "Lisa Roe from Tastefully Simple",
+  "Luehm Candy Company",
+  "Lynn Clark",
+  "Melissa Johnson Cantalupo, in memory of Jerilyn Johnson/Smiles",
+  "Michelle Ann Ogg",
+  "Myers, Duffy, Dansak, and Clegg LLC",
+  "Norwin Chamber of Commerce",
+  "Norwin Education Association",
+  "Norwin Express Tours LLC",
+  "Norwin Landscape and Pond Supply, Inc.",
+  "Norwin Play It Forward Fund, Inc.",
+  "Norwin Rotary Club",
+  "Norwin Teachers Federal Credit Union",
+  "The Novotnak and Barry Families",
+  "Ott Funeral Home, Inc.",
+  "Precision Defense Services, Inc.",
+  "Redrock Fence, Inc.",
+  "S&T Bank",
+  "Somerset Trust Company",
+  "Stratigos Banquet Centre",
+  "The Stoecklein Family",
+  "Tom & Paula Steiner",
+  "Tyler Jones, Attorney at Law - Petrillo Jones, LLC",
+  "William Snyder Funeral Home, Inc.",
+  "Woleslagle Custom Contracting"
+]
+
 [tickets]
   available    = false
   # Remember to change deadline date to appropriate deadline for RSVPs. After this date, the ticket order form will be disabled the next time the site is built.
@@ -20,6 +69,10 @@ url         = "/distinguished-alumni"
   childPrice   = "19.00"
   price        = "38.00"
   serviceFee   = "1.15"
+  
+[[sections.sponsors]]
+  title = "Thank you to our Event Sponsors"
+  content  = "The Knight of Distinguished Alumni is possible thanks to the ongoing support of businesses, families, and individuals from the Norwin community."
   
 [sections.advertisements]
   available = true
@@ -67,6 +120,14 @@ url         = "/distinguished-alumni"
   state   = "Pennsylvania"
   postal  = "15642"
 
+[[resources]]
+  name = "sponsor"
+  src = "duncan-group.svg"
+  
+  [resources.params]
+    title = "Duncan Financial Group"
+    href = "https://duncangrp.com"
+  
 [[resources]]
   name = "featured"
   src  = "mast.png"

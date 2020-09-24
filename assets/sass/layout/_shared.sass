@@ -49,8 +49,14 @@ body
       margin-top: scale(base, margin)
 
 .content-grid__side_intro
-  font-size: scale(h3)
   grid-area: "side"
+  //text-align: right
+
+.side-intro__heading
+  font-size: scale(h3)
   +respond("desktop")
     margin-top: scale(base)
-    text-align: right
+
+.side-intro__p
+  +respond("desktop")
+    margin-top: 0

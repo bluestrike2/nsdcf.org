@@ -193,4 +193,30 @@
     </section>
   {{ end }}
 
+  <!-- 4. Sponsors -->
+  {{ if isset .Params "sponsors" }}
+    <section class="content content-grid kda-sponsors">
+      <header class="content-grid__side_intro kda-sponsors__intro">
+        {{ range .Params.sections.sponsors }}
+            <h3 class="side-intro__heading kda-sponsors__intro-heading">{{ .title }}</h3>
+            {{with .content }}<p class="kda-sponsors__intro_p">{{ . }}</p>{{end}}
+        {{ end }}
+      </header>
+
+      <ul class="kda-sponsors__list">
+        <li class="kda-sponsors-list__item kda-sponsors-list__item--main">
+          {{ $eventSponsor := .Resources.GetMatch "sponsor" }}
+          {{ if $eventSponsor }}
+            <div class="kda-event-sponsor">
+              <a href="{{$eventSponsor.Params.url}}" title="{{$eventSponsor.Params.title}}"><img src="{{$eventSponsor.RelPermalink}}" target="_blank"/></a>
+            </div>
+          {{ end }}
+        </li>
+        {{ range .Params.sponsors }}
+          <li class="kda-sponsors-list__item">{{.}}</li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
 </article>

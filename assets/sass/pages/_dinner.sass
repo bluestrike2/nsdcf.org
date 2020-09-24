@@ -96,3 +96,56 @@
 
   &__description--business-reservation
     margin-top: scale(x-small)
+
+.kda-sponsors
+  background: color("background","light")
+  border-bottom: 1px solid color("background","base")
+  gap: $gutter
+  padding-top: $gutter*2
+
+.kda-sponsors__intro
+  text-align: center
+  +respond("tablet-portrait")
+    text-align: left
+    max-width: 66%
+  +respond("tablet-landscape")
+    //grid-column: 2 / 3
+    text-align: right
+    max-width: none
+
+.kda-event-sponsor
+  +respond("tablet-landscape")
+    // grid-row: 1
+    // grid-column: 2 / 3
+  a
+    display: block
+    margin: $gutter auto 0
+    width: $gutter*9
+    &:hover
+      filter: brightness(80%)
+
+.kda-sponsors__list
+  list-style: none
+  margin: 0
+  padding: 0
+  text-align: center
+  +respond("tablet-portrait")
+    display: grid
+    gap: 0 $gutter
+    grid-template-columns: 1fr 1fr
+    text-align: left
+  +respond("tablet-landscape")
+    grid-column: 2 / 3
+    // grid-row-start: 1
+    // grid-row-end: 3
+  +respond("desktop-wide")
+    grid-template-columns: 1fr 1fr 1fr
+
+.kda-sponsors-list__item
+  font-size: scale("small")
+
+.kda-sponsors-list__item--main
+    grid-column: 1 / 3
+    padding-bottom: $gutter
+    +respond("desktop-wide")
+      grid-column: 1 / 4
