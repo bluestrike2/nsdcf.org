@@ -30,3 +30,27 @@ body
 
 .grid
   +section-padding
+
+.content-grid
+  display: grid
+  gap: $gutter
+  grid-template-areas: "side" "content"
+  +respond("tablet-landscape")
+    grid-template-columns: 1fr 2fr
+    grid-template-areas: "side content"
+  +respond("desktop")
+    gap: 0 $gutter
+
+.content-grid__content
+  grid-area: "content"
+  p:first-of-type
+    margin-top: 0
+    +respond("tablet-landscape")
+      margin-top: scale(base, margin)
+
+.content-grid__side_intro
+  font-size: scale(h3)
+  grid-area: "side"
+  +respond("desktop")
+    margin-top: scale(base)
+    text-align: right

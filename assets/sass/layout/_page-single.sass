@@ -1,15 +1,8 @@
-.single
-  //
+.content
+  +section-padding
 
-.content-grid
-  display: grid
-  grid-gap: $gutter
-  grid-template-areas: "side" "content"
-  +respond("tablet-landscape")
-    grid-template-columns: 1fr 2fr
-    grid-template-areas: "side content"
-  +respond("desktop")
-    grid-gap: $gutter*2
+  &--alt
+    background-color: color(background)
 
 .content-grid__content
   grid-area: "content"
@@ -24,12 +17,6 @@
   +respond("desktop")
     margin-top: scale(base)
     text-align: right
-
-.content
-  +section-padding
-
-  &--alt
-    background-color: color(background)
 
 .content ul
   +respond("tablet-landscape")

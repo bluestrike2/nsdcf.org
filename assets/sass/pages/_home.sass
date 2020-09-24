@@ -7,11 +7,20 @@
     margin-top: 100vh
 
 .list--home
-  +section-padding
   background: color(background)
+  padding-top: $gutter*2
 
-  &__heading
-    //
+
+.list--home .listing
+  +respond("tablet-landscape")
+    grid-column: 2 / 3
+
+.home-listings__intro
+  +respond("tablet-landscape")
+    grid-area: "side"
+
+.home-listings__heading
+  margin-top: 0
 
 .alert
   background: color(background, base)
