@@ -4,12 +4,6 @@ title = "Support Norwin Students During the 2020 Days of Giving Begin on Septemb
 draft = false
 author = "Jack Boylan"
 "news/categories" = ["Community","Giving"]
-
-[banner]
- active     = true
- expiryDate = 2020-09-30T00:01:00-05:00
- text       = "The annual Days of Giving take place between September 30 and October 4. Your support can help make a difference for Norwin students."
- linkText   = "Learn more."
  
  [[resources]]
    src = "garden-project-students.jpg"

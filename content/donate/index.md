@@ -16,6 +16,12 @@ aliases = ["/days-of-giving", "/day-of-giving", "/giving"]
 
 subheading = "The future awaits Norwin students. Your support helps them move towards it."
 
+[banner]
+ active     = true
+ expiryDate = 2020-09-30T00:01:00-05:00
+ text       = "The annual Days of Giving take place between September 30 and October 4. Your support can help make a difference for Norwin students."
+ linkText   = "Learn more."
+
 [menu]
   [menu.main]
     name = "Donate"
@@ -34,6 +40,6 @@ subheading = "The future awaits Norwin students. Your support helps them move to
     name = "scholarship-quote"
 +++
 
-Each year, the NSDCF celebrates Norwin's homecoming weekend with its annual Days of Giving to raise funds to support Norwin students and programs.
+Each year, the NSDCF celebrates Norwin's homecoming weekend with its annual [Days of Giving]({{< ref "/news/2020-09-22-days-of-giving" >}}) to raise funds to support Norwin students and programs.
 
 Through your support, we are able to help make college dreams reality through scholarships, empower Norwin teachers to explore bold new opportunities for their students with Educator Innovation Grants, open the minds of our students to a world of opportunity through STEM education and summer camps, and so much more.
