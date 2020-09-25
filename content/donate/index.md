@@ -13,6 +13,7 @@ donationOptions = ["All Programs","Foundation Scholarships","Educational Giving 
 payByCheck = "Alternatively, donations may be made by check payable to *Norwin School District Community Foundation* and mailed to 281 McMahon Drive, North Huntingdon, PA 15642."
 url = "/donate"
 aliases = ["/days-of-giving", "/day-of-giving", "/giving"]
+subheading = "The future awaits Norwin students. Your support helps them move towards it."
 
 [[videos]]
   title       = "Support Norwin's 2020 Days of Giving"
@@ -20,8 +21,6 @@ aliases = ["/days-of-giving", "/day-of-giving", "/giving"]
   description = "Through your support, we are able to help make college dreams reality through scholarships, empower Norwin teachers to explore bold new opportunities for their students with Educator Innovation Grants, open the minds of our students to a world of opportunity through STEM education and summer camps, and so much more."
   duration    = "1m58s"
   youtubeId   = "fOhL-OKtW6U"
-
-subheading = "The future awaits Norwin students. Your support helps them move towards it."
 
 [banner]
  active     = true
