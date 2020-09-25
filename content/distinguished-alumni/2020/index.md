@@ -3,7 +3,7 @@ title       = "Fourth Annual Knight of Distinguished Alumni"
 titleAlt    = "Join Us in Celebrating a Knight of Distinguished Alumni"
 shortTitle  = "Knight of Distinguished Alumni"
 # Remember to adjust eventDate to reflect the appropriate date and time.
-eventDate   = "2020-10-15T17:30:00-05:00"
+eventDate   = "2021-05-20T17:30:00-05:00"
 "news/categories"  =  ["Alumni","Events"]
 date        = 2020-02-13T12:00:00-05:00
 description = ""
@@ -14,7 +14,6 @@ url         = "/distinguished-alumni"
 
 sponsors = [
   "Andrea Kuklis",
-  "Basket Donors",
   "Belak Flowers, Inc.",
   "Brittany Hodgkins from Brittany’s Scentsy",
   "Carley Painter from Kenny Ross Ford",
