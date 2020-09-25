@@ -5,6 +5,11 @@
     <div class="content content-grid">
       <h3 class="side-heading">{{.Params.subheading | safeHTML }}</h3>
       <div class="content-grid__content">{{ .Content }}</div>
+      {{- with .Params.videos }}
+        {{- range . -}}
+          {{ partial "youtube" (dict "class" "yt-container--full" "youtubeId" .youtubeId) }}
+        {{ end }}
+      {{ end }}
     </div>
 
     {{ if .Resources.Match "highlights/*.md" }}

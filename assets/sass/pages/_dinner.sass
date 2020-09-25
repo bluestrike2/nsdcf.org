@@ -109,20 +109,15 @@
     text-align: left
     max-width: 66%
   +respond("tablet-landscape")
-    //grid-column: 2 / 3
     text-align: right
     max-width: none
 
-.kda-event-sponsor
-  +respond("tablet-landscape")
-    // grid-row: 1
-    // grid-column: 2 / 3
-  a
-    display: block
-    margin: $gutter auto 0
-    width: $gutter*9
-    &:hover
-      filter: brightness(80%)
+.kda-event-sponsor a
+  display: block
+  margin: $gutter auto 0
+  width: $gutter*9
+  &:hover
+    filter: brightness(80%)
 
 .kda-sponsors__list
   list-style: none
@@ -136,8 +131,6 @@
     text-align: left
   +respond("tablet-landscape")
     grid-column: 2 / 3
-    // grid-row-start: 1
-    // grid-row-end: 3
   +respond("desktop-wide")
     grid-template-columns: 1fr 1fr 1fr
 

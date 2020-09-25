@@ -4,6 +4,13 @@ title = "Support Norwin Students During the 2020 Days of Giving Begin on Septemb
 draft = false
 author = "Jack Boylan"
 "news/categories" = ["Community","Giving"]
+
+[[videos]]
+  title       = "Support Norwin's 2020 Days of Giving"
+  url         = "https://www.youtube.com/watch?v=fOhL-OKtW6U"
+  description = "Through your support, we are able to help make college dreams reality through scholarships, empower Norwin teachers to explore bold new opportunities for their students with Educator Innovation Grants, open the minds of our students to a world of opportunity through STEM education and summer camps, and so much more."
+  duration    = "1m58s"
+  youtubeId   = "fOhL-OKtW6U"
  
  [[resources]]
    src = "garden-project-students.jpg"
@@ -11,6 +18,8 @@ author = "Jack Boylan"
    [resources.params]
      caption = "Students in Ms. Rachel Grissom's class at Sheridan Terrace Elementary School participate in The Garden Project, the recipient of a 2019 NSDCF Educator Innovation Grant. The Garden Project offers students direct hands-on learning about the lifecycle of plants and how agriculture helps shape our society."
 +++
+
+{{< youtube src="fOhL-OKtW6U" class="yt-container--full" >}}
 
 Have you wished there were ways to support Norwin academics like we do athletics?  Well, read on and we can make your wish come true.
 
