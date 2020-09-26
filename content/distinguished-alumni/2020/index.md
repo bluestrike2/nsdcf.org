@@ -60,6 +60,13 @@ sponsors = [
   "Woleslagle Custom Contracting"
 ]
 
+[menu]
+  [menu.main]
+    name        = "Knight of Distinguished Alumni"
+    identifier  = "distinguished-alumni"
+    weight      = 35
+    url         = "/distinguished-alumni"
+
 [tickets]
   available    = false
   # Remember to change deadline date to appropriate deadline for RSVPs. After this date, the ticket order form will be disabled the next time the site is built.
