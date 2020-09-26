@@ -17,10 +17,10 @@ subheading = "The future awaits Norwin students. Your support helps them move to
 
 [[videos]]
   title       = "Support Norwin's 2020 Days of Giving"
-  url         = "https://www.youtube.com/watch?v=fOhL-OKtW6U"
+  url         = "https://www.youtube.com/watch?v=TJBp0oxJKL4"
   description = "Through your support, we are able to help make college dreams reality through scholarships, empower Norwin teachers to explore bold new opportunities for their students with Educator Innovation Grants, open the minds of our students to a world of opportunity through STEM education and summer camps, and so much more."
   duration    = "1m58s"
-  youtubeId   = "fOhL-OKtW6U"
+  youtubeId   = "TJBp0oxJKL4"
 
 [banner]
  active     = true
