@@ -3,7 +3,7 @@ title       = "Fourth Annual Knight of Distinguished Alumni"
 titleAlt    = "Join Us in Celebrating a Knight of Distinguished Alumni"
 shortTitle  = "Knight of Distinguished Alumni"
 # Remember to adjust eventDate to reflect the appropriate date and time.
-eventDate   = "2021-05-20T17:30:00-05:00"
+eventDate   = "2021-05-27T17:30:00-05:00"
 "news/categories"  =  ["Alumni","Events"]
 date        = 2020-02-13T12:00:00-05:00
 description = ""
@@ -150,6 +150,6 @@ sponsors = [
     icon = "pdf"
 +++
 
-You are cordially invited to join the Norwin School District Community Foundation on Thursday, May 20, 2021 for a celebration of Norwin's past, present, and future as we honor the achievements of some of our most distinguished alumni and graduating students, sponsored by Duncan Financial Group.
+You are cordially invited to join the Norwin School District Community Foundation on Thursday, May 27, 2021 for a celebration of Norwin's past, present, and future as we honor the achievements of some of our most distinguished alumni and graduating students, sponsored by Duncan Financial Group.
 
 Reservations and additional information will be available on this page in the coming months.
