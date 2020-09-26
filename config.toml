@@ -16,10 +16,11 @@ pluralizeListTitles = false
     delimiter = ""
 
 [outputs]
-  home     = ["HTML", "RSS", "REDIR"]
-  section  = ["HTML", "RSS"]
-  taxonomy = ["HTML", "RSS"]
-  page     = ["HTML"]
+  home         = ["HTML", "RSS", "REDIR"]
+  section      = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML", "RSS"]
+  term         = ["HTML", "RSS"]
+  page         = ["HTML"]
 
 [outputFormats]
   [outputFormats.REDIR]
