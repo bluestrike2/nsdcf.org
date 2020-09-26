@@ -1,6 +1,6 @@
 +++
 date = 2020-09-22T08:00:00-05:00
-title = "Support Norwin Students During the 2020 Days of Giving Begin on September 30"
+title = "Support Norwin Students During the 2020 Days of Giving Beginning September 30"
 draft = false
 author = "Jack Boylan"
 "news/categories" = ["Community","Giving"]
