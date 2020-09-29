@@ -35,15 +35,19 @@ subheading = "The future awaits Norwin students. Your support helps them move to
     weight = 60
     
 [[resources]]
+  name = "social"
+  src  = "social_img.png"
+    
+[[resources]]
   name = "featured"
   src  = "donate.jpg"
-  
-  [[resources]]
-    src  = "highlights/*.md"
-    name = "highlights-:counter"
-  [[resources]]
-    src  = "scholarship-quote.md"
-    name = "scholarship-quote"
+
+[[resources]]
+  src  = "highlights/*.md"
+  name = "highlights-:counter"
+[[resources]]
+  src  = "scholarship-quote.md"
+  name = "scholarship-quote"
 +++
 
 Each year, the NSDCF celebrates Norwin's homecoming weekend with its annual [Days of Giving]({{< ref "/news/2020-09-22-days-of-giving" >}}) to raise funds to support Norwin students and programs.

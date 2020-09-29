@@ -5,11 +5,12 @@ some minor changes */}}
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
-{{- $images := $.Resources.ByType "image" -}}
-{{- $featured := $images.GetMatch "*feature*" -}}
-{{- $featured := cond (ne $featured nil) $featured ($images.GetMatch "{*cover*,*thumbnail*}") -}}
-{{- with $featured }}
-  <meta property="og:image" content="{{ $featured.Permalink }}" />
+{{/* Matches "*social*" separately for Facebook sharing */}}
+{{- $images := ($.Resources.ByType "image").Match "*social*" | append (($.Resources.ByType "image").Match "{*featured*,*cover*,*thumbnail*}") -}}
+{{- with $images -}}
+  {{- range $images }}
+    <meta property="og:image" content="{{ .Permalink }}" />
+  {{- end -}}
 {{- else -}}
   {{- range first 6 $.Site.Params.images }}
     <meta property="og:image" content="{{ . | absURL }}" />
