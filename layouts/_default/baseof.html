@@ -9,7 +9,7 @@
 
     <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
     {{ partial "head/open-graph.html" . }}
-    {{ template "_internal/twitter_cards.html" . -}}
+    {{ partial "head/twitter-cards.html" . }}
     {{ partial "head/schema-data.html" . }}
 
     {{ if .Params.imageAlt -}}
