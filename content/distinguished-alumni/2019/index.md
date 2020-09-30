@@ -1,4 +1,5 @@
 +++
+type        = "event"
 title       = "Third Annual Knight of Distinguished Alumni"
 titleAlt    = "Join Us in Celebrating a Knight of Distinguished Alumni"
 shortTitle  = "Knight of Distinguished Alumni"
@@ -11,9 +12,7 @@ description = ""
 draft       = false
 layout      = "event"
 layout_hero = true
-# url         = "/distinguished-alumni-2019"
 aliases     = ["/news/distinguished-alumni-2019"]
-
 
 [tickets]
   available    = false

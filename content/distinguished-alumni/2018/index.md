@@ -1,4 +1,5 @@
 +++
+type        = "event"
 date        = "2018-02-25T17:07:33+00:00"
 description = ""
 draft       = false
@@ -10,8 +11,8 @@ shortTitle  = "Knight of Distinguished Alumni"
 #url         = "/distinguished-alumni/2018"
 aliases     = ["/news/distinguished-alumni-2018"]
 "news/categories" = ["Alumni","Events"]
+eventComplete = true
 
-eventComplete = false
 
 [sections.creditsIntro]
   title = "Credits"

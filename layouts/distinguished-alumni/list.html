@@ -1,6 +1,6 @@
 {{ define "main" }}
   <!-- render post for latest year -->
-  {{ range first 1 .Pages }}
+  {{ range first 1 (where (where $.Site.RegularPages "Section" .Section) "Type" "event") }}
     {{ .Render "event-partial" }}
   {{ end }}
 {{ end }}

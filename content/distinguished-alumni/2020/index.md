@@ -1,4 +1,5 @@
 +++
+type        = "event"
 title       = "Fourth Annual Knight of Distinguished Alumni"
 titleAlt    = "Join Us in Celebrating a Knight of Distinguished Alumni"
 shortTitle  = "Knight of Distinguished Alumni"
@@ -9,7 +10,7 @@ date        = 2020-02-13T12:00:00-05:00
 description = ""
 draft       = false
 layout_hero = true
-url         = "/distinguished-alumni"
+#url         = "/distinguished-alumni"
 #aliases     = ["/news/distinguished-alumni-2020","/distinguishedalumni","/alumni-dinner","/alumnidinner"]
 
 sponsors = [

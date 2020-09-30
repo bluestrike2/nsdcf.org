@@ -220,3 +220,26 @@
   {{ end }}
 
 </article>
+
+<!-- 5. Pagination -->
+<nav class="content kda-pagination">
+  {{ with .PrevInSection }}
+    {{ if eq .Type "event" }}
+      <a href="{{.Permalink}}" class="kda-pagination-item kda-pagination-item--prev">
+        <h3 class="kda-pagination-item__heading">{{.Title}}{{if .Params.eventComplete }} Recap{{ end }}</h3>
+        {{ with .Params.eventDate }}
+          <time class="kda-pagination-item__year kda-pagination-item__year--prev">{{ dateFormat "2006" (.) }}</time>
+        {{ end }}
+      </a>
+    {{end}}
+  {{ end }}
+
+  {{ with .NextInSection }}
+    <a href="{{.Permalink}}" class="kda-pagination-item kda-pagination-item--next">
+      <h3 class="kda-pagination-item__heading">{{.Title}}{{if .Params.eventComplete }} Recap{{ end }}</h3>
+      {{ with .Params.eventDate }}
+        <time class="kda-pagination-item__year kda-pagination-item__year--next">{{ dateFormat "2006" (.) }}</time>
+      {{ end }}
+    </a>
+  {{ end }}
+</nav>

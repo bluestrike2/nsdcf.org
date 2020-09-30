@@ -28,7 +28,6 @@
   &--reservations
     background-color: color(background)
 
-
 .kda-info
   +respond("tablet-landscape")
     display: flex
@@ -142,3 +141,59 @@
     padding-bottom: $gutter
     +respond("desktop-wide")
       grid-column: 1 / 4
+
+.kda-pagination
+  display: grid
+  gap: 0
+  grid-template-columns: 50% 50%
+  padding-top: 0
+  padding-bottom: 0
+  border-top: 1px solid color("background","light")
+  overflow: hidden
+
+.kda-pagination-item
+  padding: $gutter
+  position: relative
+  &--prev
+    border-right: 1px solid color("background","light")
+    padding-left: 0
+    text-align: left
+  &--next
+    padding-right: 0
+    text-align: right
+  &:only-child.kda-pagination-item--next
+    border-left: 1px solid color("background","light")
+    grid-column: 2 / 3
+
+.kda-pagination-item__heading
+  line-height: 1em
+  margin: 0
+  word-wrap: break-word
+  hyphens: auto
+
+.kda-pagination-item__year
+  color: color(background, light)
+  font-size: scale("large")
+  position: absolute
+  left: 0
+  z-index: -1
+
+  +respond("tablet-portrait")
+    bottom: 0.65rem
+    font-size: scale("x-large")
+    left: -1.414rem
+
+  +respond("desktop")
+    bottom: 1rem
+    font-size: scale("xx-large")
+
+  // &--prev
+  //   left: auto
+  //   right: .707rem
+
+  &--next
+    text-align: right
+    right: 0
+
+    +respond("tablet-portrait")
+      right: -1.414rem
