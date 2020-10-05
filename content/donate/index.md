@@ -1,5 +1,5 @@
 +++
-title               = "Support the Norwin School District Community Foundation during the Days of Giving"
+title               = "Support the Norwin School District Community Foundation"
 shortTitle          = "Donate"
 subTitle            = "Thank You"
 draft               = false
@@ -15,15 +15,8 @@ url = "/donate"
 aliases = ["/days-of-giving", "/day-of-giving", "/giving"]
 subheading = "The future awaits Norwin students. Your support helps them move towards it."
 
-[[videos]]
-  title       = "Support Norwin's 2020 Days of Giving"
-  url         = "https://www.youtube.com/watch?v=TJBp0oxJKL4"
-  description = "Through your support, we are able to help make college dreams reality through scholarships, empower Norwin teachers to explore bold new opportunities for their students with Educator Innovation Grants, open the minds of our students to a world of opportunity through STEM education and summer camps, and so much more."
-  duration    = "1m58s"
-  youtubeId   = "TJBp0oxJKL4"
-
 [banner]
- active     = true
+ active     = false
  expiryDate = 2020-09-30T00:01:00-05:00
  text       = "The annual Days of Giving take place between September 30 and October 4. Your support can help make a difference for Norwin students."
  linkText   = "Learn more."
@@ -50,6 +43,8 @@ subheading = "The future awaits Norwin students. Your support helps them move to
   name = "scholarship-quote"
 +++
 
-Each year, the NSDCF celebrates Norwin's homecoming weekend with its annual [Days of Giving]({{< ref "/news/2020-09-22-days-of-giving" >}}) to raise funds to support Norwin students and programs.
+Through your support, the NSDCF is able to help make college dreams reality through scholarships, empower Norwin teachers to explore bold new opportunities for their students with Educator Innovation Grants, open the minds of our students to a world of opportunity through STEM education and summer camps, and so much more. Your donation can have a profound impact on the lives of Norwin students.
 
-Through your support, we are able to help make college dreams reality through scholarships, empower Norwin teachers to explore bold new opportunities for their students with Educator Innovation Grants, open the minds of our students to a world of opportunity through STEM education and summer camps, and so much more.
+On behalf Norwin students and teachers, the NSDCF thanks you for your continued support.
+
+&mdash;Dr. Jack Boylan, President, NSDCF 
