@@ -5,7 +5,7 @@ canonifyURLs    = false
 
 relativeURLs        = false
 enableRobotsTXT     = true
-googleAnalytics     = "UA-XXXXX-Y"
+googleAnalytics     = "UA-181049953-1"
 languageCode        = "en-us"
 metaDataFormat      = "toml"
 summaryLength       = 50
