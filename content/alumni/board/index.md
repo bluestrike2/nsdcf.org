@@ -1,12 +1,12 @@
 +++
 title = "Alumni Association Board of Directors"
 draft = "false"
-  
+
 [[resources]]
   src  = "*.jpg"
 
 [[members]]
-  name      = "Debbie Kunkle"
+  name      = "Lynn Clark"
   honorific = "Ms."
   positions = ["President","NAFA Executive Committee Member"]
 
@@ -16,14 +16,14 @@ draft = "false"
   positions = ["Vice President", "Social Chair", "Member, NAFA Executive Committee"]
 
 [[members]]
-  name      = "Lynn Clark"
-  honorific = "Ms."
-  positions = ["Secretary","NAFA Executive Committee Member"]
-
-[[members]]
   name      = "Jo Ann Stoecklein"
   honorific = "Ms."
-  positions = ["Treasurer","Membership Chair","Communications Co-Chair", "NAFA Executive Committee Member"]
+  positions = ["Treasurer","Communications Co-Chair", "NAFA Executive Committee Member"]
+
+[[members]]
+  name      = "Debbie Kunkle"
+  honorific = "Ms."
+  positions = ["Past President"]
 
 [[members]]
   name      = "John C. Boylan"
@@ -41,16 +41,16 @@ draft = "false"
   positions = ["NSDCF Liason","NAFA Executive Committee Member"]
 
 [[members]]
-  name      = "Dave Schehr"
-  honorific = "Mr."
-  positions = ["Member-at-Large"]
-  
-[[members]]
-  name      = "Sue Schehr"
+  name      = "Maryann Busdosh"
   honorific = "Ms."
+  positions = ["Membership Chair"]
+
+[[members]]
+  name      = "Tom Stoecklein"
+  honorific = "Mr."
   positions = ["Scholarship Chair"]
 
-[[members]]  
+[[members]]
   name      = "Lauren Steiner"
   honorific = "Ms."
   positions = ["Distinguished Alumni Nominations Chair"]
