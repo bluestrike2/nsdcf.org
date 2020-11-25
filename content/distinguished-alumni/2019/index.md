@@ -3,25 +3,49 @@ type        = "event"
 title       = "Third Annual Knight of Distinguished Alumni"
 titleAlt    = "Join Us in Celebrating a Knight of Distinguished Alumni"
 shortTitle  = "Knight of Distinguished Alumni"
+organizer   = "Norwin Alumni & Friends Association"
 # Remember to adjust eventDate to reflect the appropriate date and time.
 eventComplete = true
-eventDate   = "2019-05-23T17:30:00-05:00"
-"news/categories"  =  ["Alumni","Events"]
+# EventStatus Type - https://schema.org/EventStatusType
+# Valid states:
+# => EventCancelled
+# => EventMovedOnline
+# => EventPostponed
+# => EventRescheduled
+# => EventScheduled (Default state)
+eventStatus = "EventScheduled"
+eventDate     = "2019-05-23T17:30:00-05:00"
+eventDoorTime = "2019-05-23T17:30:00-05:00"
+eventEndDate  = "2019-05-23T21:00:00-05:00"
+ticketsAvailable = false
+# Remember to change ticket deadline date to appropriate deadline for RSVPs. After this date, the ticket order form will be disabled the next time the site is built.
+ticketsDeadlineDate = 2019-04-01T18:46:01-05:00
+
 date        = 2019-02-26T18:46:01-05:00
 description = ""
 draft       = false
 layout      = "event"
 layout_hero = true
 aliases     = ["/news/distinguished-alumni-2019"]
+"news/categories"  =  ["Alumni","Events"]
+
+[[ticketOptions]]
+  name       = "Individual Reservation"
+  price      = "38.15"
+  serviceFee = "1.15"
+
+[[ticketOptions]]
+  name        = "Child Reservation"
+  description = "For children ages 4-10"
+  price       = "19.00"
+  serviceFee  = "1.15"
 
 [tickets]
-  available    = false
-  # Remember to change deadline date to appropriate deadline for RSVPs. After this date, the ticket order form will be disabled the next time the site is built.
-  deadlineDate = 2019-04-01T18:46:01-05:00
   childAges    = "Ages 4-10"
   childPrice   = "19.00"
   price        = "38.15"
   serviceFee   = "1.15"
+  name        = "Individual Reservation"
 
 [sections.creditsIntro]
   title = "Credits"
@@ -72,11 +96,12 @@ aliases     = ["/news/distinguished-alumni-2019"]
   city    = "North Huntingdon"
   state   = "Pennsylvania"
   postal  = "15642"
+  url     = "https://stratigosbanquet.com"
 
 [[resources]]
   name = "featured"
   src  = "mast.jpg"
-  
+
 [[resources]]
   name = "2019-recipients.jpg"
   src  = "2019-recipients.jpg"

@@ -1,17 +1,51 @@
 +++
-type        = "event"
-title       = "Fourth Annual Knight of Distinguished Alumni"
-titleAlt    = "Join Us in Celebrating a Knight of Distinguished Alumni"
-shortTitle  = "Knight of Distinguished Alumni"
+type          = "event"
+title         = "Fourth Annual Knight of Distinguished Alumni"
+titleAlt      = "Join Us in Celebrating a Knight of Distinguished Alumni"
+shortTitle    = "Knight of Distinguished Alumni"
+organizer   = "Norwin Alumni & Friends Association"
 # Remember to adjust eventDate to reflect the appropriate date and time.
-eventDate   = "2021-05-27T17:30:00-05:00"
-"news/categories"  =  ["Alumni","Events"]
-date        = 2020-02-13T12:00:00-05:00
-description = ""
-draft       = false
-layout_hero = true
+eventComplete = false
+# EventStatus Type - https://schema.org/EventStatusType
+# Valid states:
+# => EventCancelled
+# => EventMovedOnline
+# => EventPostponed
+# => EventRescheduled
+# => EventScheduled (Default state)
+eventStatus = "EventScheduled"
+eventDate     = "2021-05-27T17:30:00-05:00"
+eventDoorTime = "2021-05-27T17:30:00-05:00"
+eventEndDate  = "2021-05-27T21:00:00-05:00"
+
+ticketsAvailable = false
+# Remember to change ticket deadline date to appropriate deadline for RSVPs. After this date, the ticket order form will be disabled the next time the site is built.
+ticketsDeadlineDate = 2019-04-01T18:46:01-05:00
+
+date          = 2020-02-13T12:00:00-05:00
+description   = ""
+draft         = false
+layout_hero   = true
 #url         = "/distinguished-alumni"
 #aliases     = ["/news/distinguished-alumni-2020","/distinguishedalumni","/alumni-dinner","/alumnidinner"]
+"news/categories" = ["Alumni","Events"]
+
+[[ticketOptions]]
+  name       = "Individual Reservation"
+  price      = "38.15"
+  serviceFee = "1.15"
+
+[[ticketOptions]]
+  name        = "Child Reservation"
+  description = "For children ages 4-10"
+  price       = "19.00"
+  serviceFee  = "1.15"
+
+[tickets]
+  childAges    = "Ages 4-10"
+  childPrice   = "19.00"
+  price        = "38.00"
+  serviceFee   = "1.15"
 
 sponsors = [
   "Andrea Kuklis",
@@ -68,19 +102,11 @@ sponsors = [
     weight      = 35
     url         = "/distinguished-alumni"
 
-[tickets]
-  available    = false
-  # Remember to change deadline date to appropriate deadline for RSVPs. After this date, the ticket order form will be disabled the next time the site is built.
-  deadlineDate = 2019-10-01T00:00:01-05:00
-  childAges    = "Ages 4-10"
-  childPrice   = "19.00"
-  price        = "38.00"
-  serviceFee   = "1.15"
-  
+
 [[sections.sponsors]]
   title = "Thank you to our Event Sponsors"
   content  = "The Knight of Distinguished Alumni is possible thanks to the ongoing support of businesses, families, and individuals from the Norwin community."
-  
+
 [sections.advertisements]
   available = true
   content   = ""
@@ -130,11 +156,11 @@ sponsors = [
 [[resources]]
   name = "sponsor"
   src = "duncan-group.svg"
-  
+
   [resources.params]
     title = "Duncan Financial Group"
     href = "https://duncangrp.com"
-  
+
 [[resources]]
   name = "featured"
   src  = "mast.png"

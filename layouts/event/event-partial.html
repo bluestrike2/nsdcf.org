@@ -1,4 +1,4 @@
-<article itemscope itemtype="http://schema.org/Event">
+<article>
   {{ $mast_img := .Resources.GetMatch "featured" }}
 
   <header class="mast mast--cover mast--dinner"
@@ -134,13 +134,13 @@
       {{ $reservations := .Resources.GetMatch "reservations.md" }}
       {{ if $reservations }}
         <h3 class="slide__heading">{{ $reservations.Title }}</h3>
-        {{ if .Params.tickets.available }}
+        {{ if .Params.ticketsAvailable }}
           {{ $reservations.Content }}
         {{ else }}
           <p>Reservations are not currently being accepted.</p>
         {{ end }}
 
-        {{ if .Params.tickets.available }}
+        {{ if .Params.ticketsAvailable }}
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="form form--dinner-reservations">
             <!-- paypal variables (hidden) -->
             {{ partial "paypal-form-variables.html" (dict "email" "alumni.dinner@nsdcf.org") }}

@@ -1,18 +1,50 @@
 +++
 type        = "event"
-date        = "2018-02-25T17:07:33+00:00"
-description = ""
-draft       = false
-eventDate   = "2018-05-24T17:30:00-05:00"
-layout      = "event"
 title       = "Second Annual Knight of Distinguished Alumni"
 titleAlt    = "Join Us in Celebrating a Knight of Distinguished Alumni"
 shortTitle  = "Knight of Distinguished Alumni"
-#url         = "/distinguished-alumni/2018"
-aliases     = ["/news/distinguished-alumni-2018"]
-"news/categories" = ["Alumni","Events"]
+organizer   = "Norwin Alumni & Friends Association"
+# Remember to adjust eventDate to reflect the appropriate date and time.
 eventComplete = true
+# EventStatus Type - https://schema.org/EventStatusType
+# Valid states:
+# => EventCancelled
+# => EventMovedOnline
+# => EventPostponed
+# => EventRescheduled
+# => EventScheduled (Default state)
+eventStatus = "EventScheduled"
+eventDate     = "2019-05-23T17:30:00-05:00"
+eventDoorTime = "2019-05-23T17:30:00-05:00"
+eventEndDate  = "2019-05-23T21:00:00-05:00"
+ticketsAvailable = false
+# Remember to change ticket deadline date to appropriate deadline for RSVPs. After this date, the ticket order form will be disabled the next time the site is built.
+ticketsDeadlineDate = "2018-05-23T23:59:00-05:00"
 
+aliases     = ["/news/distinguished-alumni-2018"]
+date        = "2018-02-25T17:07:33+00:00"
+description = ""
+draft       = false
+layout      = "event"
+"news/categories" = ["Alumni","Events"]
+
+[[ticketOptions]]
+  name       = "Individual Reservation"
+  price      = "38.15"
+  serviceFee = "1.15"
+
+[[ticketOptions]]
+  name        = "Child Reservation"
+  description = "For children ages 4-10"
+  price       = "19.00"
+  serviceFee  = "1.15"
+
+[tickets]
+  childAges    = "Ages 4-10"
+  childPrice   = "19.00"
+  price        = "37.00"
+  serviceFee   = "1.15"
+  name        = "Individual Reservation"
 
 [sections.creditsIntro]
   title = "Credits"
@@ -59,15 +91,6 @@ eventComplete = true
   city    = "North Huntingdon"
   state   = "Pennsylvania"
   postal  = "15642"
-
-[tickets]
-  available    = false
-  # Remember to change deadline date to appropriate deadline for RSVPs. After this date, the ticket order form will be disabled the next time the site is built.
-  deadlineDate = "2018-05-23T23:59:00-05:00"
-  childAges    = "Ages 4-10"
-  childPrice   = "19.00"
-  price        = "37.00"
-  serviceFee   = "1.15"
 
 [[resources]]
   name = "featured"

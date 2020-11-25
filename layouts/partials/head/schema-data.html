@@ -37,7 +37,7 @@
   "@graph":
   [
     {{/* Main Organization schema for site. Output only on Home.  */}}
-    {{- if .IsHome }}
+    {{- if .IsHome -}}
       {
         "@type": "Organization",
         "additionalType": "https://en.wikipedia.org/wiki/Charitable_organization",
@@ -79,7 +79,7 @@
           }
         ]
       },
-    {{ end -}}
+    {{- end -}}
 
     {{/* Global */}}
     {
@@ -107,18 +107,9 @@
       },
       "copyrightYear": {{ .Date.Format "2006" }},
       {{ with .PublishDate }}"datePublished": {{ .Format $.Site.Params.ISO8601 }},{{ end }}
-      {{ if not .Lastmod.IsZero }}"dateModified": {{ .Lastmod.Format $.Site.Params.ISO8601 }}{{ end }}
-      {{- with $featured }}
-      ,"image": {
-          "@type": "ImageObject",
-          "url": {{ $featured.Permalink }},
-          "width": {{ $featured.Width }},
-          "height": {{ $featured.Height }}
-        }
-      {{ end -}}
-      {{- $permalink := print .Permalink (cond (and .IsPage (eq $section "news")) "#blogpost" "#webpage") -}}
-      {{- with .Params.videos }}
-        , "videos": [
+      {{ if not .Lastmod.IsZero }}"dateModified": {{ .Lastmod.Format $.Site.Params.ISO8601 }},{{ end }}
+      {{- $permalink := print .Permalink (cond (and .IsPage (eq $section "news")) "#blogpost" "#webpage") -}}{{- with .Params.videos }}
+        "videos": [
           {{- range $i, $e := . }}
             {{ if ne $i 0 }},{{end}} {
               "@type": "VideoObject",
@@ -134,7 +125,15 @@
               {{ if .youtubeId }}"thumbnailUrl": "http://i3.ytimg.com/vi/{{ print .youtubeId}}/maxresdefault.jpg"{{ else if .thumbnailUrl }}"thumbnailUrl": {{.thumbnailUrl}}{{ end }}
             }
           {{ end -}}
-        ]
+        ],
+      {{ end -}}
+      {{ with $featured -}}
+        "image": {
+          "@type": "ImageObject",
+          "url": {{ $featured.Permalink }},
+          "width": {{ $featured.Width }},
+          "height": {{ $featured.Height }}
+        }
       {{ end -}}
     }
 
@@ -142,34 +141,53 @@
     {{- if eq .Type "event" -}}
       ,{
         "@type": "Event",
-        "name": "",
-        "image": "",
-        "url": "",
-        "description": "",
-        "startDate": "",
-        "doorTime": "",
-        "endDate": "",
-        "eventAttendanceMode",
-        "eventStatus": "",
-        "location": {
-          "@type": "Place",
-          "addressLocality": "",
-          "addressRegion": ""
-        },
-        "offers": [
-          {
-            "@type": "Offer",
-            "name": "General Admission",
-            "price" "",
-            "availability": "",
-            "url": ""
-          }
-        ]
-        "organizer": ""
-
-
+        {{ with .Title }}"name": {{ . }},{{ end }}
+        {{ with .Params.organizer }}"organizer": {{print "\"" | safeJS }}{{. | safeJS }}{{print "\"" | safeJS }},{{ end }}
+        {{- with $featured }}
+          "image": {
+            "@type": "ImageObject",
+            "url": {{ $featured.Permalink }},
+            "width": {{ $featured.Width }},
+            "height": {{ $featured.Height }}
+          },
+        {{ end -}}
+        "url": {{ .Permalink }},
+        {{ with .Description }}"description": {{.}},{{ end }}
+        {{ with .Params.eventDate }}"startDate": {{ dateFormat . $.Site.Params.ISO8601 }},{{ end }}
+        {{ with .Params.eventDoorTime }}"doorTime": {{ dateFormat . $.Site.Params.ISO8601 }},{{ end }}
+        {{ with .Params.eventEndDate }}"endDate": {{ dateFormat . $.Site.Params.ISO8601 }},{{ end }}
+        "eventAttendanceMode": {{with .Params.eventAttendanceMode}}{{.}}{{else}}"OfflineEventAttendanceMode"{{end}},
+        "eventStatus": {{with .Params.eventStatus}}{{.}}{{else}}"EventScheduled"{{end}}
+        {{- if .Params.sections.venue -}}
+          {{- range .Params.sections.venue -}}
+            ,"location": {
+              "@type": "Place",
+              "address": {
+                {{ with .city }}"addressLocality": {{.}},{{ end }}
+                {{ with .state }}"addressRegion": {{.}},{{ end }}
+                {{ with .postal }}"postalCode": {{.}},{{ end }}
+                {{ with .street }}"streetAddress": {{.}}{{ end }}
+              },
+              {{ with .url }}"url": {{.}},{{ end }}
+              {{ with .name }}"name": {{.}}{{ end }}
+            }
+          {{- end -}}
+        {{- end -}}
+        {{- if .Params.ticketsAvailable -}}
+          {{- range .Params.ticketOptions -}}
+            ,"offers": [
+              {
+                "@type": "Offer",
+                "name": {{.name}},
+                {{ with .description }}"description": {{.}},{{ end }}
+                "price": {{.price}},
+                "url": {{$.Permalink}}
+              }
+            ]
+          {{- end -}}
+        {{- end -}}
       }
-    {{ end }}
+    {{- end -}}
 
     {{/* CollectionPage for taxonomy pages & section listings */}}
     {{- if .IsSection }}
@@ -229,7 +247,7 @@
       {{end -}}
       "articleSection": {{ $section }}
     }
-    {{ end -}}
+    {{- end -}}
 
     {{/* Breadcrumbs */}}
     ,{
