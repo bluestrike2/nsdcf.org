@@ -6,11 +6,14 @@ author = "Jack Boylan"
 "news/categories" = ["Community","Giving"]
 
 [[videos]]
-  title       = "Support Norwin's 2020 Days of Giving"
+  name        = "Support Norwin's 2020 Days of Giving"
   url         = "https://www.youtube.com/watch?v=TJBp0oxJKL4"
-  description = "Through your support, we are able to help make college dreams reality through scholarships, empower Norwin teachers to explore bold new opportunities for their students with Educator Innovation Grants, open the minds of our students to a world of opportunity through STEM education and summer camps, and so much more."
+  description = "Each year, the NSDCF celebrates Norwin’s homecoming weekend with its annual Days of Giving to raise funds to support Norwin students and programs. Through your support, we are able to help make college dreams reality through scholarships, empower Norwin teachers to explore bold new opportunities for their students with Educator Innovation Grants, open the minds of our students to a world of opportunity through STEM education and summer camps, and so much more."
   duration    = "1m58s"
   youtubeId   = "TJBp0oxJKL4"
+  uploadDate  = 2020-09-25T00:00:00-05:00
+  thumbnailUrl = "http://i3.ytimg.com/vi/aYExcS9gNso/hqdefault.jpg"
+  
  
  [[resources]]
    src = "garden-project-students.jpg"

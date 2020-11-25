@@ -124,18 +124,52 @@
               "@type": "VideoObject",
               "about": {{ print $permalink }},
               "author": {{ print $.Site.BaseURL "#organization" }},
-              {{ with .caption }}"caption": {{.}},{{ end }}
+              {{- with .caption }}"caption": {{.}},{{ end }}
               {{ with .description }}"description": {{.}},{{ end }}
-              {{ with .duration }}"duration": {{ print (cond (hasPrefix . "T") . (print "T" .)) | upper}} ,{{ end}}
+              {{ with .duration }}"duration": {{ print (cond (hasPrefix . "T") . (print "T" .)) | upper}},{{ end}}
+              {{ with .uploadDate }}"uploadDate": {{ .Format $.Site.Params.ISO8601 }},{{ end }}
               {{ with .url }}"contentUrl": {{.}},{{ end }}
-              {{ with .embedUrl }}"embedUrl": {{.}},{{ end }}
+              {{ if .youtubeId -}}"embedUrl": "https://www.youtube.com/embed/{{ print .youtubeId}}",{{ else if .embedUrl }}"embedUrl": {{.embedUrl}},{{ end }}
               {{ with .name }}"name": {{.}},{{ end }}
-              {{ with .thumbnailUrl }}"thumbnailURL": {{ absURL .}}{{end}}
+              {{ if .youtubeId }}"thumbnailUrl": "http://i3.ytimg.com/vi/{{ print .youtubeId}}/maxresdefault.jpg"{{ else if .thumbnailUrl }}"thumbnailUrl": {{.thumbnailUrl}}{{ end }}
             }
           {{ end -}}
         ]
       {{ end -}}
     }
+
+    {{/* Event */}}
+    {{- if eq .Type "event" -}}
+      ,{
+        "@type": "Event",
+        "name": "",
+        "image": "",
+        "url": "",
+        "description": "",
+        "startDate": "",
+        "doorTime": "",
+        "endDate": "",
+        "eventAttendanceMode",
+        "eventStatus": "",
+        "location": {
+          "@type": "Place",
+          "addressLocality": "",
+          "addressRegion": ""
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "General Admission",
+            "price" "",
+            "availability": "",
+            "url": ""
+          }
+        ]
+        "organizer": ""
+
+
+      }
+    {{ end }}
 
     {{/* CollectionPage for taxonomy pages & section listings */}}
     {{- if .IsSection }}

@@ -6,12 +6,13 @@ draft   = false
 "news/categories" = ["Community","Giving"]
 
 [[videos]]
-  title       = "Support Norwin's 2019 Days of Giving"
+  name        = "Support Norwin's 2019 Days of Giving"
   embedUrl    = "https://www.youtube.com/embed/aYExcS9gNso"
   url         = "https://www.youtube.com/watch?v=aYExcS9gNso"
-  description = ""
+  description = "During the Days of Giving, it's your opportunity to give back to the Norwin community by supporting the Norwin School District Community Foundation. The NSDCF works to help Norwin teachers, parents, and students benefit further from their education through grants, scholarship programs, community outreach, and more."
   duration    = "4m45s"
   youtubeId   = "aYExcS9gNso"
+  uploadDate  = 2019-09-24T00:00:00-05:00
 
 [banner]
  active     = false
