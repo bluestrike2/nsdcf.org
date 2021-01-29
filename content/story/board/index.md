@@ -6,7 +6,7 @@ headless = true
   src  = "*.jpg"
 [[resources]]
   src  = "*.png"
-  
+
 [[members]]
   name      = "John C. Boylan"
   honorific = "Dr."
@@ -17,7 +17,7 @@ headless = true
   honorific = "Mr."
   title     = "Esq."
   positions = ["Vice President","Norwin Business Community Representative"]
-  
+
 [[members]]
   name      = "Jo Ann Stoecklein"
   honorific = "Ms."
@@ -27,7 +27,7 @@ headless = true
   name      = "Heidi Stratton-Minor"
   honorific = "Ms."
   positions = ["Treasurer","Norwin Financial Community Representative"]
-  
+
 [[members]]
   name      = "William F. Caruthers II"
   honorific = "Mr."
@@ -38,12 +38,12 @@ headless = true
   name      = "Cheryl Campbell"
   honorific = "Ms."
   positions = ["At-Large Representative"]
-  
+
 [[members]]
   name      = "John Duncan"
   honorific = "Mr."
   positions = ["At-Large Representative"]
-  
+
 [[members]]
   name      = "Maria Hanley"
   honorific = "Ms."
@@ -54,7 +54,7 @@ headless = true
   honorific = "Mr."
   positions = ["Norwin School District Director of Business Affairs"]
 
-[[members]]  
+[[members]]
   name      = "Debbie Kunkle"
   honorific = "Ms."
   positions = ["At-Large Representative"]
@@ -63,16 +63,16 @@ headless = true
   name      = "Barb McKee"
   honorific = "Ms."
   positions = ["Norwin Alumna and Resident"]
-  
-[[members]]  
+
+[[members]]
   name      = "Jeffrey M. Taylor"
   honorific = "Dr."
   positions = ["Norwin School District Superintendent of Schools"]
-  
+
 [[members]]
-  name      = "Brian S. Carlton"
+  name      = "Robert Perkins"
   honorific = "Mr."
   positions = ["Norwin School Board Representative"]
 +++
 
-The Norwin School District Community Foundation is governed by its Board of Directors, composed of thirteen members bringing together a wide variety of experiences and community perspectives. The Board of Directors is responsible for supervising the Foundation's operations and strategies in accordance with its bylaws, mission statement, and relevant guidelines. 
+The Norwin School District Community Foundation is governed by its Board of Directors, composed of thirteen members bringing together a wide variety of experiences and community perspectives. The Board of Directors is responsible for supervising the Foundation's operations and strategies in accordance with its bylaws, mission statement, and relevant guidelines.
