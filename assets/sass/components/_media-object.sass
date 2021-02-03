@@ -22,25 +22,34 @@
 .media_vert
   margin: $halfGutter 0 0
   display: flex
-  align-items: flex-end
-  +respond("tablet-landscape")
-    width: 50%
-  +respond("desktop")
+  flex-wrap: nowrap
+  width: 100%
+  +respond("tablet-portrait")
     display: block
+    width: 33%
+  +respond("desktop")
     width: 25%
 
   &__fig
     margin: 0 $halfGutter 0 0
-    max-width: 25%
-    +respond("desktop")
-      max-width: 100%
+    width: 33%
+    +respond("tablet-portrait")
+      width: auto
 
   &__img
+    width: 100%
     max-width: 100%
     height: auto
+    +respond("tablet-portrait")
+      min-width: none
 
   &__meta
     margin-bottom: .2em
+    width: 66%
+    +respond("tablet-portrait")
+      margin-right: $halfGutter
+      width: auto
+
 
   &__heading
     font-size: scale(small)
