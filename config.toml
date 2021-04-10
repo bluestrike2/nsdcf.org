@@ -53,6 +53,11 @@ pluralizeListTitles = false
   hrefTargetBlank = false
   angledQuotes    = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [imaging]
   anchor         = "smart"
   quality        = 70
