@@ -8,6 +8,6 @@ title = "2020 Knight of Distinguished Alumni Recognition Dinner Postponed, Resch
 
 As a result of the unprecedented nature of the COVID-19 pandemic, the Norwin School District Community Foundation and the Norwin Alumni & Friends Association have decided to reschedule their annual Knight of Distinguished Alumni.
 
-The Knight of Distinguished Alumni, originally scheduled for May 27, 2020, has been postponed. The event has been rescheduled to May 20, 2021, with additional information available in the coming months.
+The Knight of Distinguished Alumni, originally scheduled for May 27, 2020, has been postponed. The event has been rescheduled to Thursday, August 19, 2021, with additional information available in the coming months.
 
 We are grateful to the Norwin community for their support of this event, and we look forward to the opportunity to safely come together once again to recognize the achievements of Norwin alumni.

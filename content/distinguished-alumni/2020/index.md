@@ -14,13 +14,13 @@ eventComplete = false
 # => EventRescheduled
 # => EventScheduled (Default state)
 eventStatus = "EventScheduled"
-eventDate     = "2021-05-27T17:30:00-05:00"
-eventDoorTime = "2021-05-27T17:30:00-05:00"
-eventEndDate  = "2021-05-27T21:00:00-05:00"
+eventDate     = "2021-08-19T17:30:00-05:00"
+eventDoorTime = "2021-08-19T17:30:00-05:00"
+eventEndDate  = "2021-08-19T21:00:00-05:00"
 
 ticketsAvailable = false
 # Remember to change ticket deadline date to appropriate deadline for RSVPs. After this date, the ticket order form will be disabled the next time the site is built.
-ticketsDeadlineDate = 2019-04-01T18:46:01-05:00
+ticketsDeadlineDate = 2019-07-01T18:46:01-05:00
 
 date          = 2020-02-13T12:00:00-05:00
 description   = ""
@@ -129,10 +129,10 @@ sponsors = [
 [[sections.schedule]]
   [[sections.schedule]]
     title = "Cocktails and Cash Bar"
-    time  = "2019-05-23T17:30:00-05:00"
+    time  = "2021-08-19T17:30:00-05:00"
   [[sections.schedule]]
     title = "Buffet Dinner"
-    time  = "2019-05-23T18:30:00-05:00"
+    time  = "2021-08-19T18:30:00-05:00"
   [[sections.schedule]]
     title   = "Distinguished Alumni Awards and Scholarship Presentations"
     content = "After Dinner"
@@ -177,6 +177,6 @@ sponsors = [
     icon = "pdf"
 +++
 
-You are cordially invited to join the Norwin School District Community Foundation on Thursday, May 27, 2021 for a celebration of Norwin's past, present, and future as we honor the achievements of some of our most distinguished alumni and graduating students, sponsored by Duncan Financial Group.
+You are cordially invited to join the Norwin School District Community Foundation on Thursday, August 19, 2021 for a celebration of Norwin's past, present, and future as we honor the achievements of some of our most distinguished alumni and graduating students, sponsored by Duncan Financial Group.
 
 Reservations and additional information will be available on this page in the coming months.

@@ -21,9 +21,9 @@ Throughout their lives, these honorees have demonstrated how the quality educati
 * Jennifer Toth &#39;90, M.D.
 * Lois Woleslagle (née Lauffer) &#39;49
 * Richard 'Dick' Zentner &#39;62
-* James Duffy, Esq., *Distinguished Friend of Norwin* 
+* James Duffy, Esq., *Distinguished Friend of Norwin*
 * NAFA 2019 Scholarship Awardee *To Be Announced*
 
-Each honoree will be recognized at the *2020 Knight of Distinguished Alumni Recognition Dinner* to be held on Thursday, May 27, 2021 at the Stratigos Banquet Center. Reservations and additional information regarding this event will be available on the [2020 Knight of Distinguished Alumni]({{< ref "distinguished-alumni/2020">}}) section starting on September 1st.
+Each honoree will be recognized at the *2020 Knight of Distinguished Alumni Recognition Dinner* to be held on Thursday, August 19, 2021 at the Stratigos Banquet Center. Reservations and additional information regarding this event will be available on the [2020 Knight of Distinguished Alumni]({{< ref "distinguished-alumni/2020">}}) page.
 
 [Advertising opportunities]({{< ref "distinguished-alumni/advertising">}}) in our program book are also available for this year's event.
