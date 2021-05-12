@@ -19,7 +19,7 @@
     "gulp-newer": "^1.4.0",
     "imagemin-mozjpeg": "^8.0.0",
     "merge2": "^1.2.2",
-    "postcss": "^7.0.2",
+    "postcss": "^8.2.10",
     "postcss-cli": "^6.1.0",
     "postcss-preset-env": "^6.7.0"
   }
