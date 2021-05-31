@@ -14,9 +14,9 @@ eventComplete = true
 # => EventRescheduled
 # => EventScheduled (Default state)
 eventStatus = "EventScheduled"
-eventDate     = "2019-05-23T17:30:00-05:00"
-eventDoorTime = "2019-05-23T17:30:00-05:00"
-eventEndDate  = "2019-05-23T21:00:00-05:00"
+eventDate     = "2018-05-23T17:30:00-05:00"
+eventDoorTime = "2018-05-23T17:30:00-05:00"
+eventEndDate  = "2018-05-23T21:00:00-05:00"
 ticketsAvailable = false
 # Remember to change ticket deadline date to appropriate deadline for RSVPs. After this date, the ticket order form will be disabled the next time the site is built.
 ticketsDeadlineDate = "2018-05-23T23:59:00-05:00"
