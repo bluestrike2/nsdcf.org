@@ -18,9 +18,9 @@ eventDate     = "2021-08-19T17:30:00-05:00"
 eventDoorTime = "2021-08-19T17:30:00-05:00"
 eventEndDate  = "2021-08-19T21:00:00-05:00"
 
-ticketsAvailable = false
+ticketsAvailable = true
 # Remember to change ticket deadline date to appropriate deadline for RSVPs. After this date, the ticket order form will be disabled the next time the site is built.
-ticketsDeadlineDate = 2019-07-01T18:46:01-05:00
+ticketsDeadlineDate = 2021-08-05T11:59:59-05:00
 
 date          = 2020-02-13T12:00:00-05:00
 description   = ""
@@ -30,22 +30,6 @@ layout_hero   = true
 #aliases     = ["/news/distinguished-alumni-2020","/distinguishedalumni","/alumni-dinner","/alumnidinner"]
 "news/categories" = ["Alumni","Events"]
 
-[[ticketOptions]]
-  name       = "Individual Reservation"
-  price      = "38.15"
-  serviceFee = "1.15"
-
-[[ticketOptions]]
-  name        = "Child Reservation"
-  description = "For children ages 4-10"
-  price       = "19.00"
-  serviceFee  = "1.15"
-
-[tickets]
-  childAges    = "Ages 4-10"
-  childPrice   = "19.00"
-  price        = "38.00"
-  serviceFee   = "1.15"
 
 sponsors = [
   "Andrea Kuklis",
@@ -95,6 +79,26 @@ sponsors = [
   "Woleslagle Custom Contracting"
 ]
 
+[[ticketOptions]]
+  name       = "Individual Reservation"
+  price      = "38.15"
+  serviceFee = "1.15"
+
+[[ticketOptions]]
+  name        = "Child Reservation"
+  description = "For children ages 4-10"
+  price       = "19.00"
+  serviceFee  = "1.15"
+
+[tickets]
+  childAges    = "Ages 4-10"
+  childPrice   = "19.00"
+  price        = "38.00"
+  serviceFee   = "1.15"
+  guestNamesText = "Please list each guest name and their respective dinner selection, including your own, on a separate line. Dinner options are *Chicken Romano*, *Sliced Sirloin of Beef Au Ju*, or special dietary meals upon request."
+  guestNamesPlaceholder = "Guest names and dinner selection (beef, chicken, or special diet). One per line."
+
+
 [menu]
   [menu.main]
     name        = "Knight of Distinguished Alumni"
@@ -120,7 +124,7 @@ sponsors = [
   content = "Please [email us](mailto:alumni@nsdcf.org) with any further questions or concerns regarding the event."
 
 [[sections.recipientsIntro]]
-  title   = "Our 2020 Distinguished Alumni"
+  title   = "Our 2021 Distinguished Alumni"
   content = "Since 1952, the Norwin School District has graduated tens of thousands of students, many of whom have gone on to change the world, touching the lives of their fellow man. The NSDCF is proud to honor the following individuals for their outstanding achievements:"
 
 [sections.schedule_intro]
@@ -179,4 +183,4 @@ sponsors = [
 
 You are cordially invited to join the Norwin School District Community Foundation on Thursday, August 19, 2021 for a celebration of Norwin's past, present, and future as we honor the achievements of some of our most distinguished alumni and graduating students, sponsored by Duncan Financial Group.
 
-Reservations and additional information will be available on this page in the coming months.
+Make your [reservations today](#reservations).
